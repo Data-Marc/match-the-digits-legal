@@ -1,7 +1,7 @@
 import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "";
-const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI — French sole proprietorship), trading as Primisia";
+const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, French sole proprietorship), trading as Primisia";
 
 export const en: Locale = {
   code: "en",
@@ -55,7 +55,7 @@ export const en: Locale = {
         id: "2",
         title: "2. Data Stored Only on Your Device",
         content:
-          "The following data is stored in the App's local storage, on your device. It is not sent to us and is not sent to any server operated by the publisher:\n\n• Game in progress (board, score, remaining hints and additions) — to resume your game\n• Best score — to show it on the home screen and in the trophies\n• Daily results (boards cleared, points, pairs, daily challenges) — calendar, statistics, trophies\n• Preferences: language, haptic feedback, sound effects, reminders — to respect your settings\n• Dates of the rating requests already shown — so that you are not asked too often to rate the App\n\nThis data is kept as long as the App is installed. You can delete it at any time by clearing the App's data (Android) or by uninstalling it (iOS and Android). It cannot be recovered afterwards: the publisher makes no backup.",
+          "The following data is stored in the App's local storage, on your device. It is not sent to us and is not sent to any server operated by the publisher:\n\n• Game in progress (board, score, remaining hints and additions): to resume your game\n• Best score: to show it on the home screen and in the trophies\n• Daily results (boards cleared, points, pairs, daily challenges): calendar, statistics, trophies\n• Preferences: language, haptic feedback, sound effects, reminders: to respect your settings\n• Dates of the rating requests already shown: so that you are not asked too often to rate the App\n\nThis data is kept as long as the App is installed. You can delete it at any time by clearing the App's data (Android) or by uninstalling it (iOS and Android). It cannot be recovered afterwards: the publisher makes no backup.",
       },
       {
         id: "3",
@@ -75,7 +75,7 @@ export const en: Locale = {
           {
             subtitle: "Data processed by Google",
             content:
-              "The App displays advertising provided by Google AdMob, through the Google Mobile Ads SDK built into the App. According to the documentation Google publishes for developers, Google processes:\n\n• IP address, which may be used to estimate the approximate location of the device — advertising, measurement, fraud prevention\n• Interactions with the App (launches, taps, videos viewed) — advertising, measurement, fraud prevention\n• Diagnostic and performance data (launch time, hang rate, energy use); on iOS, crash logs not linked to the user — diagnostics, improvement, advertising, measurement\n• Device identifiers: advertising ID (Android), App Set ID, other app- or developer-scoped identifiers — advertising and measurement\n• Advertising data (ads viewed) — advertising and measurement\n\nGoogle states that this data is encrypted in transit (TLS). The publisher has no access to this individual data: it only receives aggregated statistics (number of impressions, revenue).",
+              "The App displays advertising provided by Google AdMob, through the Google Mobile Ads SDK built into the App. According to the documentation Google publishes for developers, Google processes:\n\n• IP address, which may be used to estimate the approximate location of the device: advertising, measurement, fraud prevention\n• Interactions with the App (launches, taps, videos viewed): advertising, measurement, fraud prevention\n• Diagnostic and performance data (launch time, hang rate, energy use); on iOS, crash logs not linked to the user: diagnostics, improvement, advertising, measurement\n• Device identifiers: advertising ID (Android), App Set ID, other app- or developer-scoped identifiers: advertising and measurement\n• Advertising data (ads viewed): advertising and measurement\n\nGoogle states that this data is encrypted in transit (TLS). The publisher has no access to this individual data: it only receives aggregated statistics (number of impressions, revenue).",
           },
           {
             subtitle: "Ads shown in the App",
@@ -88,12 +88,12 @@ export const en: Locale = {
               "On first launch, a consent window managed by Google's consent tool lets you accept or refuse the use of your data for advertising purposes, purpose by purpose. If you refuse, the App remains fully playable; non-personalized or limited ads may then be shown. You can change your choice at any time in the App's settings.",
           },
           {
-            subtitle: "iOS — tracking",
+            subtitle: "iOS: tracking",
             content:
               "The App does not ask for permission to track your activity (App Tracking Transparency): your device's advertising identifier (IDFA) is not used. The App never requires you to accept tracking in order to play.",
           },
           {
-            subtitle: "Android — advertising ID",
+            subtitle: "Android: advertising ID",
             content: "You can reset or delete your advertising ID in your device settings.",
           },
           {
@@ -123,7 +123,7 @@ export const en: Locale = {
         id: "8",
         title: "8. Legal Bases (GDPR)",
         content:
-          "• Running the game and storing your progress and settings locally — performance of the service you request (contract)\n• Access to device identifiers and advertising, personalized or not, where the law requires consent — consent, which you can withdraw at any time (Section 5)\n• Showing reminders — consent (notification permission), which you can withdraw at any time\n• Replying to your support requests — legitimate interest in replying to you; or pre-contractual measures / contract if the request concerns a purchase\n• Compliance with legal obligations (for example, accounting obligations for purchases) — legal obligation",
+          "• Running the game and storing your progress and settings locally: performance of the service you request (contract)\n• Access to device identifiers and advertising, personalized or not, where the law requires consent: consent, which you can withdraw at any time (Section 5)\n• Showing reminders: consent (notification permission), which you can withdraw at any time\n• Replying to your support requests: legitimate interest in replying to you; or pre-contractual measures / contract if the request concerns a purchase\n• Compliance with legal obligations (for example, accounting obligations for purchases): legal obligation",
       },
       {
         id: "9",
@@ -134,7 +134,7 @@ export const en: Locale = {
       {
         id: "10",
         title: "10. Children",
-        content: `The App is intended for people aged at least 16. It is not directed at children, and we do not knowingly collect data about them.\n\nIn France, a minor under 15 cannot consent alone to the processing of their data based on consent: the agreement of a holder of parental authority is also required (Article 45 of the French Data Protection Act — Loi Informatique et Libertés). If you are a parent and believe your child has given consent, write to us at ${EMAIL}: we will tell you how to withdraw it.`,
+        content: `The App is intended for people aged at least 16. It is not directed at children, and we do not knowingly collect data about them.\n\nIn France, a minor under 15 cannot consent alone to the processing of their data based on consent: the agreement of a holder of parental authority is also required (Article 45 of the French Data Protection Act, Loi Informatique et Libertés). If you are a parent and believe your child has given consent, write to us at ${EMAIL}: we will tell you how to withdraw it.`,
       },
       {
         id: "11",
@@ -153,7 +153,7 @@ export const en: Locale = {
         content:
           "We may change this policy, in particular if the App evolves. The date of the last update is shown at the top of this page. In the event of a significant change, you will be informed in the App before it applies.",
       },
-      { id: "14", title: "14. Contact", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "14", title: "14. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
   terms: {
@@ -161,7 +161,7 @@ export const en: Locale = {
       {
         id: "1",
         title: "1. Publisher",
-        content: `The Match the Digits mobile application (the "App") is published by:\n\n${PUBLISHER}\n• Address: ${ADDRESS}\n• Phone: ${PHONE}\n• Email: ${EMAIL}\n• ${IDS} — ${REG}\n• EU VAT number: ${VAT} — VAT not applicable, Article 293 B of the French General Tax Code\n• Publication director: Marc SAMSON\n• Host of the pages of the privacy policy and of these Terms: ${HOST} — ${HOST_PHONE}`,
+        content: `The Match the Digits mobile application (the "App") is published by:\n\n${PUBLISHER}\n• Address: ${ADDRESS}\n• Phone: ${PHONE}\n• Email: ${EMAIL}\n• ${IDS}, ${REG}\n• EU VAT number: ${VAT}, VAT not applicable, Article 293 B of the French General Tax Code\n• Publication director: Marc SAMSON\n• Host of the pages of the privacy policy and of these Terms: ${HOST}, ${HOST_PHONE}`,
       },
       {
         id: "2",
@@ -256,7 +256,7 @@ export const en: Locale = {
         title: "14. Governing Law, Mediation and Disputes",
         content: `These Terms are governed by French law. If you are a consumer living in another country, you keep the protection of the mandatory rules of the law of your country.\n\nIn case of difficulty, first write to ${EMAIL}: we will look for an amicable solution.\n\nConsumer mediation: if you are a consumer and your written complaint has not been resolved, you may use the following consumer mediator free of charge: ${MEDIATOR}.\n\nFailing agreement, the dispute will be brought before the competent courts; if you are a consumer, you may in particular bring proceedings before the court of your place of residence.`,
       },
-      { id: "15", title: "15. Contact", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "15", title: "15. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
 };

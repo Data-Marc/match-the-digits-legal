@@ -1,7 +1,7 @@
 import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "es/";
-const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI — empresario individual francés), con el nombre comercial Primisia";
+const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, empresario individual francés), con el nombre comercial Primisia";
 
 export const es: Locale = {
   code: "es",
@@ -55,7 +55,7 @@ export const es: Locale = {
         id: "2",
         title: "2. Datos guardados solo en tu dispositivo",
         content:
-          "Los siguientes datos se guardan en el almacenamiento local de la Aplicación, en tu dispositivo. No se nos envían ni se envían a ningún servidor del editor:\n\n• Partida en curso (tablero, puntuación, pistas y añadidos restantes) — para retomar tu partida\n• Mejor puntuación — para mostrarla en la pantalla de inicio y en los trofeos\n• Resultados diarios (tableros completados, puntos, parejas, desafíos diarios) — calendario, estadísticas, trofeos\n• Preferencias: idioma, respuesta háptica, efectos de sonido, recordatorios — para respetar tus ajustes\n• Fechas de las solicitudes de valoración ya mostradas — para no pedirte con demasiada frecuencia que valores la Aplicación\n\nEstos datos se conservan mientras la Aplicación esté instalada. Puedes eliminarlos en cualquier momento borrando los datos de la Aplicación (Android) o desinstalándola (iOS y Android). Después no se pueden recuperar: el editor no hace ninguna copia de seguridad.",
+          "Los siguientes datos se guardan en el almacenamiento local de la Aplicación, en tu dispositivo. No se nos envían ni se envían a ningún servidor del editor:\n\n• Partida en curso (tablero, puntuación, pistas y añadidos restantes): para retomar tu partida\n• Mejor puntuación: para mostrarla en la pantalla de inicio y en los trofeos\n• Resultados diarios (tableros completados, puntos, parejas, desafíos diarios): calendario, estadísticas, trofeos\n• Preferencias: idioma, respuesta háptica, efectos de sonido, recordatorios: para respetar tus ajustes\n• Fechas de las solicitudes de valoración ya mostradas: para no pedirte con demasiada frecuencia que valores la Aplicación\n\nEstos datos se conservan mientras la Aplicación esté instalada. Puedes eliminarlos en cualquier momento borrando los datos de la Aplicación (Android) o desinstalándola (iOS y Android). Después no se pueden recuperar: el editor no hace ninguna copia de seguridad.",
       },
       {
         id: "3",
@@ -75,7 +75,7 @@ export const es: Locale = {
           {
             subtitle: "Datos tratados por Google",
             content:
-              "La Aplicación muestra publicidad proporcionada por Google AdMob, mediante el SDK Google Mobile Ads integrado en la Aplicación. Según la documentación que Google publica para desarrolladores, Google trata:\n\n• Dirección IP, que puede usarse para estimar la ubicación aproximada del dispositivo — publicidad, medición, prevención del fraude\n• Interacciones con la Aplicación (inicios, toques, vídeos vistos) — publicidad, medición, prevención del fraude\n• Datos de diagnóstico y rendimiento (tiempo de inicio, bloqueos, consumo de energía); en iOS, registros de fallos no vinculados al usuario — diagnóstico, mejora, publicidad, medición\n• Identificadores del dispositivo: ID de publicidad (Android), App Set ID, otros identificadores propios de la aplicación o del desarrollador — publicidad y medición\n• Datos publicitarios (anuncios vistos) — publicidad y medición\n\nGoogle indica que estos datos se cifran durante su transferencia (TLS). El editor no tiene acceso a estos datos individuales: solo recibe estadísticas agregadas (número de impresiones, ingresos).",
+              "La Aplicación muestra publicidad proporcionada por Google AdMob, mediante el SDK Google Mobile Ads integrado en la Aplicación. Según la documentación que Google publica para desarrolladores, Google trata:\n\n• Dirección IP, que puede usarse para estimar la ubicación aproximada del dispositivo: publicidad, medición, prevención del fraude\n• Interacciones con la Aplicación (inicios, toques, vídeos vistos): publicidad, medición, prevención del fraude\n• Datos de diagnóstico y rendimiento (tiempo de inicio, bloqueos, consumo de energía); en iOS, registros de fallos no vinculados al usuario: diagnóstico, mejora, publicidad, medición\n• Identificadores del dispositivo: ID de publicidad (Android), App Set ID, otros identificadores propios de la aplicación o del desarrollador: publicidad y medición\n• Datos publicitarios (anuncios vistos): publicidad y medición\n\nGoogle indica que estos datos se cifran durante su transferencia (TLS). El editor no tiene acceso a estos datos individuales: solo recibe estadísticas agregadas (número de impresiones, ingresos).",
           },
           {
             subtitle: "Anuncios que se muestran en la Aplicación",
@@ -88,12 +88,12 @@ export const es: Locale = {
               "En el primer inicio, una ventana de consentimiento gestionada por la herramienta de consentimiento de Google te permite aceptar o rechazar el uso de tus datos con fines publicitarios, finalidad por finalidad. Si lo rechazas, la Aplicación sigue siendo totalmente jugable; en ese caso pueden mostrarse anuncios no personalizados o limitados. Puedes cambiar tu elección en cualquier momento en los ajustes de la Aplicación.",
           },
           {
-            subtitle: "iOS — seguimiento",
+            subtitle: "iOS: seguimiento",
             content:
               "La Aplicación no te pide permiso para rastrear tu actividad (App Tracking Transparency): no se usa el identificador publicitario de tu dispositivo (IDFA). La Aplicación nunca te obliga a aceptar el seguimiento para jugar.",
           },
           {
-            subtitle: "Android — ID de publicidad",
+            subtitle: "Android: ID de publicidad",
             content: "Puedes restablecer o eliminar tu ID de publicidad en los ajustes de tu dispositivo.",
           },
           {
@@ -123,7 +123,7 @@ export const es: Locale = {
         id: "8",
         title: "8. Bases jurídicas (RGPD)",
         content:
-          "• Funcionamiento del juego y almacenamiento local de tu progreso y tus ajustes — prestación del servicio que solicitas (contrato)\n• Acceso a los identificadores del dispositivo y publicidad, personalizada o no, cuando la ley exige consentimiento — consentimiento, que puedes retirar en cualquier momento (sección 5)\n• Mostrar recordatorios — consentimiento (permiso de notificaciones), que puedes retirar en cualquier momento\n• Responder a tus solicitudes de soporte — interés legítimo en responderte; o medidas precontractuales / contrato si la solicitud se refiere a una compra\n• Cumplimiento de obligaciones legales (por ejemplo, contables en relación con las compras) — obligación legal",
+          "• Funcionamiento del juego y almacenamiento local de tu progreso y tus ajustes: prestación del servicio que solicitas (contrato)\n• Acceso a los identificadores del dispositivo y publicidad, personalizada o no, cuando la ley exige consentimiento: consentimiento, que puedes retirar en cualquier momento (sección 5)\n• Mostrar recordatorios: consentimiento (permiso de notificaciones), que puedes retirar en cualquier momento\n• Responder a tus solicitudes de soporte: interés legítimo en responderte; o medidas precontractuales / contrato si la solicitud se refiere a una compra\n• Cumplimiento de obligaciones legales (por ejemplo, contables en relación con las compras): obligación legal",
       },
       {
         id: "9",
@@ -134,7 +134,7 @@ export const es: Locale = {
       {
         id: "10",
         title: "10. Menores",
-        content: `La Aplicación está destinada a personas de al menos 16 años. No está dirigida a menores y no recogemos a sabiendas datos sobre ellos.\n\nEn Francia, un menor de 15 años no puede consentir por sí solo el tratamiento de sus datos basado en el consentimiento: también se requiere el acuerdo de un titular de la patria potestad (artículo 45 de la Ley francesa de protección de datos — Loi Informatique et Libertés). Si eres padre o madre y crees que tu hijo ha dado su consentimiento, escríbenos a ${EMAIL}: te indicaremos cómo retirarlo.`,
+        content: `La Aplicación está destinada a personas de al menos 16 años. No está dirigida a menores y no recogemos a sabiendas datos sobre ellos.\n\nEn Francia, un menor de 15 años no puede consentir por sí solo el tratamiento de sus datos basado en el consentimiento: también se requiere el acuerdo de un titular de la patria potestad (artículo 45 de la Ley francesa de protección de datos, Loi Informatique et Libertés). Si eres padre o madre y crees que tu hijo ha dado su consentimiento, escríbenos a ${EMAIL}: te indicaremos cómo retirarlo.`,
       },
       {
         id: "11",
@@ -153,7 +153,7 @@ export const es: Locale = {
         content:
           "Podemos modificar esta política, en particular si la Aplicación evoluciona. La fecha de la última actualización figura en la parte superior de esta página. En caso de un cambio importante, se te informará en la Aplicación antes de que se aplique.",
       },
-      { id: "14", title: "14. Contacto", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "14", title: "14. Contacto", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
   terms: {
@@ -161,7 +161,7 @@ export const es: Locale = {
       {
         id: "1",
         title: "1. Editor",
-        content: `La aplicación móvil Match the Digits (la «Aplicación») es publicada por:\n\n${PUBLISHER}\n• Dirección: ${ADDRESS}\n• Teléfono: ${PHONE}\n• Correo electrónico: ${EMAIL}\n• ${IDS} — ${REG}\n• Número de IVA intracomunitario: ${VAT} — IVA no aplicable, artículo 293 B del Código General de Impuestos francés\n• Director de la publicación: Marc SAMSON\n• Alojamiento de las páginas de la política de privacidad y de estas Condiciones: ${HOST} — ${HOST_PHONE}`,
+        content: `La aplicación móvil Match the Digits (la «Aplicación») es publicada por:\n\n${PUBLISHER}\n• Dirección: ${ADDRESS}\n• Teléfono: ${PHONE}\n• Correo electrónico: ${EMAIL}\n• ${IDS}, ${REG}\n• Número de IVA intracomunitario: ${VAT}, IVA no aplicable, artículo 293 B del Código General de Impuestos francés\n• Director de la publicación: Marc SAMSON\n• Alojamiento de las páginas de la política de privacidad y de estas Condiciones: ${HOST}, ${HOST_PHONE}`,
       },
       {
         id: "2",
@@ -256,7 +256,7 @@ export const es: Locale = {
         title: "14. Ley aplicable, mediación y litigios",
         content: `Estas Condiciones se rigen por la ley francesa. Si eres un consumidor que reside en otro país, conservas la protección de las normas imperativas de la ley de tu país.\n\nEn caso de dificultad, escribe primero a ${EMAIL}: buscaremos una solución amistosa.\n\nMediación de consumo: si eres consumidor y tu reclamación escrita no se ha resuelto, puedes recurrir gratuitamente al siguiente mediador de consumo: ${MEDIATOR}.\n\nA falta de acuerdo, el litigio se someterá a los tribunales competentes; si eres consumidor, puedes acudir en particular al tribunal de tu lugar de residencia.`,
       },
-      { id: "15", title: "15. Contacto", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "15", title: "15. Contacto", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
 };

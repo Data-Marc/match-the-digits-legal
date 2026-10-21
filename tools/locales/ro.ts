@@ -1,7 +1,7 @@
 import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "ro/";
-const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI — întreprindere individuală franceză), sub denumirea comercială Primisia";
+const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, întreprindere individuală franceză), sub denumirea comercială Primisia";
 
 export const ro: Locale = {
   code: "ro",
@@ -55,7 +55,7 @@ export const ro: Locale = {
         id: "2",
         title: "2. Date salvate doar pe dispozitivul tău",
         content:
-          "Următoarele date sunt salvate în spațiul de stocare local al Aplicației, pe dispozitivul tău. Nu ne sunt transmise și nu sunt trimise către niciun server al editorului:\n\n• Jocul în desfășurare (tabla, scorul, indiciile și adăugările rămase) — pentru a relua jocul\n• Cel mai bun scor — pentru a-l afișa pe ecranul principal și la trofee\n• Rezultate zilnice (table finalizate, puncte, perechi, provocări zilnice) — calendar, statistici, trofee\n• Preferințe: limbă, feedback haptic, efecte sonore, mementouri — pentru a respecta setările tale\n• Datele solicitărilor de evaluare deja afișate — pentru a nu-ți cere prea des să evaluezi Aplicația\n\nAceste date sunt păstrate cât timp Aplicația este instalată. Le poți șterge oricând ștergând datele Aplicației (Android) sau dezinstalând-o (iOS și Android). Ulterior nu mai pot fi recuperate: editorul nu face nicio copie de rezervă.",
+          "Următoarele date sunt salvate în spațiul de stocare local al Aplicației, pe dispozitivul tău. Nu ne sunt transmise și nu sunt trimise către niciun server al editorului:\n\n• Jocul în desfășurare (tabla, scorul, indiciile și adăugările rămase): pentru a relua jocul\n• Cel mai bun scor: pentru a-l afișa pe ecranul principal și la trofee\n• Rezultate zilnice (table finalizate, puncte, perechi, provocări zilnice): calendar, statistici, trofee\n• Preferințe: limbă, feedback haptic, efecte sonore, mementouri: pentru a respecta setările tale\n• Datele solicitărilor de evaluare deja afișate: pentru a nu-ți cere prea des să evaluezi Aplicația\n\nAceste date sunt păstrate cât timp Aplicația este instalată. Le poți șterge oricând ștergând datele Aplicației (Android) sau dezinstalând-o (iOS și Android). Ulterior nu mai pot fi recuperate: editorul nu face nicio copie de rezervă.",
       },
       {
         id: "3",
@@ -75,7 +75,7 @@ export const ro: Locale = {
           {
             subtitle: "Date prelucrate de Google",
             content:
-              "Aplicația afișează reclame furnizate de Google AdMob, prin SDK-ul Google Mobile Ads integrat în Aplicație. Conform documentației publicate de Google pentru dezvoltatori, Google prelucrează:\n\n• Adresa IP, care poate fi folosită pentru a estima locația aproximativă a dispozitivului — publicitate, măsurare, prevenirea fraudei\n• Interacțiuni cu Aplicația (lansări, atingeri, videoclipuri vizionate) — publicitate, măsurare, prevenirea fraudei\n• Date de diagnosticare și performanță (timp de lansare, blocaje, consum de energie); pe iOS, jurnale de erori neasociate utilizatorului — diagnosticare, îmbunătățire, publicitate, măsurare\n• Identificatori ai dispozitivului: ID de publicitate (Android), App Set ID, alți identificatori specifici aplicației sau dezvoltatorului — publicitate și măsurare\n• Date publicitare (reclame vizualizate) — publicitate și măsurare\n\nGoogle precizează că aceste date sunt criptate în timpul transferului (TLS). Editorul nu are acces la aceste date individuale: primește doar statistici agregate (număr de afișări, venituri).",
+              "Aplicația afișează reclame furnizate de Google AdMob, prin SDK-ul Google Mobile Ads integrat în Aplicație. Conform documentației publicate de Google pentru dezvoltatori, Google prelucrează:\n\n• Adresa IP, care poate fi folosită pentru a estima locația aproximativă a dispozitivului: publicitate, măsurare, prevenirea fraudei\n• Interacțiuni cu Aplicația (lansări, atingeri, videoclipuri vizionate): publicitate, măsurare, prevenirea fraudei\n• Date de diagnosticare și performanță (timp de lansare, blocaje, consum de energie); pe iOS, jurnale de erori neasociate utilizatorului: diagnosticare, îmbunătățire, publicitate, măsurare\n• Identificatori ai dispozitivului: ID de publicitate (Android), App Set ID, alți identificatori specifici aplicației sau dezvoltatorului: publicitate și măsurare\n• Date publicitare (reclame vizualizate): publicitate și măsurare\n\nGoogle precizează că aceste date sunt criptate în timpul transferului (TLS). Editorul nu are acces la aceste date individuale: primește doar statistici agregate (număr de afișări, venituri).",
           },
           {
             subtitle: "Reclame afișate în Aplicație",
@@ -88,12 +88,12 @@ export const ro: Locale = {
               "La prima lansare, o fereastră de consimțământ gestionată de instrumentul de consimțământ al Google îți permite să accepți sau să refuzi utilizarea datelor tale în scopuri publicitare, scop cu scop. Dacă refuzi, Aplicația rămâne complet jucabilă; pot fi afișate atunci reclame nepersonalizate sau limitate. Îți poți schimba alegerea oricând din setările Aplicației.",
           },
           {
-            subtitle: "iOS — urmărire",
+            subtitle: "iOS: urmărire",
             content:
               "Aplicația nu îți cere permisiunea de a-ți urmări activitatea (App Tracking Transparency): identificatorul de publicitate al dispozitivului tău (IDFA) nu este folosit. Aplicația nu te obligă niciodată să accepți urmărirea pentru a juca.",
           },
           {
-            subtitle: "Android — ID de publicitate",
+            subtitle: "Android: ID de publicitate",
             content: "Poți reseta sau șterge ID-ul de publicitate din setările dispozitivului.",
           },
           {
@@ -123,7 +123,7 @@ export const ro: Locale = {
         id: "8",
         title: "8. Temeiuri juridice (GDPR)",
         content:
-          "• Funcționarea jocului și salvarea locală a progresului și setărilor tale — executarea serviciului pe care îl soliciți (contract)\n• Accesul la identificatorii dispozitivului și publicitatea, personalizată sau nu, atunci când legea impune consimțământul — consimțământ, care poate fi retras oricând (secțiunea 5)\n• Afișarea mementourilor — consimțământ (permisiunea pentru notificări), care poate fi retras oricând\n• Răspunsul la solicitările tale de asistență — interesul legitim de a-ți răspunde; sau demersuri precontractuale / contract dacă solicitarea privește o achiziție\n• Respectarea obligațiilor legale (de exemplu, cele contabile pentru achiziții) — obligație legală",
+          "• Funcționarea jocului și salvarea locală a progresului și setărilor tale: executarea serviciului pe care îl soliciți (contract)\n• Accesul la identificatorii dispozitivului și publicitatea, personalizată sau nu, atunci când legea impune consimțământul: consimțământ, care poate fi retras oricând (secțiunea 5)\n• Afișarea mementourilor: consimțământ (permisiunea pentru notificări), care poate fi retras oricând\n• Răspunsul la solicitările tale de asistență: interesul legitim de a-ți răspunde; sau demersuri precontractuale / contract dacă solicitarea privește o achiziție\n• Respectarea obligațiilor legale (de exemplu, cele contabile pentru achiziții): obligație legală",
       },
       {
         id: "9",
@@ -134,7 +134,7 @@ export const ro: Locale = {
       {
         id: "10",
         title: "10. Copii",
-        content: `Aplicația este destinată persoanelor de cel puțin 16 ani. Nu se adresează copiilor și nu colectăm în mod intenționat date despre aceștia.\n\nÎn Franța, un minor sub 15 ani nu își poate da singur consimțământul pentru prelucrarea datelor sale bazată pe consimțământ: este necesar și acordul unui titular al autorității părintești (articolul 45 din legea franceză privind protecția datelor — Loi Informatique et Libertés). Dacă ești părinte și crezi că copilul tău și-a dat consimțământul, scrie-ne la ${EMAIL}: îți vom spune cum îl poți retrage.`,
+        content: `Aplicația este destinată persoanelor de cel puțin 16 ani. Nu se adresează copiilor și nu colectăm în mod intenționat date despre aceștia.\n\nÎn Franța, un minor sub 15 ani nu își poate da singur consimțământul pentru prelucrarea datelor sale bazată pe consimțământ: este necesar și acordul unui titular al autorității părintești (articolul 45 din legea franceză privind protecția datelor, Loi Informatique et Libertés). Dacă ești părinte și crezi că copilul tău și-a dat consimțământul, scrie-ne la ${EMAIL}: îți vom spune cum îl poți retrage.`,
       },
       {
         id: "11",
@@ -153,7 +153,7 @@ export const ro: Locale = {
         content:
           "Putem modifica această politică, în special dacă Aplicația evoluează. Data ultimei actualizări este afișată în partea de sus a acestei pagini. În cazul unei modificări importante, vei fi informat în Aplicație înainte ca aceasta să se aplice.",
       },
-      { id: "14", title: "14. Contact", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "14", title: "14. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
   terms: {
@@ -161,7 +161,7 @@ export const ro: Locale = {
       {
         id: "1",
         title: "1. Editor",
-        content: `Aplicația mobilă Match the Digits („Aplicația”) este publicată de:\n\n${PUBLISHER}\n• Adresă: ${ADDRESS}\n• Telefon: ${PHONE}\n• E-mail: ${EMAIL}\n• ${IDS} — ${REG}\n• Cod de TVA intracomunitar: ${VAT} — TVA neaplicabil, articolul 293 B din Codul general fiscal francez\n• Director de publicație: Marc SAMSON\n• Găzduirea paginilor politicii de confidențialitate și ale prezentelor Condiții: ${HOST} — ${HOST_PHONE}`,
+        content: `Aplicația mobilă Match the Digits („Aplicația”) este publicată de:\n\n${PUBLISHER}\n• Adresă: ${ADDRESS}\n• Telefon: ${PHONE}\n• E-mail: ${EMAIL}\n• ${IDS}, ${REG}\n• Cod de TVA intracomunitar: ${VAT}, TVA neaplicabil, articolul 293 B din Codul general fiscal francez\n• Director de publicație: Marc SAMSON\n• Găzduirea paginilor politicii de confidențialitate și ale prezentelor Condiții: ${HOST}, ${HOST_PHONE}`,
       },
       {
         id: "2",
@@ -256,7 +256,7 @@ export const ro: Locale = {
         title: "14. Legea aplicabilă, mediere și litigii",
         content: `Prezentele Condiții sunt guvernate de legea franceză. Dacă ești consumator cu reședința în altă țară, păstrezi protecția normelor imperative ale legii țării tale.\n\nÎn caz de dificultate, scrie mai întâi la ${EMAIL}: vom căuta o soluție amiabilă.\n\nMedierea în domeniul consumului: dacă ești consumator și reclamația ta scrisă nu a fost soluționată, poți apela gratuit la următorul mediator pentru consumatori: ${MEDIATOR}.\n\nÎn lipsa unui acord, litigiul va fi supus instanțelor competente; dacă ești consumator, te poți adresa în special instanței de la locul tău de reședință.`,
       },
-      { id: "15", title: "15. Contact", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "15", title: "15. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
 };

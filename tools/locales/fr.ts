@@ -56,7 +56,7 @@ export const fr: Locale = {
         id: "2",
         title: "2. Données enregistrées uniquement sur votre appareil",
         content:
-          "Les données suivantes sont enregistrées dans le stockage local de l'Application, sur votre appareil. Elles ne nous sont pas transmises et ne sont envoyées à aucun serveur de l'éditeur :\n\n• Partie en cours (plateau, score, indices et ajouts restants) — reprendre votre partie\n• Meilleur score — l'afficher sur l'accueil et dans les trophées\n• Résultats quotidiens (plateaux terminés, points, paires, défis du jour) — calendrier, statistiques, trophées\n• Préférences : langue, retours haptiques, effets sonores, rappels — respecter vos réglages\n• Dates des demandes de notation déjà affichées — ne pas vous redemander trop souvent de noter l'Application\n\nCes données sont conservées tant que l'Application est installée. Vous pouvez les supprimer à tout moment en effaçant les données de l'Application (Android) ou en la désinstallant (iOS et Android). Elles ne peuvent pas être récupérées ensuite : aucune sauvegarde n'est faite par l'éditeur.",
+          "Les données suivantes sont enregistrées dans le stockage local de l'Application, sur votre appareil. Elles ne nous sont pas transmises et ne sont envoyées à aucun serveur de l'éditeur :\n\n• Partie en cours (plateau, score, indices et ajouts restants) : reprendre votre partie\n• Meilleur score : l'afficher sur l'accueil et dans les trophées\n• Résultats quotidiens (plateaux terminés, points, paires, défis du jour) : calendrier, statistiques, trophées\n• Préférences : langue, retours haptiques, effets sonores, rappels : respecter vos réglages\n• Dates des demandes de notation déjà affichées : ne pas vous redemander trop souvent de noter l'Application\n\nCes données sont conservées tant que l'Application est installée. Vous pouvez les supprimer à tout moment en effaçant les données de l'Application (Android) ou en la désinstallant (iOS et Android). Elles ne peuvent pas être récupérées ensuite : aucune sauvegarde n'est faite par l'éditeur.",
       },
       {
         id: "3",
@@ -76,7 +76,7 @@ export const fr: Locale = {
           {
             subtitle: "Données traitées par Google",
             content:
-              "L'Application affiche des publicités fournies par Google AdMob, au moyen du SDK Google Mobile Ads intégré à l'Application. Selon la documentation qu'il publie à l'attention des développeurs, Google traite :\n\n• Adresse IP, pouvant servir à estimer la localisation approximative de l'appareil — publicité, mesure, prévention de la fraude\n• Interactions avec l'Application (lancement, appuis, vidéos vues) — publicité, mesure, prévention de la fraude\n• Données de diagnostic et de performance (temps de lancement, blocages, consommation d'énergie) ; sur iOS, journaux de plantage non liés à l'utilisateur — diagnostic, amélioration, publicité, mesure\n• Identifiants de l'appareil : identifiant publicitaire (Android), App Set ID, autres identifiants propres à l'application ou au développeur — publicité et mesure\n• Données publicitaires (publicités vues) — publicité et mesure\n\nGoogle indique que ces données sont chiffrées pendant leur transfert (protocole TLS). L'éditeur n'a pas accès à ces données individuelles : il reçoit seulement des statistiques agrégées (nombre d'affichages, revenus).",
+              "L'Application affiche des publicités fournies par Google AdMob, au moyen du SDK Google Mobile Ads intégré à l'Application. Selon la documentation qu'il publie à l'attention des développeurs, Google traite :\n\n• Adresse IP, pouvant servir à estimer la localisation approximative de l'appareil : publicité, mesure, prévention de la fraude\n• Interactions avec l'Application (lancement, appuis, vidéos vues) : publicité, mesure, prévention de la fraude\n• Données de diagnostic et de performance (temps de lancement, blocages, consommation d'énergie) ; sur iOS, journaux de plantage non liés à l'utilisateur : diagnostic, amélioration, publicité, mesure\n• Identifiants de l'appareil : identifiant publicitaire (Android), App Set ID, autres identifiants propres à l'application ou au développeur : publicité et mesure\n• Données publicitaires (publicités vues) : publicité et mesure\n\nGoogle indique que ces données sont chiffrées pendant leur transfert (protocole TLS). L'éditeur n'a pas accès à ces données individuelles : il reçoit seulement des statistiques agrégées (nombre d'affichages, revenus).",
           },
           {
             subtitle: "Publicités affichées dans l'Application",
@@ -89,12 +89,12 @@ export const fr: Locale = {
               "Au premier lancement, une fenêtre de consentement, gérée par l'outil de consentement de Google, vous permet d'accepter ou de refuser l'utilisation de vos données à des fins publicitaires, finalité par finalité. Si vous refusez, l'Application reste entièrement jouable ; des publicités non personnalisées ou limitées peuvent alors être affichées. Vous pouvez modifier votre choix à tout moment dans les réglages de l'Application.",
           },
           {
-            subtitle: "iOS — suivi publicitaire",
+            subtitle: "iOS : suivi publicitaire",
             content:
               "L'Application ne vous demande pas l'autorisation de suivre votre activité (App Tracking Transparency) : l'identifiant publicitaire de votre appareil (IDFA) n'est pas utilisé. L'Application ne vous oblige jamais à accepter le suivi pour jouer.",
           },
           {
-            subtitle: "Android — identifiant publicitaire",
+            subtitle: "Android : identifiant publicitaire",
             content: "Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres de votre appareil.",
           },
           {
@@ -124,7 +124,7 @@ export const fr: Locale = {
         id: "8",
         title: "8. Bases légales (RGPD)",
         content:
-          "• Fonctionnement du jeu et enregistrement local de votre progression et de vos réglages — exécution du service que vous demandez (contrat)\n• Accès aux identifiants de l'appareil et publicité, personnalisée ou non, lorsque la loi exige un consentement — consentement, retirable à tout moment (section 5)\n• Affichage des rappels — consentement (autorisation des notifications), retirable à tout moment\n• Réponse à vos demandes de support — intérêt légitime à vous répondre ; ou mesures précontractuelles / contrat si la demande porte sur un achat\n• Respect d'obligations légales (par exemple, comptables pour les achats) — obligation légale",
+          "• Fonctionnement du jeu et enregistrement local de votre progression et de vos réglages : exécution du service que vous demandez (contrat)\n• Accès aux identifiants de l'appareil et publicité, personnalisée ou non, lorsque la loi exige un consentement : consentement, retirable à tout moment (section 5)\n• Affichage des rappels : consentement (autorisation des notifications), retirable à tout moment\n• Réponse à vos demandes de support : intérêt légitime à vous répondre ; ou mesures précontractuelles / contrat si la demande porte sur un achat\n• Respect d'obligations légales (par exemple, comptables pour les achats) : obligation légale",
       },
       {
         id: "9",
@@ -154,7 +154,7 @@ export const fr: Locale = {
         content:
           "Nous pouvons modifier cette politique, notamment si l'Application évolue. La date de mise à jour figure en haut de la page. En cas de changement important, vous en serez informé dans l'Application avant son application.",
       },
-      { id: "14", title: "14. Contact", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "14", title: "14. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
   terms: {
@@ -162,7 +162,7 @@ export const fr: Locale = {
       {
         id: "1",
         title: "1. Éditeur",
-        content: `L'application mobile Match the Digits (l'« Application ») est éditée par :\n\n${PUBLISHER}\n• Adresse : ${ADDRESS}\n• Téléphone : ${PHONE}\n• E-mail : ${EMAIL}\n• ${IDS} — ${REG}\n• N° de TVA intracommunautaire : ${VAT} — TVA non applicable, article 293 B du Code général des impôts\n• Directeur de la publication : Marc SAMSON\n• Hébergeur des pages de la politique de confidentialité et des présentes Conditions : ${HOST} — ${HOST_PHONE}`,
+        content: `L'application mobile Match the Digits (l'« Application ») est éditée par :\n\n${PUBLISHER}\n• Adresse : ${ADDRESS}\n• Téléphone : ${PHONE}\n• E-mail : ${EMAIL}\n• ${IDS}, ${REG}\n• N° de TVA intracommunautaire : ${VAT}, TVA non applicable, article 293 B du Code général des impôts\n• Directeur de la publication : Marc SAMSON\n• Hébergeur des pages de la politique de confidentialité et des présentes Conditions : ${HOST}, ${HOST_PHONE}`,
       },
       {
         id: "2",
@@ -257,7 +257,7 @@ export const fr: Locale = {
         title: "14. Droit applicable, médiation et litiges",
         content: `Les présentes Conditions sont soumises au droit français. Si vous êtes un consommateur résidant dans un autre pays, vous conservez la protection des règles impératives du droit de votre pays.\n\nEn cas de difficulté, écrivez d'abord à ${EMAIL} : nous cherchons une solution amiable.\n\nMédiation de la consommation : si vous êtes un consommateur et que votre réclamation écrite n'a pas abouti, vous pouvez recourir gratuitement au médiateur de la consommation suivant : ${MEDIATOR}.\n\nÀ défaut d'accord, le litige sera porté devant les tribunaux compétents ; si vous êtes un consommateur, vous pouvez saisir notamment la juridiction de votre lieu de résidence.`,
       },
-      { id: "15", title: "15. Contact", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "15", title: "15. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
 };

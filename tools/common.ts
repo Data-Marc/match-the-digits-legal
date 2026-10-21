@@ -42,7 +42,7 @@ export const BASE = "https://data-marc.github.io/match-the-digits-legal";
 export const EMAIL = "hello@primisia.com";
 export const ADDRESS = "17 rue Raspail, 92300 Levallois-Perret, France";
 export const PHONE = "+33 7 69 18 24 97";
-export const IDS = "SIREN 106684699 — SIRET 10668469900015";
+export const IDS = "SIREN 106684699, SIRET 10668469900015";
 export const VAT = "FR87106684699";
 export const REG = "[TO BE CONFIRMED: RCS / RNE]";
 export const MEDIATOR = "[TO BE CONFIRMED: consumer mediator]";
@@ -59,12 +59,12 @@ export const privacyUrl = (dir: string) => `${BASE}/${dir}privacy-policy.html`;
 
 /** Licences tierces : noms propres, identiques dans toutes les langues. */
 export const LICENSES = [
-  "Poppins (The Poppins Project Authors) — SIL Open Font License 1.1",
-  "Noto Sans, Noto Sans Thai, Noto Sans JP / KR / SC (The Noto Project Authors) — SIL Open Font License 1.1",
-  "@expo/vector-icons — MIT License",
-  "Material Icons (Google) — Apache License 2.0",
-  "Material Design Icons (Pictogrammers) — Pictogrammers Free License (Apache License 2.0)",
-  "\"Game experience level increased\" (Mixkit) — Mixkit Sound Effects Free License",
+  "Poppins (The Poppins Project Authors): SIL Open Font License 1.1",
+  "Noto Sans, Noto Sans Thai, Noto Sans JP / KR / SC (The Noto Project Authors): SIL Open Font License 1.1",
+  "@expo/vector-icons: MIT License",
+  "Material Icons (Google): Apache License 2.0",
+  "Material Design Icons (Pictogrammers): Pictogrammers Free License (Apache License 2.0)",
+  "\"Game experience level increased\" (Mixkit): Mixkit Sound Effects Free License",
 ]
   .map((l) => `• ${l}`)
   .join("\n");

@@ -42,7 +42,7 @@ function head(l: Locale, file: string, title: string, desc: string, css: string)
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title} — ${APP}</title>
+  <title>${title} | ${APP}</title>
   <meta name="description" content="${esc(desc)}">
   <link rel="canonical" href="${BASE}/${l.dir}${file}">
 ${alts}
@@ -253,3 +253,14 @@ for (const l of LOCALES) {
 }
 writeFileSync(join(ROOT, ".nojekyll"), "");
 console.log(`généré : ${LOCALES.map((l) => l.code).join(", ")}`);
+
+// Copie pour l'écran natif de l'app : node tools/generate.ts --app <dossier legal/content de l'app>
+const appDir = process.argv[process.argv.indexOf("--app") + 1];
+if (process.argv.includes("--app") && appDir) {
+  mkdirSync(appDir, { recursive: true });
+  for (const l of LOCALES) {
+    const data = { lastUpdated: `${l.ui.lastUpdated}: ${l.updated}`, note: l.ui.translationNote, privacy: l.privacy.sections, terms: l.terms.sections };
+    writeFileSync(join(appDir, `${l.code}.json`), JSON.stringify(data, null, 1) + "\n");
+  }
+  console.log("copie app :", appDir);
+}

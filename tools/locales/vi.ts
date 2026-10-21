@@ -1,7 +1,7 @@
 import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "vi/";
-const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI — doanh nghiệp tư nhân theo luật Pháp), với tên thương mại Primisia";
+const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, doanh nghiệp tư nhân theo luật Pháp), với tên thương mại Primisia";
 
 export const vi: Locale = {
   code: "vi",
@@ -55,7 +55,7 @@ export const vi: Locale = {
         id: "2",
         title: "2. Dữ liệu chỉ lưu trên thiết bị của bạn",
         content:
-          "Các dữ liệu sau được lưu trong bộ nhớ cục bộ của Ứng dụng, trên thiết bị của bạn. Chúng không được gửi cho chúng tôi và không được gửi đến bất kỳ máy chủ nào của nhà phát hành:\n\n• Ván đang chơi (bàn chơi, điểm số, số gợi ý và lượt thêm còn lại) — để tiếp tục ván chơi\n• Điểm cao nhất — để hiển thị trên màn hình chính và trong mục cúp\n• Kết quả hằng ngày (bàn chơi đã hoàn thành, điểm, cặp số, thử thách hằng ngày) — lịch, thống kê, cúp\n• Tùy chọn: ngôn ngữ, phản hồi xúc giác, hiệu ứng âm thanh, lời nhắc — để tôn trọng cài đặt của bạn\n• Ngày của các yêu cầu đánh giá đã hiển thị — để không đề nghị bạn đánh giá Ứng dụng quá thường xuyên\n\nDữ liệu này được giữ chừng nào Ứng dụng còn được cài đặt. Bạn có thể xóa chúng bất cứ lúc nào bằng cách xóa dữ liệu của Ứng dụng (Android) hoặc gỡ cài đặt Ứng dụng (iOS và Android). Sau đó không thể khôi phục: nhà phát hành không sao lưu.",
+          "Các dữ liệu sau được lưu trong bộ nhớ cục bộ của Ứng dụng, trên thiết bị của bạn. Chúng không được gửi cho chúng tôi và không được gửi đến bất kỳ máy chủ nào của nhà phát hành:\n\n• Ván đang chơi (bàn chơi, điểm số, số gợi ý và lượt thêm còn lại): để tiếp tục ván chơi\n• Điểm cao nhất: để hiển thị trên màn hình chính và trong mục cúp\n• Kết quả hằng ngày (bàn chơi đã hoàn thành, điểm, cặp số, thử thách hằng ngày): lịch, thống kê, cúp\n• Tùy chọn: ngôn ngữ, phản hồi xúc giác, hiệu ứng âm thanh, lời nhắc: để tôn trọng cài đặt của bạn\n• Ngày của các yêu cầu đánh giá đã hiển thị: để không đề nghị bạn đánh giá Ứng dụng quá thường xuyên\n\nDữ liệu này được giữ chừng nào Ứng dụng còn được cài đặt. Bạn có thể xóa chúng bất cứ lúc nào bằng cách xóa dữ liệu của Ứng dụng (Android) hoặc gỡ cài đặt Ứng dụng (iOS và Android). Sau đó không thể khôi phục: nhà phát hành không sao lưu.",
       },
       {
         id: "3",
@@ -75,7 +75,7 @@ export const vi: Locale = {
           {
             subtitle: "Dữ liệu do Google xử lý",
             content:
-              "Ứng dụng hiển thị quảng cáo do Google AdMob cung cấp, thông qua Google Mobile Ads SDK được tích hợp trong Ứng dụng. Theo tài liệu Google công bố cho nhà phát triển, Google xử lý:\n\n• Địa chỉ IP, có thể dùng để ước tính vị trí gần đúng của thiết bị — quảng cáo, đo lường, phòng chống gian lận\n• Tương tác với Ứng dụng (lần mở, lần chạm, video đã xem) — quảng cáo, đo lường, phòng chống gian lận\n• Dữ liệu chẩn đoán và hiệu suất (thời gian khởi động, tỷ lệ treo, mức tiêu thụ năng lượng); trên iOS, nhật ký sự cố không liên kết với người dùng — chẩn đoán, cải thiện, quảng cáo, đo lường\n• Mã nhận dạng thiết bị: mã nhận dạng quảng cáo (Android), App Set ID, các mã nhận dạng khác theo phạm vi ứng dụng hoặc nhà phát triển — quảng cáo và đo lường\n• Dữ liệu quảng cáo (quảng cáo đã xem) — quảng cáo và đo lường\n\nGoogle cho biết dữ liệu này được mã hóa khi truyền (TLS). Nhà phát hành không có quyền truy cập dữ liệu cá nhân này: chỉ nhận số liệu thống kê tổng hợp (số lần hiển thị, doanh thu).",
+              "Ứng dụng hiển thị quảng cáo do Google AdMob cung cấp, thông qua Google Mobile Ads SDK được tích hợp trong Ứng dụng. Theo tài liệu Google công bố cho nhà phát triển, Google xử lý:\n\n• Địa chỉ IP, có thể dùng để ước tính vị trí gần đúng của thiết bị: quảng cáo, đo lường, phòng chống gian lận\n• Tương tác với Ứng dụng (lần mở, lần chạm, video đã xem): quảng cáo, đo lường, phòng chống gian lận\n• Dữ liệu chẩn đoán và hiệu suất (thời gian khởi động, tỷ lệ treo, mức tiêu thụ năng lượng); trên iOS, nhật ký sự cố không liên kết với người dùng: chẩn đoán, cải thiện, quảng cáo, đo lường\n• Mã nhận dạng thiết bị: mã nhận dạng quảng cáo (Android), App Set ID, các mã nhận dạng khác theo phạm vi ứng dụng hoặc nhà phát triển: quảng cáo và đo lường\n• Dữ liệu quảng cáo (quảng cáo đã xem): quảng cáo và đo lường\n\nGoogle cho biết dữ liệu này được mã hóa khi truyền (TLS). Nhà phát hành không có quyền truy cập dữ liệu cá nhân này: chỉ nhận số liệu thống kê tổng hợp (số lần hiển thị, doanh thu).",
           },
           {
             subtitle: "Quảng cáo hiển thị trong Ứng dụng",
@@ -88,12 +88,12 @@ export const vi: Locale = {
               "Ở lần mở đầu tiên, một cửa sổ xin đồng ý do công cụ quản lý sự đồng ý của Google điều hành cho phép bạn chấp nhận hoặc từ chối việc sử dụng dữ liệu cho mục đích quảng cáo, theo từng mục đích. Nếu bạn từ chối, Ứng dụng vẫn chơi được đầy đủ; khi đó có thể hiển thị quảng cáo không được cá nhân hóa hoặc bị giới hạn. Bạn có thể thay đổi lựa chọn bất cứ lúc nào trong cài đặt của Ứng dụng.",
           },
           {
-            subtitle: "iOS — theo dõi",
+            subtitle: "iOS: theo dõi",
             content:
               "Ứng dụng không xin quyền theo dõi hoạt động của bạn (App Tracking Transparency): mã nhận dạng quảng cáo của thiết bị (IDFA) không được sử dụng. Ứng dụng không bao giờ bắt buộc bạn chấp nhận theo dõi để chơi.",
           },
           {
-            subtitle: "Android — mã nhận dạng quảng cáo",
+            subtitle: "Android: mã nhận dạng quảng cáo",
             content: "Bạn có thể đặt lại hoặc xóa mã nhận dạng quảng cáo trong cài đặt thiết bị.",
           },
           {
@@ -123,7 +123,7 @@ export const vi: Locale = {
         id: "8",
         title: "8. Cơ sở pháp lý (GDPR)",
         content:
-          "• Vận hành trò chơi và lưu cục bộ tiến trình, cài đặt của bạn — thực hiện dịch vụ bạn yêu cầu (hợp đồng)\n• Truy cập mã nhận dạng thiết bị và quảng cáo, được cá nhân hóa hay không, khi luật yêu cầu sự đồng ý — sự đồng ý, có thể rút lại bất cứ lúc nào (Mục 5)\n• Hiển thị lời nhắc — sự đồng ý (quyền thông báo), có thể rút lại bất cứ lúc nào\n• Trả lời yêu cầu hỗ trợ — lợi ích chính đáng trong việc trả lời bạn; hoặc biện pháp tiền hợp đồng / hợp đồng nếu yêu cầu liên quan đến giao dịch mua\n• Tuân thủ nghĩa vụ pháp lý (ví dụ, nghĩa vụ kế toán đối với giao dịch mua) — nghĩa vụ pháp lý",
+          "• Vận hành trò chơi và lưu cục bộ tiến trình, cài đặt của bạn: thực hiện dịch vụ bạn yêu cầu (hợp đồng)\n• Truy cập mã nhận dạng thiết bị và quảng cáo, được cá nhân hóa hay không, khi luật yêu cầu sự đồng ý: sự đồng ý, có thể rút lại bất cứ lúc nào (Mục 5)\n• Hiển thị lời nhắc: sự đồng ý (quyền thông báo), có thể rút lại bất cứ lúc nào\n• Trả lời yêu cầu hỗ trợ: lợi ích chính đáng trong việc trả lời bạn; hoặc biện pháp tiền hợp đồng / hợp đồng nếu yêu cầu liên quan đến giao dịch mua\n• Tuân thủ nghĩa vụ pháp lý (ví dụ, nghĩa vụ kế toán đối với giao dịch mua): nghĩa vụ pháp lý",
       },
       {
         id: "9",
@@ -134,7 +134,7 @@ export const vi: Locale = {
       {
         id: "10",
         title: "10. Trẻ em",
-        content: `Ứng dụng dành cho người từ 16 tuổi trở lên. Ứng dụng không hướng đến trẻ em và chúng tôi không cố ý thu thập dữ liệu về trẻ em.\n\nTại Pháp, người chưa thành niên dưới 15 tuổi không thể tự mình đồng ý với việc xử lý dữ liệu dựa trên sự đồng ý: cần có thêm sự chấp thuận của một người nắm quyền cha mẹ (Điều 45 Luật bảo vệ dữ liệu của Pháp — Loi Informatique et Libertés). Nếu bạn là cha mẹ và cho rằng con bạn đã đưa ra sự đồng ý, hãy viết cho chúng tôi tại ${EMAIL}: chúng tôi sẽ hướng dẫn bạn cách rút lại.`,
+        content: `Ứng dụng dành cho người từ 16 tuổi trở lên. Ứng dụng không hướng đến trẻ em và chúng tôi không cố ý thu thập dữ liệu về trẻ em.\n\nTại Pháp, người chưa thành niên dưới 15 tuổi không thể tự mình đồng ý với việc xử lý dữ liệu dựa trên sự đồng ý: cần có thêm sự chấp thuận của một người nắm quyền cha mẹ (Điều 45 Luật bảo vệ dữ liệu của Pháp, Loi Informatique et Libertés). Nếu bạn là cha mẹ và cho rằng con bạn đã đưa ra sự đồng ý, hãy viết cho chúng tôi tại ${EMAIL}: chúng tôi sẽ hướng dẫn bạn cách rút lại.`,
       },
       {
         id: "11",
@@ -153,7 +153,7 @@ export const vi: Locale = {
         content:
           "Chúng tôi có thể thay đổi chính sách này, đặc biệt khi Ứng dụng phát triển. Ngày cập nhật lần cuối được hiển thị ở đầu trang này. Trong trường hợp có thay đổi quan trọng, bạn sẽ được thông báo trong Ứng dụng trước khi thay đổi được áp dụng.",
       },
-      { id: "14", title: "14. Liên hệ", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "14", title: "14. Liên hệ", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
   terms: {
@@ -161,7 +161,7 @@ export const vi: Locale = {
       {
         id: "1",
         title: "1. Nhà phát hành",
-        content: `Ứng dụng di động Match the Digits (\"Ứng dụng\") được phát hành bởi:\n\n${PUBLISHER}\n• Địa chỉ: ${ADDRESS}\n• Điện thoại: ${PHONE}\n• Email: ${EMAIL}\n• ${IDS} — ${REG}\n• Mã số VAT nội khối EU: ${VAT} — không áp dụng VAT, Điều 293 B Bộ luật Thuế chung của Pháp\n• Người chịu trách nhiệm xuất bản: Marc SAMSON\n• Đơn vị lưu trữ các trang chính sách quyền riêng tư và Điều khoản này: ${HOST} — ${HOST_PHONE}`,
+        content: `Ứng dụng di động Match the Digits (\"Ứng dụng\") được phát hành bởi:\n\n${PUBLISHER}\n• Địa chỉ: ${ADDRESS}\n• Điện thoại: ${PHONE}\n• Email: ${EMAIL}\n• ${IDS}, ${REG}\n• Mã số VAT nội khối EU: ${VAT}, không áp dụng VAT, Điều 293 B Bộ luật Thuế chung của Pháp\n• Người chịu trách nhiệm xuất bản: Marc SAMSON\n• Đơn vị lưu trữ các trang chính sách quyền riêng tư và Điều khoản này: ${HOST}, ${HOST_PHONE}`,
       },
       {
         id: "2",
@@ -256,7 +256,7 @@ export const vi: Locale = {
         title: "14. Luật áp dụng, hòa giải và tranh chấp",
         content: `Điều khoản này chịu sự điều chỉnh của luật Pháp. Nếu bạn là người tiêu dùng cư trú tại quốc gia khác, bạn vẫn được hưởng sự bảo vệ của các quy định bắt buộc trong luật của quốc gia mình.\n\nKhi gặp khó khăn, trước tiên hãy viết cho ${EMAIL}: chúng tôi sẽ tìm giải pháp thiện chí.\n\nHòa giải tiêu dùng: nếu bạn là người tiêu dùng và khiếu nại bằng văn bản của bạn chưa được giải quyết, bạn có thể sử dụng miễn phí hòa giải viên tiêu dùng sau: ${MEDIATOR}.\n\nNếu không đạt được thỏa thuận, tranh chấp sẽ được đưa ra tòa án có thẩm quyền; nếu bạn là người tiêu dùng, bạn có thể khởi kiện tại tòa án nơi bạn cư trú.`,
       },
-      { id: "15", title: "15. Liên hệ", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "15", title: "15. Liên hệ", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
 };

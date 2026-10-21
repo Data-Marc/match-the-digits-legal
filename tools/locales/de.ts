@@ -1,7 +1,7 @@
 import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "de/";
-const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI – französisches Einzelunternehmen), unter der Geschäftsbezeichnung Primisia";
+const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, französisches Einzelunternehmen), unter der Geschäftsbezeichnung Primisia";
 
 export const de: Locale = {
   code: "de",
@@ -55,7 +55,7 @@ export const de: Locale = {
         id: "2",
         title: "2. Nur auf Ihrem Gerät gespeicherte Daten",
         content:
-          "Die folgenden Daten werden im lokalen Speicher der App auf Ihrem Gerät gespeichert. Sie werden nicht an uns und an keinen Server des Herausgebers übermittelt:\n\n• Laufendes Spiel (Spielfeld, Punktzahl, verbleibende Hinweise und Ergänzungen) — um Ihr Spiel fortzusetzen\n• Bestpunktzahl — Anzeige auf dem Startbildschirm und bei den Trophäen\n• Tagesergebnisse (abgeschlossene Spielfelder, Punkte, Paare, Tagesherausforderungen) — Kalender, Statistiken, Trophäen\n• Einstellungen: Sprache, haptisches Feedback, Soundeffekte, Erinnerungen — um Ihre Einstellungen zu berücksichtigen\n• Daten bereits angezeigter Bewertungsanfragen — damit Sie nicht zu oft um eine Bewertung gebeten werden\n\nDiese Daten werden gespeichert, solange die App installiert ist. Sie können sie jederzeit löschen, indem Sie die Daten der App löschen (Android) oder die App deinstallieren (iOS und Android). Danach können sie nicht wiederhergestellt werden: Der Herausgeber erstellt keine Sicherung.",
+          "Die folgenden Daten werden im lokalen Speicher der App auf Ihrem Gerät gespeichert. Sie werden nicht an uns und an keinen Server des Herausgebers übermittelt:\n\n• Laufendes Spiel (Spielfeld, Punktzahl, verbleibende Hinweise und Ergänzungen): um Ihr Spiel fortzusetzen\n• Bestpunktzahl: Anzeige auf dem Startbildschirm und bei den Trophäen\n• Tagesergebnisse (abgeschlossene Spielfelder, Punkte, Paare, Tagesherausforderungen): Kalender, Statistiken, Trophäen\n• Einstellungen: Sprache, haptisches Feedback, Soundeffekte, Erinnerungen: um Ihre Einstellungen zu berücksichtigen\n• Daten bereits angezeigter Bewertungsanfragen: damit Sie nicht zu oft um eine Bewertung gebeten werden\n\nDiese Daten werden gespeichert, solange die App installiert ist. Sie können sie jederzeit löschen, indem Sie die Daten der App löschen (Android) oder die App deinstallieren (iOS und Android). Danach können sie nicht wiederhergestellt werden: Der Herausgeber erstellt keine Sicherung.",
       },
       {
         id: "3",
@@ -75,7 +75,7 @@ export const de: Locale = {
           {
             subtitle: "Von Google verarbeitete Daten",
             content:
-              "Die App zeigt Werbung von Google AdMob über das in die App integrierte Google Mobile Ads SDK. Laut der von Google für Entwickler veröffentlichten Dokumentation verarbeitet Google:\n\n• IP-Adresse, die zur Schätzung des ungefähren Standorts des Geräts dienen kann — Werbung, Messung, Betrugsprävention\n• Interaktionen mit der App (Starts, Tippen, angesehene Videos) — Werbung, Messung, Betrugsprävention\n• Diagnose- und Leistungsdaten (Startzeit, Hänger, Energieverbrauch); unter iOS nicht mit dem Nutzer verknüpfte Absturzprotokolle — Diagnose, Verbesserung, Werbung, Messung\n• Gerätekennungen: Werbe-ID (Android), App Set ID, weitere app- oder entwicklerbezogene Kennungen — Werbung und Messung\n• Werbedaten (angesehene Anzeigen) — Werbung und Messung\n\nGoogle gibt an, dass diese Daten bei der Übertragung verschlüsselt werden (TLS). Der Herausgeber hat keinen Zugriff auf diese Einzeldaten: Er erhält nur zusammengefasste Statistiken (Anzahl der Einblendungen, Einnahmen).",
+              "Die App zeigt Werbung von Google AdMob über das in die App integrierte Google Mobile Ads SDK. Laut der von Google für Entwickler veröffentlichten Dokumentation verarbeitet Google:\n\n• IP-Adresse, die zur Schätzung des ungefähren Standorts des Geräts dienen kann: Werbung, Messung, Betrugsprävention\n• Interaktionen mit der App (Starts, Tippen, angesehene Videos): Werbung, Messung, Betrugsprävention\n• Diagnose- und Leistungsdaten (Startzeit, Hänger, Energieverbrauch); unter iOS nicht mit dem Nutzer verknüpfte Absturzprotokolle: Diagnose, Verbesserung, Werbung, Messung\n• Gerätekennungen: Werbe-ID (Android), App Set ID, weitere app- oder entwicklerbezogene Kennungen: Werbung und Messung\n• Werbedaten (angesehene Anzeigen): Werbung und Messung\n\nGoogle gibt an, dass diese Daten bei der Übertragung verschlüsselt werden (TLS). Der Herausgeber hat keinen Zugriff auf diese Einzeldaten: Er erhält nur zusammengefasste Statistiken (Anzahl der Einblendungen, Einnahmen).",
           },
           {
             subtitle: "In der App gezeigte Werbung",
@@ -88,12 +88,12 @@ export const de: Locale = {
               "Beim ersten Start können Sie in einem Einwilligungsfenster, das vom Einwilligungstool von Google verwaltet wird, die Nutzung Ihrer Daten zu Werbezwecken für jeden Zweck einzeln annehmen oder ablehnen. Wenn Sie ablehnen, bleibt die App vollständig spielbar; es kann dann nicht personalisierte oder eingeschränkte Werbung angezeigt werden. Sie können Ihre Wahl jederzeit in den Einstellungen der App ändern.",
           },
           {
-            subtitle: "iOS — Tracking",
+            subtitle: "iOS: Tracking",
             content:
               "Die App fragt nicht um Erlaubnis, Ihre Aktivitäten zu verfolgen (App Tracking Transparency): Die Werbekennung Ihres Geräts (IDFA) wird nicht verwendet. Die App verlangt nie, dass Sie Tracking akzeptieren, um zu spielen.",
           },
           {
-            subtitle: "Android — Werbe-ID",
+            subtitle: "Android: Werbe-ID",
             content: "Sie können Ihre Werbe-ID in den Einstellungen Ihres Geräts zurücksetzen oder löschen.",
           },
           {
@@ -123,7 +123,7 @@ export const de: Locale = {
         id: "8",
         title: "8. Rechtsgrundlagen (DSGVO)",
         content:
-          "• Betrieb des Spiels und lokale Speicherung Ihres Fortschritts und Ihrer Einstellungen — Erbringung des von Ihnen angeforderten Dienstes (Vertrag)\n• Zugriff auf Gerätekennungen und Werbung, personalisiert oder nicht, wenn das Gesetz eine Einwilligung verlangt — Einwilligung, jederzeit widerrufbar (Abschnitt 5)\n• Anzeige von Erinnerungen — Einwilligung (Mitteilungserlaubnis), jederzeit widerrufbar\n• Beantwortung Ihrer Support-Anfragen — berechtigtes Interesse an der Beantwortung; oder vorvertragliche Maßnahmen / Vertrag, wenn die Anfrage einen Kauf betrifft\n• Erfüllung gesetzlicher Pflichten (z. B. Buchführungspflichten bei Käufen) — rechtliche Verpflichtung",
+          "• Betrieb des Spiels und lokale Speicherung Ihres Fortschritts und Ihrer Einstellungen: Erbringung des von Ihnen angeforderten Dienstes (Vertrag)\n• Zugriff auf Gerätekennungen und Werbung, personalisiert oder nicht, wenn das Gesetz eine Einwilligung verlangt: Einwilligung, jederzeit widerrufbar (Abschnitt 5)\n• Anzeige von Erinnerungen: Einwilligung (Mitteilungserlaubnis), jederzeit widerrufbar\n• Beantwortung Ihrer Support-Anfragen: berechtigtes Interesse an der Beantwortung; oder vorvertragliche Maßnahmen / Vertrag, wenn die Anfrage einen Kauf betrifft\n• Erfüllung gesetzlicher Pflichten (z. B. Buchführungspflichten bei Käufen): rechtliche Verpflichtung",
       },
       {
         id: "9",
@@ -134,7 +134,7 @@ export const de: Locale = {
       {
         id: "10",
         title: "10. Kinder",
-        content: `Die App richtet sich an Personen ab 16 Jahren. Sie richtet sich nicht an Kinder, und wir erheben nicht wissentlich Daten über sie.\n\nIn Frankreich kann ein Minderjähriger unter 15 Jahren der auf Einwilligung beruhenden Verarbeitung seiner Daten nicht allein zustimmen: Die Zustimmung eines Inhabers der elterlichen Sorge ist ebenfalls erforderlich (Artikel 45 des französischen Datenschutzgesetzes — Loi Informatique et Libertés). Wenn Sie ein Elternteil sind und glauben, dass Ihr Kind eine Einwilligung erteilt hat, schreiben Sie uns an ${EMAIL}: Wir erklären Ihnen, wie Sie sie widerrufen.`,
+        content: `Die App richtet sich an Personen ab 16 Jahren. Sie richtet sich nicht an Kinder, und wir erheben nicht wissentlich Daten über sie.\n\nIn Frankreich kann ein Minderjähriger unter 15 Jahren der auf Einwilligung beruhenden Verarbeitung seiner Daten nicht allein zustimmen: Die Zustimmung eines Inhabers der elterlichen Sorge ist ebenfalls erforderlich (Artikel 45 des französischen Datenschutzgesetzes, Loi Informatique et Libertés). Wenn Sie ein Elternteil sind und glauben, dass Ihr Kind eine Einwilligung erteilt hat, schreiben Sie uns an ${EMAIL}: Wir erklären Ihnen, wie Sie sie widerrufen.`,
       },
       {
         id: "11",
@@ -153,7 +153,7 @@ export const de: Locale = {
         content:
           "Wir können diese Erklärung ändern, insbesondere wenn sich die App weiterentwickelt. Das Datum der letzten Aktualisierung steht oben auf dieser Seite. Bei einer wesentlichen Änderung werden Sie in der App informiert, bevor sie wirksam wird.",
       },
-      { id: "14", title: "14. Kontakt", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "14", title: "14. Kontakt", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
   terms: {
@@ -161,7 +161,7 @@ export const de: Locale = {
       {
         id: "1",
         title: "1. Herausgeber",
-        content: `Die mobile Anwendung Match the Digits (die „App“) wird herausgegeben von:\n\n${PUBLISHER}\n• Adresse: ${ADDRESS}\n• Telefon: ${PHONE}\n• E-Mail: ${EMAIL}\n• ${IDS} — ${REG}\n• USt-IdNr.: ${VAT} — keine Umsatzsteuer ausgewiesen, Artikel 293 B des französischen Steuergesetzbuchs (Code général des impôts)\n• Verantwortlich für den Inhalt: Marc SAMSON\n• Hosting der Seiten der Datenschutzerklärung und dieser Bedingungen: ${HOST} — ${HOST_PHONE}`,
+        content: `Die mobile Anwendung Match the Digits (die „App“) wird herausgegeben von:\n\n${PUBLISHER}\n• Adresse: ${ADDRESS}\n• Telefon: ${PHONE}\n• E-Mail: ${EMAIL}\n• ${IDS}, ${REG}\n• USt-IdNr.: ${VAT}, keine Umsatzsteuer ausgewiesen, Artikel 293 B des französischen Steuergesetzbuchs (Code général des impôts)\n• Verantwortlich für den Inhalt: Marc SAMSON\n• Hosting der Seiten der Datenschutzerklärung und dieser Bedingungen: ${HOST}, ${HOST_PHONE}`,
       },
       {
         id: "2",
@@ -256,7 +256,7 @@ export const de: Locale = {
         title: "14. Anwendbares Recht, Schlichtung und Streitigkeiten",
         content: `Diese Bedingungen unterliegen französischem Recht. Wenn Sie Verbraucher mit Wohnsitz in einem anderen Land sind, behalten Sie den Schutz der zwingenden Vorschriften des Rechts Ihres Landes.\n\nSchreiben Sie bei Schwierigkeiten zuerst an ${EMAIL}: Wir suchen nach einer gütlichen Lösung.\n\nVerbraucherschlichtung: Wenn Sie Verbraucher sind und Ihre schriftliche Beschwerde nicht gelöst wurde, können Sie kostenlos die folgende Verbraucherschlichtungsstelle anrufen: ${MEDIATOR}.\n\nKommt keine Einigung zustande, wird die Streitigkeit vor die zuständigen Gerichte gebracht; als Verbraucher können Sie insbesondere das Gericht Ihres Wohnorts anrufen.`,
       },
-      { id: "15", title: "15. Kontakt", content: `Marc SAMSON EI — Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "15", title: "15. Kontakt", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
     ],
   },
 };
