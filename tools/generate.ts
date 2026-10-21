@@ -23,7 +23,11 @@ const APP = "Match the Digits";
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const link = (s: string) =>
-  esc(s).replace(/(https?:\/\/[^\s<]+?)([.,;)]?)(?=\s|$)/g, (_m, u, p) => `<a href="${u}">${u}</a>${p}`);
+  // Caractères d'URL ASCII seulement : la ponctuation pleine chasse (ja/zh) et les parenthèses restent hors du lien.
+  esc(s).replace(/https?:\/\/[\w\-.~:/?#@!$*+=%]+/g, (m) => {
+    const u = m.replace(/[.,;:!?]+$/, "");
+    return `<a href="${u}">${u}</a>${m.slice(u.length)}`;
+  });
 const body = (text: string) =>
   text
     .split("\n\n")
