@@ -31,8 +31,9 @@ export const it: Locale = {
   faq: [
     ["Devo creare un account?", "No. Match the Digits non richiede account, registrazione né accesso. Puoi giocare subito dopo l'installazione."],
     ["Ho acquistato «Rimuovi pubblicità» ma vedo ancora annunci", "Apri le impostazioni dell'app e tocca <strong>Ripristina acquisti</strong>. Verifica di aver effettuato l'accesso con lo stesso account App Store o Google Play usato per l'acquisto."],
-    ["«Rimuovi pubblicità» è un abbonamento?", "No. È un acquisto unico: viene addebitato una sola volta e non si rinnova mai. Rimuove tutti gli annunci, compreso l'annuncio con premio facoltativo per gli indizi. Non dà alcun vantaggio di gioco: ogni giocatore ha 4 indizi per partita."],
+    ["«Rimuovi pubblicità» è un abbonamento?", "No. È un acquisto unico: viene addebitato una sola volta e non si rinnova mai. Rimuove tutti gli annunci, compreso gli annunci con premio facoltativi per indizi e aggiunte. Non dà alcun vantaggio di gioco: ogni giocatore ha 4 indizi per partita."],
     ["Come funzionano gli indizi?", "Ogni partita ti dà 4 indizi. Senza l'acquisto «Rimuovi pubblicità», puoi scegliere di guardare un breve annuncio per scoprire un indizio. È facoltativo: puoi sempre continuare a giocare senza."],
+    ["Come funziona il pulsante «+»?", "Il pulsante «+» aggiunge al tabellone una copia dei numeri rimasti, fino a 5 volte per tabellone. La prima è gratuita. Per le quattro successive, puoi scegliere di guardare un breve annuncio. È facoltativo."],
     ["Come modifico le mie scelte pubblicitarie?", "Apri le impostazioni dell'app per consultare o modificare il consenso dato per la pubblicità. Su Android puoi anche reimpostare o eliminare il tuo ID pubblicità nelle impostazioni del dispositivo."],
     ["Il mio promemoria non compare", "Verifica che le notifiche di Match the Digits siano consentite nelle impostazioni del dispositivo e che i promemoria siano attivati nelle impostazioni dell'app."],
     ["Perderò i miei progressi?", "La tua partita, i punteggi, i risultati giornalieri e le impostazioni sono salvati solo sul tuo dispositivo. Disinstallare l'app, cancellarne i dati o cambiare dispositivo li elimina definitivamente: non ne conserviamo copia e non possiamo ripristinarli."],
@@ -80,7 +81,7 @@ export const it: Locale = {
           {
             subtitle: "Annunci mostrati nell'App",
             content:
-              "• un banner nella schermata di gioco;\n• un annuncio con premio facoltativo: puoi scegliere di guardare un video per ottenere un indizio. Rifiutare non ti impedisce di giocare.\n\nSe hai acquistato «Rimuovi pubblicità» (sezione 6), non viene mostrato alcun annuncio.",
+              "• un banner nella schermata di gioco;\n• un annuncio con premio facoltativo: puoi scegliere di guardare un video per ottenere un indizio o per usare di nuovo il pulsante «+» (il primo «+» di ogni tabellone è gratuito). Rifiutare non ti impedisce di giocare.\n\nSe hai acquistato «Rimuovi pubblicità» (sezione 6), non viene mostrato alcun annuncio.",
           },
           {
             subtitle: "Il tuo consenso (SEE, Regno Unito, Svizzera)",
@@ -189,7 +190,7 @@ export const it: Locale = {
         id: "6",
         title: "6. Pubblicità",
         content:
-          "L'App è gratuita e finanziata dalla pubblicità fornita da Google AdMob:\n\n• un banner nella schermata di gioco;\n• un annuncio con premio facoltativo: puoi scegliere di guardare un video per ottenere un indizio. Il premio è indicato prima del video e concesso una volta guardato il video. Se rifiuti, o se nessun annuncio è disponibile, puoi continuare a giocare.\n\nGli annunci sono selezionati da Google. L'editore non ne controlla il contenuto e non è responsabile dei prodotti o servizi presentati. Le tue scelte sull'uso dei tuoi dati a fini pubblicitari sono descritte nell'Informativa sulla privacy.",
+          "L'App è gratuita e finanziata dalla pubblicità fornita da Google AdMob:\n\n• un banner nella schermata di gioco;\n• un annuncio con premio facoltativo: puoi scegliere di guardare un video per ottenere un indizio o per usare di nuovo il pulsante «+» (il primo «+» di ogni tabellone è gratuito). Il premio è indicato prima del video e concesso una volta guardato il video. Se rifiuti, o se nessun annuncio è disponibile, puoi continuare a giocare.\n\nGli annunci sono selezionati da Google. L'editore non ne controlla il contenuto e non è responsabile dei prodotti o servizi presentati. Le tue scelte sull'uso dei tuoi dati a fini pubblicitari sono descritte nell'Informativa sulla privacy.",
       },
       {
         id: "7",
@@ -198,7 +199,7 @@ export const it: Locale = {
           {
             subtitle: "Cosa ottieni",
             content:
-              "L'App offre un acquisto unico e permanente («Rimuovi pubblicità»):\n\n• rimuove tutti gli annunci dall'App, compreso l'annuncio con premio: l'indizio viene allora concesso direttamente;\n• non dà alcun vantaggio di gioco: ogni giocatore ha 4 indizi per partita, con o senza acquisto; il numero di aggiunte e le regole sono uguali per tutti;\n• non è un abbonamento: viene addebitato una sola volta e non si rinnova.",
+              "L'App offre un acquisto unico e permanente («Rimuovi pubblicità»):\n\n• rimuove tutti gli annunci dall'App, compreso l'annuncio con premio: indizi e aggiunte vengono allora concessi direttamente;\n• non dà alcun vantaggio di gioco: ogni giocatore ha 4 indizi per partita, con o senza acquisto; il numero di aggiunte e le regole sono uguali per tutti;\n• non è un abbonamento: viene addebitato una sola volta e non si rinnova.",
           },
           {
             subtitle: "Prezzo e pagamento",

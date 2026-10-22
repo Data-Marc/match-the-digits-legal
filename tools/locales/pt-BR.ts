@@ -31,8 +31,9 @@ export const ptBR: Locale = {
   faq: [
     ["Preciso criar uma conta?", "Não. O Match the Digits não exige conta, cadastro nem login. Você pode jogar logo após instalar."],
     ["Comprei \"Remover anúncios\", mas ainda vejo anúncios", "Abra as configurações do app e toque em <strong>Restaurar compras</strong>. Verifique se você está conectado com a mesma conta da App Store ou do Google Play usada na compra."],
-    ["\"Remover anúncios\" é uma assinatura?", "Não. É uma compra única: é cobrada uma só vez e nunca é renovada. Ela remove todos os anúncios, inclusive o anúncio premiado opcional das dicas. Não dá nenhuma vantagem no jogo: todo jogador tem 4 dicas por partida."],
+    ["\"Remover anúncios\" é uma assinatura?", "Não. É uma compra única: é cobrada uma só vez e nunca é renovada. Ela remove todos os anúncios, inclusive os anúncios premiados opcionais das dicas e das adições. Não dá nenhuma vantagem no jogo: todo jogador tem 4 dicas por partida."],
     ["Como funcionam as dicas?", "Cada partida dá 4 dicas. Sem a compra \"Remover anúncios\", você pode optar por assistir a um anúncio curto para revelar uma dica. É opcional: você sempre pode continuar jogando sem assistir."],
+    ["Como funciona o botão “+”?", "O botão “+” adiciona ao tabuleiro uma cópia dos números restantes, até 5 vezes por tabuleiro. A primeira é grátis. Nas quatro seguintes, você pode optar por assistir a um anúncio curto. É opcional."],
     ["Como altero minhas escolhas de publicidade?", "Abra as configurações do app para consultar ou alterar o consentimento dado para publicidade. No Android, você também pode redefinir ou excluir seu ID de publicidade nas configurações do dispositivo."],
     ["Meu lembrete não aparece", "Verifique se as notificações do Match the Digits estão permitidas nas configurações do dispositivo e se os lembretes estão ativados nas configurações do app."],
     ["Vou perder meu progresso?", "Sua partida, pontuações, resultados diários e configurações ficam salvos apenas no seu dispositivo. Desinstalar o app, apagar os dados dele ou trocar de dispositivo os exclui definitivamente: não guardamos nenhuma cópia e não podemos restaurá-los."],
@@ -80,7 +81,7 @@ export const ptBR: Locale = {
           {
             subtitle: "Anúncios exibidos no Aplicativo",
             content:
-              "• um banner na tela de jogo;\n• um anúncio premiado opcional: você pode optar por assistir a um vídeo para ganhar uma dica. Recusar não impede você de jogar.\n\nSe você comprou \"Remover anúncios\" (seção 6), nenhum anúncio é exibido.",
+              "• um banner na tela de jogo;\n• um anúncio premiado opcional: você pode optar por assistir a um vídeo para ganhar uma dica ou para usar de novo o botão “+” (o primeiro “+” de cada tabuleiro é grátis). Recusar não impede você de jogar.\n\nSe você comprou \"Remover anúncios\" (seção 6), nenhum anúncio é exibido.",
           },
           {
             subtitle: "Seu consentimento (EEE, Reino Unido, Suíça)",
@@ -189,7 +190,7 @@ export const ptBR: Locale = {
         id: "6",
         title: "6. Publicidade",
         content:
-          "O Aplicativo é gratuito e financiado por publicidade fornecida pelo Google AdMob:\n\n• um banner na tela de jogo;\n• um anúncio premiado opcional: você pode optar por assistir a um vídeo para ganhar uma dica. A recompensa é informada antes do vídeo e concedida depois que o vídeo é assistido. Se você recusar, ou se nenhum anúncio estiver disponível, pode continuar jogando.\n\nOs anúncios são selecionados pelo Google. O editor não controla seu conteúdo e não é responsável pelos produtos ou serviços apresentados. Suas escolhas sobre o uso dos seus dados para publicidade estão descritas na Política de Privacidade.",
+          "O Aplicativo é gratuito e financiado por publicidade fornecida pelo Google AdMob:\n\n• um banner na tela de jogo;\n• um anúncio premiado opcional: você pode optar por assistir a um vídeo para ganhar uma dica ou para usar de novo o botão “+” (o primeiro “+” de cada tabuleiro é grátis). A recompensa é informada antes do vídeo e concedida depois que o vídeo é assistido. Se você recusar, ou se nenhum anúncio estiver disponível, pode continuar jogando.\n\nOs anúncios são selecionados pelo Google. O editor não controla seu conteúdo e não é responsável pelos produtos ou serviços apresentados. Suas escolhas sobre o uso dos seus dados para publicidade estão descritas na Política de Privacidade.",
       },
       {
         id: "7",
@@ -198,7 +199,7 @@ export const ptBR: Locale = {
           {
             subtitle: "O que você recebe",
             content:
-              "O Aplicativo oferece uma compra única e permanente (\"Remover anúncios\"):\n\n• ela remove todos os anúncios do Aplicativo, inclusive o anúncio premiado: a dica passa a ser concedida diretamente;\n• ela não dá nenhuma vantagem no jogo: todo jogador tem 4 dicas por partida, com ou sem a compra; o número de adições e as regras são iguais para todos;\n• não é uma assinatura: é cobrada uma só vez e não é renovada.",
+              "O Aplicativo oferece uma compra única e permanente (\"Remover anúncios\"):\n\n• ela remove todos os anúncios do Aplicativo, inclusive o anúncio premiado: as dicas e as adições passam a ser concedidas diretamente;\n• ela não dá nenhuma vantagem no jogo: todo jogador tem 4 dicas por partida, com ou sem a compra; o número de adições e as regras são iguais para todos;\n• não é uma assinatura: é cobrada uma só vez e não é renovada.",
           },
           {
             subtitle: "Preço e pagamento",

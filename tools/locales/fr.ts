@@ -32,8 +32,9 @@ export const fr: Locale = {
   faq: [
     ["Dois-je créer un compte ?", "Non. Match the Digits ne demande ni compte, ni inscription, ni connexion. Vous pouvez jouer dès l'installation."],
     ["J'ai acheté « Supprimer les publicités » mais je vois encore des publicités", "Ouvrez les réglages de l'application et appuyez sur <strong>Restaurer les achats</strong>. Vérifiez que vous êtes connecté avec le même compte App Store ou Google Play que celui de l'achat."],
-    ["« Supprimer les publicités » est-il un abonnement ?", "Non. C'est un achat unique : il est facturé une seule fois et ne se renouvelle jamais. Il retire toutes les publicités, y compris la publicité récompensée facultative pour les indices. Il ne donne aucun avantage de jeu : chaque joueur dispose de 4 indices par partie."],
+    ["« Supprimer les publicités » est-il un abonnement ?", "Non. C'est un achat unique : il est facturé une seule fois et ne se renouvelle jamais. Il retire toutes les publicités, y compris les publicités récompensées facultatives pour les indices et les ajouts. Il ne donne aucun avantage de jeu : chaque joueur dispose de 4 indices par partie."],
     ["Comment fonctionnent les indices ?", "Chaque partie vous donne 4 indices. Sans l'achat « Supprimer les publicités », vous pouvez choisir de regarder une courte publicité pour révéler un indice. C'est facultatif : vous pouvez toujours continuer à jouer sans."],
+    ["Comment fonctionne le bouton « + » ?", "Le bouton « + » ajoute à la grille une copie des chiffres restants, jusqu'à 5 fois par plateau. Le premier est gratuit. Pour les quatre suivants, vous pouvez choisir de regarder une courte publicité. C'est facultatif."],
     ["Comment modifier mes choix publicitaires ?", "Ouvrez les réglages de l'application pour consulter ou modifier le consentement donné pour la publicité. Sur Android, vous pouvez aussi réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres de l'appareil."],
     ["Mon rappel ne s'affiche pas", "Vérifiez que les notifications sont autorisées pour Match the Digits dans les paramètres de votre appareil, puis que les rappels sont activés dans les réglages de l'application."],
     ["Vais-je perdre ma progression ?", "Votre partie, vos scores, vos résultats quotidiens et vos réglages sont enregistrés uniquement sur votre appareil. Désinstaller l'application, effacer ses données ou changer d'appareil les supprime définitivement : nous n'en gardons aucune copie et ne pouvons pas les restaurer."],
@@ -81,7 +82,7 @@ export const fr: Locale = {
           {
             subtitle: "Publicités affichées dans l'Application",
             content:
-              "• une bannière sur l'écran de jeu ;\n• une publicité récompensée facultative : vous pouvez choisir de regarder une vidéo pour obtenir un indice. Refuser ne vous empêche pas de jouer.\n\nSi vous avez acheté « Supprimer les publicités » (section 6), aucune publicité n'est affichée.",
+              "• une bannière sur l'écran de jeu ;\n• une publicité récompensée facultative : vous pouvez choisir de regarder une vidéo pour obtenir un indice, ou pour utiliser à nouveau le bouton « + » (le premier « + » de chaque plateau est gratuit). Refuser ne vous empêche pas de jouer.\n\nSi vous avez acheté « Supprimer les publicités » (section 6), aucune publicité n'est affichée.",
           },
           {
             subtitle: "Votre consentement (Espace économique européen, Royaume-Uni, Suisse)",
@@ -190,7 +191,7 @@ export const fr: Locale = {
         id: "6",
         title: "6. Publicité",
         content:
-          "L'Application est gratuite et financée par la publicité, fournie par Google AdMob :\n\n• une bannière sur l'écran de jeu ;\n• une publicité récompensée facultative : vous pouvez choisir de regarder une vidéo pour obtenir un indice. La récompense est indiquée avant la vidéo et accordée une fois la vidéo regardée. Si vous refusez ou si aucune publicité n'est disponible, vous pouvez continuer à jouer.\n\nLes publicités sont sélectionnées par Google. L'éditeur ne contrôle pas leur contenu et n'est pas responsable des produits ou services qui y sont présentés. Vos choix concernant l'utilisation de vos données à des fins publicitaires sont décrits dans la Politique de confidentialité.",
+          "L'Application est gratuite et financée par la publicité, fournie par Google AdMob :\n\n• une bannière sur l'écran de jeu ;\n• une publicité récompensée facultative : vous pouvez choisir de regarder une vidéo pour obtenir un indice, ou pour utiliser à nouveau le bouton « + » (le premier « + » de chaque plateau est gratuit). La récompense est indiquée avant la vidéo et accordée une fois la vidéo regardée. Si vous refusez ou si aucune publicité n'est disponible, vous pouvez continuer à jouer.\n\nLes publicités sont sélectionnées par Google. L'éditeur ne contrôle pas leur contenu et n'est pas responsable des produits ou services qui y sont présentés. Vos choix concernant l'utilisation de vos données à des fins publicitaires sont décrits dans la Politique de confidentialité.",
       },
       {
         id: "7",
@@ -199,7 +200,7 @@ export const fr: Locale = {
           {
             subtitle: "Ce que vous obtenez",
             content:
-              "L'Application propose un achat unique et définitif (« Supprimer les publicités ») :\n\n• il retire toutes les publicités de l'Application, y compris la publicité récompensée : l'indice est alors accordé directement ;\n• il ne donne aucun avantage de jeu : chaque joueur dispose de 4 indices par partie, avec ou sans achat ; le nombre d'ajouts et les règles restent identiques pour tous ;\n• ce n'est pas un abonnement : il n'est facturé qu'une fois et ne se renouvelle pas.",
+              "L'Application propose un achat unique et définitif (« Supprimer les publicités ») :\n\n• il retire toutes les publicités de l'Application, y compris la publicité récompensée : les indices et les ajouts sont alors accordés directement ;\n• il ne donne aucun avantage de jeu : chaque joueur dispose de 4 indices par partie, avec ou sans achat ; le nombre d'ajouts et les règles restent identiques pour tous ;\n• ce n'est pas un abonnement : il n'est facturé qu'une fois et ne se renouvelle pas.",
           },
           {
             subtitle: "Prix et paiement",

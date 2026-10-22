@@ -31,8 +31,9 @@ export const de: Locale = {
   faq: [
     ["Muss ich ein Konto erstellen?", "Nein. Match the Digits erfordert weder Konto noch Registrierung noch Anmeldung. Sie können direkt nach der Installation spielen."],
     ["Ich habe „Werbung entfernen“ gekauft, sehe aber noch Werbung", "Öffnen Sie die Einstellungen der App und tippen Sie auf <strong>Käufe wiederherstellen</strong>. Achten Sie darauf, mit demselben App-Store- oder Google-Play-Konto wie beim Kauf angemeldet zu sein."],
-    ["Ist „Werbung entfernen“ ein Abonnement?", "Nein. Es ist ein einmaliger Kauf: Er wird nur einmal berechnet und verlängert sich nie. Er entfernt jegliche Werbung, auch die freiwillige Werbung mit Belohnung für Hinweise. Er verschafft keinen Spielvorteil: Jeder Spieler hat 4 Hinweise pro Spiel."],
+    ["Ist „Werbung entfernen“ ein Abonnement?", "Nein. Es ist ein einmaliger Kauf: Er wird nur einmal berechnet und verlängert sich nie. Er entfernt jegliche Werbung, auch die freiwillige Werbung mit Belohnung für Hinweise und Ergänzungen. Er verschafft keinen Spielvorteil: Jeder Spieler hat 4 Hinweise pro Spiel."],
     ["Wie funktionieren Hinweise?", "Jedes Spiel gibt Ihnen 4 Hinweise. Ohne den Kauf „Werbung entfernen“ können Sie sich eine kurze Werbung ansehen, um einen Hinweis aufzudecken. Das ist freiwillig: Sie können jederzeit auch ohne weiterspielen."],
+    ["Wie funktioniert die Schaltfläche „+“?", "Die Schaltfläche „+“ fügt dem Spielfeld eine Kopie der verbleibenden Zahlen hinzu, bis zu 5-mal pro Spielfeld. Das erste Mal ist kostenlos. Für die nächsten vier können Sie sich eine kurze Werbung ansehen. Das ist freiwillig."],
     ["Wie ändere ich meine Werbeeinstellungen?", "Öffnen Sie die Einstellungen der App, um die für Werbung erteilte Einwilligung einzusehen oder zu ändern. Unter Android können Sie Ihre Werbe-ID auch in den Geräteeinstellungen zurücksetzen oder löschen."],
     ["Meine Erinnerung wird nicht angezeigt", "Prüfen Sie, ob Mitteilungen für Match the Digits in den Geräteeinstellungen erlaubt sind und ob die Erinnerungen in den Einstellungen der App aktiviert sind."],
     ["Verliere ich meinen Fortschritt?", "Ihr Spiel, Ihre Punktzahlen, Tagesergebnisse und Einstellungen werden nur auf Ihrem Gerät gespeichert. Wenn Sie die App deinstallieren, ihre Daten löschen oder das Gerät wechseln, werden sie endgültig gelöscht: Wir haben keine Kopie und können sie nicht wiederherstellen."],
@@ -80,7 +81,7 @@ export const de: Locale = {
           {
             subtitle: "In der App gezeigte Werbung",
             content:
-              "• ein Banner auf dem Spielbildschirm;\n• eine freiwillige Werbung mit Belohnung: Sie können ein Video ansehen, um einen Hinweis zu erhalten. Eine Ablehnung hindert Sie nicht am Spielen.\n\nWenn Sie „Werbung entfernen“ gekauft haben (Abschnitt 6), wird keine Werbung angezeigt.",
+              "• ein Banner auf dem Spielbildschirm;\n• eine freiwillige Werbung mit Belohnung: Sie können ein Video ansehen, um einen Hinweis zu erhalten oder die Schaltfläche „+“ erneut zu nutzen (das erste „+“ jedes Spielfelds ist kostenlos). Eine Ablehnung hindert Sie nicht am Spielen.\n\nWenn Sie „Werbung entfernen“ gekauft haben (Abschnitt 6), wird keine Werbung angezeigt.",
           },
           {
             subtitle: "Ihre Einwilligung (EWR, Vereinigtes Königreich, Schweiz)",
@@ -189,7 +190,7 @@ export const de: Locale = {
         id: "6",
         title: "6. Werbung",
         content:
-          "Die App ist kostenlos und wird durch Werbung von Google AdMob finanziert:\n\n• ein Banner auf dem Spielbildschirm;\n• eine freiwillige Werbung mit Belohnung: Sie können ein Video ansehen, um einen Hinweis zu erhalten. Die Belohnung wird vor dem Video angegeben und nach dem Ansehen gewährt. Wenn Sie ablehnen oder keine Werbung verfügbar ist, können Sie weiterspielen.\n\nDie Werbung wird von Google ausgewählt. Der Herausgeber kontrolliert ihren Inhalt nicht und ist nicht für die darin vorgestellten Produkte oder Dienstleistungen verantwortlich. Ihre Wahlmöglichkeiten zur Nutzung Ihrer Daten für Werbung sind in der Datenschutzerklärung beschrieben.",
+          "Die App ist kostenlos und wird durch Werbung von Google AdMob finanziert:\n\n• ein Banner auf dem Spielbildschirm;\n• eine freiwillige Werbung mit Belohnung: Sie können ein Video ansehen, um einen Hinweis zu erhalten oder die Schaltfläche „+“ erneut zu nutzen (das erste „+“ jedes Spielfelds ist kostenlos). Die Belohnung wird vor dem Video angegeben und nach dem Ansehen gewährt. Wenn Sie ablehnen oder keine Werbung verfügbar ist, können Sie weiterspielen.\n\nDie Werbung wird von Google ausgewählt. Der Herausgeber kontrolliert ihren Inhalt nicht und ist nicht für die darin vorgestellten Produkte oder Dienstleistungen verantwortlich. Ihre Wahlmöglichkeiten zur Nutzung Ihrer Daten für Werbung sind in der Datenschutzerklärung beschrieben.",
       },
       {
         id: "7",
@@ -198,7 +199,7 @@ export const de: Locale = {
           {
             subtitle: "Was Sie erhalten",
             content:
-              "Die App bietet einen einmaligen, dauerhaften Kauf („Werbung entfernen“):\n\n• er entfernt jegliche Werbung aus der App, einschließlich der Werbung mit Belohnung: Der Hinweis wird dann direkt gewährt;\n• er verschafft keinen Spielvorteil: Jeder Spieler hat 4 Hinweise pro Spiel, mit oder ohne Kauf; die Anzahl der Ergänzungen und die Regeln sind für alle gleich;\n• er ist kein Abonnement: Er wird nur einmal berechnet und verlängert sich nicht.",
+              "Die App bietet einen einmaligen, dauerhaften Kauf („Werbung entfernen“):\n\n• er entfernt jegliche Werbung aus der App, einschließlich der Werbung mit Belohnung: Hinweise und Ergänzungen werden dann direkt gewährt;\n• er verschafft keinen Spielvorteil: Jeder Spieler hat 4 Hinweise pro Spiel, mit oder ohne Kauf; die Anzahl der Ergänzungen und die Regeln sind für alle gleich;\n• er ist kein Abonnement: Er wird nur einmal berechnet und verlängert sich nicht.",
           },
           {
             subtitle: "Preis und Zahlung",

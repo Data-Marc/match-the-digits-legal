@@ -31,8 +31,9 @@ export const en: Locale = {
   faq: [
     ["Do I need to create an account?", "No. Match the Digits requires no account, no registration and no login. You can start playing right after installing."],
     ["I bought \"Remove ads\" but I still see ads", "Open the settings in the app and tap <strong>Restore purchases</strong>. Make sure you are signed in with the same App Store or Google Play account used for the original purchase."],
-    ["Is \"Remove ads\" a subscription?", "No. It is a one-time purchase: it is charged once and never renews. It removes all ads, including the optional rewarded ad for hints. It gives no gameplay advantage: every player has 4 hints per game."],
+    ["Is \"Remove ads\" a subscription?", "No. It is a one-time purchase: it is charged once and never renews. It removes all ads, including the optional rewarded ads for hints and additions. It gives no gameplay advantage: every player has 4 hints per game."],
     ["How do hints work?", "Each game gives you 4 hints. Without the \"Remove ads\" purchase, you can choose to watch a short ad to reveal a hint. Watching is optional: you can always keep playing without it."],
+    ["How does the “+” button work?", "The “+” button adds a copy of the remaining numbers to the board, up to 5 times per board. The first one is free. For the next four, you can choose to watch a short ad. Watching is optional."],
     ["How do I change my advertising choices?", "Open the app's settings to review or change the consent you gave for advertising. On Android, you can also reset or delete your advertising ID in your device settings."],
     ["My reminder does not show up", "Check that notifications are allowed for Match the Digits in your device settings, then confirm that reminders are turned on in the app's settings."],
     ["Will I lose my progress?", "Your game, scores, daily results and settings are stored only on your device. Uninstalling the app, clearing its data or changing devices permanently deletes them: we keep no copy and cannot restore them."],
@@ -80,7 +81,7 @@ export const en: Locale = {
           {
             subtitle: "Ads shown in the App",
             content:
-              "• a banner on the game screen;\n• an optional rewarded ad: you can choose to watch a video to get a hint. Declining does not prevent you from playing.\n\nIf you have purchased \"Remove ads\" (Section 6), no ads are shown.",
+              "• a banner on the game screen;\n• an optional rewarded ad: you can choose to watch a video to get a hint, or to use the “+” button again (the first “+” of each board is free). Declining does not prevent you from playing.\n\nIf you have purchased \"Remove ads\" (Section 6), no ads are shown.",
           },
           {
             subtitle: "Your consent (EEA, United Kingdom, Switzerland)",
@@ -189,7 +190,7 @@ export const en: Locale = {
         id: "6",
         title: "6. Advertising",
         content:
-          "The App is free and funded by advertising, provided by Google AdMob:\n\n• a banner on the game screen;\n• an optional rewarded ad: you can choose to watch a video to get a hint. The reward is stated before the video and granted once the video has been watched. If you decline, or if no ad is available, you can keep playing.\n\nAds are selected by Google. The publisher does not control their content and is not responsible for the products or services they present. Your choices regarding the use of your data for advertising are described in the Privacy Policy.",
+          "The App is free and funded by advertising, provided by Google AdMob:\n\n• a banner on the game screen;\n• an optional rewarded ad: you can choose to watch a video to get a hint, or to use the “+” button again (the first “+” of each board is free). The reward is stated before the video and granted once the video has been watched. If you decline, or if no ad is available, you can keep playing.\n\nAds are selected by Google. The publisher does not control their content and is not responsible for the products or services they present. Your choices regarding the use of your data for advertising are described in the Privacy Policy.",
       },
       {
         id: "7",
@@ -198,7 +199,7 @@ export const en: Locale = {
           {
             subtitle: "What you get",
             content:
-              "The App offers a one-time, permanent purchase (\"Remove ads\"):\n\n• it removes all ads from the App, including the rewarded ad: the hint is then granted directly;\n• it gives no gameplay advantage: every player has 4 hints per game, with or without the purchase; the number of additions and the rules are the same for everyone;\n• it is not a subscription: it is charged only once and does not renew.",
+              "The App offers a one-time, permanent purchase (\"Remove ads\"):\n\n• it removes all ads from the App, including the rewarded ad: hints and additions are then granted directly;\n• it gives no gameplay advantage: every player has 4 hints per game, with or without the purchase; the number of additions and the rules are the same for everyone;\n• it is not a subscription: it is charged only once and does not renew.",
           },
           {
             subtitle: "Price and payment",

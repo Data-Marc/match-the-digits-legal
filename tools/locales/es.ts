@@ -31,8 +31,9 @@ export const es: Locale = {
   faq: [
     ["¿Tengo que crear una cuenta?", "No. Match the Digits no requiere cuenta, registro ni inicio de sesión. Puedes jugar en cuanto lo instales."],
     ["Compré «Quitar anuncios» pero sigo viendo anuncios", "Abre los ajustes de la app y toca <strong>Restaurar compras</strong>. Comprueba que has iniciado sesión con la misma cuenta de App Store o Google Play que usaste para la compra."],
-    ["¿«Quitar anuncios» es una suscripción?", "No. Es una compra única: se cobra una sola vez y nunca se renueva. Elimina todos los anuncios, incluido el anuncio con recompensa opcional para las pistas. No da ninguna ventaja de juego: cada jugador tiene 4 pistas por partida."],
+    ["¿«Quitar anuncios» es una suscripción?", "No. Es una compra única: se cobra una sola vez y nunca se renueva. Elimina todos los anuncios, incluido los anuncios con recompensa opcionales para las pistas y los añadidos. No da ninguna ventaja de juego: cada jugador tiene 4 pistas por partida."],
     ["¿Cómo funcionan las pistas?", "Cada partida te da 4 pistas. Sin la compra «Quitar anuncios», puedes elegir ver un anuncio breve para revelar una pista. Es opcional: siempre puedes seguir jugando sin verlo."],
+    ["¿Cómo funciona el botón «+»?", "El botón «+» añade al tablero una copia de los números restantes, hasta 5 veces por tablero. El primero es gratis. Para los cuatro siguientes, puedes elegir ver un anuncio breve. Es opcional."],
     ["¿Cómo cambio mis opciones de publicidad?", "Abre los ajustes de la app para consultar o cambiar el consentimiento que diste para la publicidad. En Android también puedes restablecer o eliminar tu ID de publicidad en los ajustes del dispositivo."],
     ["Mi recordatorio no aparece", "Comprueba que las notificaciones de Match the Digits están permitidas en los ajustes del dispositivo y que los recordatorios están activados en los ajustes de la app."],
     ["¿Perderé mi progreso?", "Tu partida, tus puntuaciones, tus resultados diarios y tus ajustes se guardan solo en tu dispositivo. Desinstalar la app, borrar sus datos o cambiar de dispositivo los elimina definitivamente: no guardamos ninguna copia y no podemos restaurarlos."],
@@ -80,7 +81,7 @@ export const es: Locale = {
           {
             subtitle: "Anuncios que se muestran en la Aplicación",
             content:
-              "• un banner en la pantalla de juego;\n• un anuncio con recompensa opcional: puedes elegir ver un vídeo para obtener una pista. Rechazarlo no te impide jugar.\n\nSi has comprado «Quitar anuncios» (sección 6), no se muestra ningún anuncio.",
+              "• un banner en la pantalla de juego;\n• un anuncio con recompensa opcional: puedes elegir ver un vídeo para obtener una pista o para volver a usar el botón «+» (el primer «+» de cada tablero es gratis). Rechazarlo no te impide jugar.\n\nSi has comprado «Quitar anuncios» (sección 6), no se muestra ningún anuncio.",
           },
           {
             subtitle: "Tu consentimiento (EEE, Reino Unido, Suiza)",
@@ -189,7 +190,7 @@ export const es: Locale = {
         id: "6",
         title: "6. Publicidad",
         content:
-          "La Aplicación es gratuita y se financia con publicidad proporcionada por Google AdMob:\n\n• un banner en la pantalla de juego;\n• un anuncio con recompensa opcional: puedes elegir ver un vídeo para obtener una pista. La recompensa se indica antes del vídeo y se concede una vez visto. Si lo rechazas, o si no hay ningún anuncio disponible, puedes seguir jugando.\n\nLos anuncios los selecciona Google. El editor no controla su contenido y no es responsable de los productos o servicios que presentan. Tus opciones sobre el uso de tus datos con fines publicitarios se describen en la Política de privacidad.",
+          "La Aplicación es gratuita y se financia con publicidad proporcionada por Google AdMob:\n\n• un banner en la pantalla de juego;\n• un anuncio con recompensa opcional: puedes elegir ver un vídeo para obtener una pista o para volver a usar el botón «+» (el primer «+» de cada tablero es gratis). La recompensa se indica antes del vídeo y se concede una vez visto. Si lo rechazas, o si no hay ningún anuncio disponible, puedes seguir jugando.\n\nLos anuncios los selecciona Google. El editor no controla su contenido y no es responsable de los productos o servicios que presentan. Tus opciones sobre el uso de tus datos con fines publicitarios se describen en la Política de privacidad.",
       },
       {
         id: "7",
@@ -198,7 +199,7 @@ export const es: Locale = {
           {
             subtitle: "Qué obtienes",
             content:
-              "La Aplicación ofrece una compra única y permanente («Quitar anuncios»):\n\n• elimina todos los anuncios de la Aplicación, incluido el anuncio con recompensa: la pista se concede entonces directamente;\n• no da ninguna ventaja de juego: cada jugador tiene 4 pistas por partida, con o sin compra; el número de añadidos y las reglas son iguales para todos;\n• no es una suscripción: se cobra una sola vez y no se renueva.",
+              "La Aplicación ofrece una compra única y permanente («Quitar anuncios»):\n\n• elimina todos los anuncios de la Aplicación, incluido el anuncio con recompensa: las pistas y los añadidos se conceden entonces directamente;\n• no da ninguna ventaja de juego: cada jugador tiene 4 pistas por partida, con o sin compra; el número de añadidos y las reglas son iguales para todos;\n• no es una suscripción: se cobra una sola vez y no se renueva.",
           },
           {
             subtitle: "Precio y pago",

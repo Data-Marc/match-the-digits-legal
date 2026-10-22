@@ -31,8 +31,9 @@ export const vi: Locale = {
   faq: [
     ["Tôi có cần tạo tài khoản không?", "Không. Match the Digits không yêu cầu tài khoản, đăng ký hay đăng nhập. Bạn có thể chơi ngay sau khi cài đặt."],
     ["Tôi đã mua \"Xóa quảng cáo\" nhưng vẫn thấy quảng cáo", "Mở phần cài đặt của ứng dụng và nhấn <strong>Khôi phục giao dịch mua</strong>. Hãy chắc chắn rằng bạn đăng nhập bằng cùng tài khoản App Store hoặc Google Play đã dùng để mua."],
-    ["\"Xóa quảng cáo\" có phải là gói đăng ký không?", "Không. Đây là giao dịch mua một lần: chỉ tính phí một lần và không bao giờ gia hạn. Giao dịch này xóa mọi quảng cáo, kể cả quảng cáo có thưởng tùy chọn để nhận gợi ý. Nó không mang lại lợi thế nào trong trò chơi: mỗi người chơi có 4 gợi ý mỗi ván."],
+    ["\"Xóa quảng cáo\" có phải là gói đăng ký không?", "Không. Đây là giao dịch mua một lần: chỉ tính phí một lần và không bao giờ gia hạn. Giao dịch này xóa mọi quảng cáo, kể cả quảng cáo có thưởng tùy chọn để nhận gợi ý và lượt thêm. Nó không mang lại lợi thế nào trong trò chơi: mỗi người chơi có 4 gợi ý mỗi ván."],
     ["Gợi ý hoạt động thế nào?", "Mỗi ván cho bạn 4 gợi ý. Nếu chưa mua \"Xóa quảng cáo\", bạn có thể chọn xem một quảng cáo ngắn để hiện một gợi ý. Việc xem là tùy chọn: bạn luôn có thể tiếp tục chơi mà không cần xem."],
+    ["Nút “+” hoạt động thế nào?", "Nút “+” thêm vào bàn chơi một bản sao của các số còn lại, tối đa 5 lần mỗi bàn chơi. Lần đầu tiên miễn phí. Với bốn lần tiếp theo, bạn có thể chọn xem một quảng cáo ngắn. Việc xem là tùy chọn."],
     ["Làm sao để thay đổi lựa chọn quảng cáo?", "Mở phần cài đặt của ứng dụng để xem hoặc thay đổi sự đồng ý bạn đã đưa ra cho quảng cáo. Trên Android, bạn cũng có thể đặt lại hoặc xóa mã nhận dạng quảng cáo trong cài đặt thiết bị."],
     ["Lời nhắc của tôi không hiện", "Kiểm tra xem thông báo của Match the Digits đã được cho phép trong cài đặt thiết bị chưa, và lời nhắc đã được bật trong cài đặt của ứng dụng chưa."],
     ["Tôi có bị mất tiến trình không?", "Ván chơi, điểm số, kết quả hằng ngày và cài đặt của bạn chỉ được lưu trên thiết bị. Gỡ cài đặt ứng dụng, xóa dữ liệu của ứng dụng hoặc đổi thiết bị sẽ xóa vĩnh viễn chúng: chúng tôi không giữ bản sao nào và không thể khôi phục."],
@@ -80,7 +81,7 @@ export const vi: Locale = {
           {
             subtitle: "Quảng cáo hiển thị trong Ứng dụng",
             content:
-              "• một biểu ngữ trên màn hình chơi;\n• một quảng cáo có thưởng tùy chọn: bạn có thể chọn xem video để nhận một gợi ý. Từ chối không ngăn bạn chơi.\n\nNếu bạn đã mua \"Xóa quảng cáo\" (Mục 6), sẽ không có quảng cáo nào được hiển thị.",
+              "• một biểu ngữ trên màn hình chơi;\n• một quảng cáo có thưởng tùy chọn: bạn có thể chọn xem video để nhận một gợi ý hoặc để dùng lại nút “+” (lần “+” đầu tiên của mỗi bàn chơi là miễn phí). Từ chối không ngăn bạn chơi.\n\nNếu bạn đã mua \"Xóa quảng cáo\" (Mục 6), sẽ không có quảng cáo nào được hiển thị.",
           },
           {
             subtitle: "Sự đồng ý của bạn (EEA, Vương quốc Anh, Thụy Sĩ)",
@@ -189,7 +190,7 @@ export const vi: Locale = {
         id: "6",
         title: "6. Quảng cáo",
         content:
-          "Ứng dụng miễn phí và được tài trợ bằng quảng cáo do Google AdMob cung cấp:\n\n• một biểu ngữ trên màn hình chơi;\n• một quảng cáo có thưởng tùy chọn: bạn có thể chọn xem video để nhận một gợi ý. Phần thưởng được nêu rõ trước video và được trao sau khi xem xong. Nếu bạn từ chối, hoặc không có quảng cáo nào, bạn vẫn có thể tiếp tục chơi.\n\nQuảng cáo do Google lựa chọn. Nhà phát hành không kiểm soát nội dung và không chịu trách nhiệm về sản phẩm hoặc dịch vụ được giới thiệu. Các lựa chọn của bạn về việc sử dụng dữ liệu cho quảng cáo được mô tả trong Chính sách quyền riêng tư.",
+          "Ứng dụng miễn phí và được tài trợ bằng quảng cáo do Google AdMob cung cấp:\n\n• một biểu ngữ trên màn hình chơi;\n• một quảng cáo có thưởng tùy chọn: bạn có thể chọn xem video để nhận một gợi ý hoặc để dùng lại nút “+” (lần “+” đầu tiên của mỗi bàn chơi là miễn phí). Phần thưởng được nêu rõ trước video và được trao sau khi xem xong. Nếu bạn từ chối, hoặc không có quảng cáo nào, bạn vẫn có thể tiếp tục chơi.\n\nQuảng cáo do Google lựa chọn. Nhà phát hành không kiểm soát nội dung và không chịu trách nhiệm về sản phẩm hoặc dịch vụ được giới thiệu. Các lựa chọn của bạn về việc sử dụng dữ liệu cho quảng cáo được mô tả trong Chính sách quyền riêng tư.",
       },
       {
         id: "7",
@@ -198,7 +199,7 @@ export const vi: Locale = {
           {
             subtitle: "Bạn nhận được gì",
             content:
-              "Ứng dụng cung cấp một giao dịch mua một lần, vĩnh viễn (\"Xóa quảng cáo\"):\n\n• xóa mọi quảng cáo khỏi Ứng dụng, kể cả quảng cáo có thưởng: khi đó gợi ý được trao trực tiếp;\n• không mang lại lợi thế nào trong trò chơi: mỗi người chơi có 4 gợi ý mỗi ván, dù có mua hay không; số lượt thêm và luật chơi như nhau cho mọi người;\n• không phải gói đăng ký: chỉ tính phí một lần và không gia hạn.",
+              "Ứng dụng cung cấp một giao dịch mua một lần, vĩnh viễn (\"Xóa quảng cáo\"):\n\n• xóa mọi quảng cáo khỏi Ứng dụng, kể cả quảng cáo có thưởng: khi đó gợi ý và lượt thêm được trao trực tiếp;\n• không mang lại lợi thế nào trong trò chơi: mỗi người chơi có 4 gợi ý mỗi ván, dù có mua hay không; số lượt thêm và luật chơi như nhau cho mọi người;\n• không phải gói đăng ký: chỉ tính phí một lần và không gia hạn.",
           },
           {
             subtitle: "Giá và thanh toán",

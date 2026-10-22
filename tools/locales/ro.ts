@@ -31,8 +31,9 @@ export const ro: Locale = {
   faq: [
     ["Trebuie să îmi creez un cont?", "Nu. Match the Digits nu necesită cont, înregistrare sau autentificare. Poți juca imediat după instalare."],
     ["Am cumpărat „Elimină reclamele”, dar încă văd reclame", "Deschide setările aplicației și atinge <strong>Restabilește achizițiile</strong>. Verifică dacă ești conectat cu același cont App Store sau Google Play folosit la achiziție."],
-    ["„Elimină reclamele” este un abonament?", "Nu. Este o achiziție unică: se plătește o singură dată și nu se reînnoiește niciodată. Elimină toate reclamele, inclusiv reclama opțională cu recompensă pentru indicii. Nu oferă niciun avantaj în joc: fiecare jucător are 4 indicii pe joc."],
+    ["„Elimină reclamele” este un abonament?", "Nu. Este o achiziție unică: se plătește o singură dată și nu se reînnoiește niciodată. Elimină toate reclamele, inclusiv reclamele opționale cu recompensă pentru indicii și adăugări. Nu oferă niciun avantaj în joc: fiecare jucător are 4 indicii pe joc."],
     ["Cum funcționează indiciile?", "Fiecare joc îți oferă 4 indicii. Fără achiziția „Elimină reclamele”, poți alege să urmărești o reclamă scurtă pentru a afla un indiciu. Este opțional: poți oricând să continui să joci fără ea."],
+    ["Cum funcționează butonul „+”?", "Butonul „+” adaugă pe tablă o copie a numerelor rămase, de până la 5 ori pe tablă. Prima dată este gratuită. Pentru următoarele patru, poți alege să urmărești o reclamă scurtă. Este opțional."],
     ["Cum îmi schimb opțiunile privind publicitatea?", "Deschide setările aplicației pentru a vedea sau modifica consimțământul dat pentru publicitate. Pe Android, poți și să resetezi sau să ștergi ID-ul de publicitate din setările dispozitivului."],
     ["Mementoul meu nu apare", "Verifică dacă notificările pentru Match the Digits sunt permise în setările dispozitivului și dacă mementourile sunt activate în setările aplicației."],
     ["Îmi voi pierde progresul?", "Jocul, scorurile, rezultatele zilnice și setările tale sunt salvate doar pe dispozitivul tău. Dezinstalarea aplicației, ștergerea datelor ei sau schimbarea dispozitivului le șterge definitiv: nu păstrăm nicio copie și nu le putem restabili."],
@@ -80,7 +81,7 @@ export const ro: Locale = {
           {
             subtitle: "Reclame afișate în Aplicație",
             content:
-              "• un banner pe ecranul de joc;\n• o reclamă opțională cu recompensă: poți alege să urmărești un videoclip pentru a obține un indiciu. Refuzul nu te împiedică să joci.\n\nDacă ai cumpărat „Elimină reclamele” (secțiunea 6), nu se afișează nicio reclamă.",
+              "• un banner pe ecranul de joc;\n• o reclamă opțională cu recompensă: poți alege să urmărești un videoclip pentru a obține un indiciu sau pentru a folosi din nou butonul „+” (primul „+” de pe fiecare tablă este gratuit). Refuzul nu te împiedică să joci.\n\nDacă ai cumpărat „Elimină reclamele” (secțiunea 6), nu se afișează nicio reclamă.",
           },
           {
             subtitle: "Consimțământul tău (SEE, Regatul Unit, Elveția)",
@@ -189,7 +190,7 @@ export const ro: Locale = {
         id: "6",
         title: "6. Publicitate",
         content:
-          "Aplicația este gratuită și finanțată prin publicitate furnizată de Google AdMob:\n\n• un banner pe ecranul de joc;\n• o reclamă opțională cu recompensă: poți alege să urmărești un videoclip pentru a obține un indiciu. Recompensa este indicată înainte de videoclip și acordată după vizionarea acestuia. Dacă refuzi sau dacă nu este disponibilă nicio reclamă, poți continua să joci.\n\nReclamele sunt selectate de Google. Editorul nu controlează conținutul lor și nu răspunde pentru produsele sau serviciile prezentate. Opțiunile tale privind utilizarea datelor în scopuri publicitare sunt descrise în Politica de confidențialitate.",
+          "Aplicația este gratuită și finanțată prin publicitate furnizată de Google AdMob:\n\n• un banner pe ecranul de joc;\n• o reclamă opțională cu recompensă: poți alege să urmărești un videoclip pentru a obține un indiciu sau pentru a folosi din nou butonul „+” (primul „+” de pe fiecare tablă este gratuit). Recompensa este indicată înainte de videoclip și acordată după vizionarea acestuia. Dacă refuzi sau dacă nu este disponibilă nicio reclamă, poți continua să joci.\n\nReclamele sunt selectate de Google. Editorul nu controlează conținutul lor și nu răspunde pentru produsele sau serviciile prezentate. Opțiunile tale privind utilizarea datelor în scopuri publicitare sunt descrise în Politica de confidențialitate.",
       },
       {
         id: "7",
@@ -198,7 +199,7 @@ export const ro: Locale = {
           {
             subtitle: "Ce primești",
             content:
-              "Aplicația oferă o achiziție unică și permanentă („Elimină reclamele”):\n\n• elimină toate reclamele din Aplicație, inclusiv reclama cu recompensă: indiciul este atunci acordat direct;\n• nu oferă niciun avantaj în joc: fiecare jucător are 4 indicii pe joc, cu sau fără achiziție; numărul de adăugări și regulile sunt aceleași pentru toți;\n• nu este un abonament: se plătește o singură dată și nu se reînnoiește.",
+              "Aplicația oferă o achiziție unică și permanentă („Elimină reclamele”):\n\n• elimină toate reclamele din Aplicație, inclusiv reclama cu recompensă: indiciile și adăugările sunt atunci acordate direct;\n• nu oferă niciun avantaj în joc: fiecare jucător are 4 indicii pe joc, cu sau fără achiziție; numărul de adăugări și regulile sunt aceleași pentru toți;\n• nu este un abonament: se plătește o singură dată și nu se reînnoiește.",
           },
           {
             subtitle: "Preț și plată",
