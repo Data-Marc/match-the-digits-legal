@@ -65,6 +65,7 @@ export const LICENSES = [
   "Material Icons (Google): Apache License 2.0",
   "Material Design Icons (Pictogrammers): Pictogrammers Free License (Apache License 2.0)",
   "\"Game experience level increased\" (Mixkit): Mixkit Sound Effects Free License",
+  "\"Upbeat corporate music - Palm Trees in Stereo\" (Cinematic-Soul, Pixabay): Pixabay Content License",
 ]
   .map((l) => `• ${l}`)
   .join("\n");
