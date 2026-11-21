@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>자주 묻는 질문</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">계정을 만들어야 하나요?</div>
-        <div class="faq-a">아니요. Match the Digits는 계정, 가입, 로그인이 필요하지 않습니다. 설치 후 바로 플레이할 수 있습니다.</div>
+        <div class="faq-q">계정이 필요한가요?</div>
+        <div class="faq-a">이메일이나 비밀번호 없이 플레이합니다. 순위표는 익명 신원과 배정 닉네임을 만듭니다.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">'광고 제거'를 구매했는데 아직 광고가 보입니다</div>
-        <div class="faq-a">앱 설정을 열고 <strong>구매 복원</strong>을 누르세요. 구매할 때와 같은 App Store 또는 Google Play 계정으로 로그인되어 있는지 확인하세요.</div>
+        <div class="faq-q">힌트와 추가는 몇 번인가요?</div>
+        <div class="faq-a">보드당 힌트 최대 4회, 추가 5회입니다. 처음 추가 2회는 무료이며 Premium이 없으면 나머지 3회와 힌트에 보상 광고를 제안합니다.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">'광고 제거'는 구독인가요?</div>
-        <div class="faq-a">아니요. 1회 구매입니다. 한 번만 결제되며 갱신되지 않습니다. 힌트와 추가를 위한 선택형 보상형 광고를 포함한 모든 광고가 제거됩니다. 게임상의 이점은 없으며, 모든 플레이어는 게임당 4개의 힌트를 사용할 수 있습니다.</div>
+        <div class="faq-q">광고가 작동하지 않으면?</div>
+        <div class="faq-a">요청 후 제공 불가이면 남은 한도 내에서 영상 없이 동작을 허용할 수 있습니다. 거부나 보상 전 자발적 닫기는 허용하지 않습니다.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">힌트는 어떻게 작동하나요?</div>
-        <div class="faq-a">각 게임에서 4개의 힌트를 사용할 수 있습니다. '광고 제거'를 구매하지 않은 경우 짧은 광고를 시청해 힌트를 볼 수 있습니다. 시청은 선택 사항이며, 보지 않고도 계속 플레이할 수 있습니다.</div>
+        <div class="faq-q">Premium은 구독인가요?</div>
+        <div class="faq-a">아니요. 힌트·추가를 포함한 광고 없는 일회성 구매이며 한도는 같습니다.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">'+' 버튼은 어떻게 작동하나요?</div>
-        <div class="faq-a">'+' 버튼을 누르면 남은 숫자의 사본이 보드에 추가됩니다. 보드당 최대 5회이며, 첫 번째는 무료입니다. 이후 4회는 짧은 광고를 시청하고 사용할 수 있습니다. 시청은 선택 사항입니다.</div>
+        <div class="faq-q">Premium 복원 방법은?</div>
+        <div class="faq-a">설정에서 원래 스토어·계정으로 구매 복원하세요. Apple과 Google 간 자동 이전은 없습니다.</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">순위표 계정을 어떻게 삭제하나요?</div>
+        <div class="faq-a">설정의 계정 항목에서 요청하고 진행 상태를 확인하세요. 앱 접근이 없으면 Match the Digits와 순위표 닉네임·식별자를 지원 메일로 보내세요. 토큰·비밀번호는 보내지 마세요. 확인이 필요할 수 있습니다.<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">광고 설정은 어떻게 변경하나요?</div>
-        <div class="faq-a">앱 설정에서 광고에 대해 제공한 동의를 확인하거나 변경할 수 있습니다. Android에서는 기기 설정에서 광고 ID를 재설정하거나 삭제할 수도 있습니다.</div>
+        <div class="faq-q">삭제 후 돌아올 수 있나요?</div>
+        <div class="faq-a">완료 후 악용 제한에 따라 새 신원과 닉네임을 요청할 수 있습니다. 보존한 진행 상황의 기록은 다시 게시할 수 있습니다. Premium은 스토어 규칙에 따라 유지됩니다.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">알림이 표시되지 않습니다</div>
-        <div class="faq-a">기기 설정에서 Match the Digits의 알림이 허용되어 있는지, 앱 설정에서 알림이 켜져 있는지 확인하세요.</div>
+        <div class="faq-q">진행 상황도 지우면 어떻게 되나요?</div>
+        <div class="faq-a">게임, 기록과 해당 로컬 결과를 초기화하지만 Premium과 설정은 유지합니다. 선택하지 않으면 진행 상황은 남습니다.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">진행 상황이 사라지나요?</div>
-        <div class="faq-a">게임, 점수, 일일 결과 및 설정은 이용자의 기기에만 저장됩니다. 앱을 삭제하거나 데이터를 지우거나 기기를 바꾸면 영구적으로 삭제됩니다. 당사는 사본을 보관하지 않으며 복원할 수 없습니다.</div>
+        <div class="faq-q">앱 제거로 모두 삭제되나요?</div>
+        <div class="faq-a">로컬 진행 상황은 사라질 수 있지만 서버 계정 삭제 요청은 아닙니다. 순위표는 전체 백업이 아닙니다.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">환불은 어떻게 받나요?</div>
-        <div class="faq-a">구매는 Apple 또는 Google이 처리합니다. Apple에는 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>에서, Google에는 <a href="https://support.google.com/googleplay/answer/15574897">이 절차</a>에 따라 환불을 요청하세요. 당사에 문의하실 수도 있습니다.</div>
+        <div class="faq-q">광고 동의 관리는 어디에 있나요?</div>
+        <div class="faq-a">이 버전의 설정에는 아직 광고 개인정보 관리 화면이 없습니다. 휴대전화 설정이나 지원은 처리 전에 필요한 동의 양식을 대신하지 않습니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">알림이 표시되지 않는 이유는?</div>
+        <div class="faq-a">앱 알림 설정과 휴대전화 알림 권한을 확인하세요.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">환불은 어떻게 요청하나요?</div>
+        <div class="faq-a">구매한 Apple 또는 Google에 요청하세요. 약관에 절차 링크가 있으며 지원에 문의할 수도 있습니다.</div>
       </div>
     </div>
 

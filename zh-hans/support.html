@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>常见问题</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">需要创建账户吗？</div>
-        <div class="faq-a">不需要。Match the Digits 无需账户、注册或登录。安装后即可开始游戏。</div>
+        <div class="faq-q">需要账户吗？</div>
+        <div class="faq-a">游玩无需邮箱或密码。排行榜会创建匿名身份和分配昵称。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">我购买了“移除广告”，但仍然看到广告</div>
-        <div class="faq-a">请打开应用设置并点按<strong>恢复购买</strong>。请确认您登录的是购买时使用的同一 App Store 或 Google Play 账户。</div>
+        <div class="faq-q">有多少提示和添加？</div>
+        <div class="faq-a">每盘最多4次提示、5次添加。前2次添加免费，非Premium用户其余3次及提示会提供激励广告。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">“移除广告”是订阅吗？</div>
-        <div class="faq-a">不是。这是一次性购买：只收费一次，永不续订。它会移除所有广告，包括用于提示和添加的可选激励广告。它不提供任何游戏优势：每位玩家每局都有 4 次提示。</div>
+        <div class="faq-q">广告无法播放怎么办？</div>
+        <div class="faq-a">请求后不可用时，可在剩余配额内无需视频给予操作。拒绝或在奖励前自行关闭不会给予该操作。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">提示如何使用？</div>
-        <div class="faq-a">每局游戏有 4 次提示。未购买“移除广告”时，您可以选择观看一段简短广告来显示提示。观看是可选的：不看也可以一直继续游戏。</div>
+        <div class="faq-q">Premium是订阅吗？</div>
+        <div class="faq-a">不是，是包括提示和添加广告在内的免广告一次性购买，游戏上限相同。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">“+”按钮如何使用？</div>
-        <div class="faq-a">“+”按钮会将剩余数字的副本添加到棋盘上，每个棋盘最多 5 次。第一次免费。之后的四次，您可以选择观看一段简短广告。观看是可选的。</div>
+        <div class="faq-q">如何恢复Premium？</div>
+        <div class="faq-a">设置中用原商店和账户恢复购买。Apple和Google之间不自动转移。</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">如何删除排行榜账户？</div>
+        <div class="faq-a">在设置的账户部分申请并跟踪。无法访问应用时，向支持邮箱提供Match the Digits和排行榜昵称/标识符，切勿提供令牌或密码。可能需核实。<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">如何更改我的广告选择？</div>
-        <div class="faq-a">打开应用设置即可查看或更改您对广告给予的同意。在 Android 上，您还可以在设备设置中重置或删除广告 ID。</div>
+        <div class="faq-q">删除后还能回来吗？</div>
+        <div class="faq-a">完成后可在防滥用限制下申请新身份及昵称，保留的进度可能允许重新发布纪录。Premium按商店规则保留。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">我的提醒没有出现</div>
-        <div class="faq-a">请检查设备设置中是否允许 Match the Digits 发送通知，并确认应用设置中已开启提醒。</div>
+        <div class="faq-q">同时清除进度会怎样？</div>
+        <div class="faq-a">重置游戏、纪录及相关本地结果，不删除Premium或偏好。不选择则保留本地进度。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">我的进度会丢失吗？</div>
-        <div class="faq-a">您的对局、分数、每日结果和设置仅保存在您的设备上。卸载应用、清除其数据或更换设备会永久删除这些数据：我们不保留任何副本，也无法恢复。</div>
+        <div class="faq-q">卸载会删除全部数据吗？</div>
+        <div class="faq-a">可能丢失本地进度，但不是服务器账户删除申请。排行榜不是完整备份。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">哪里管理广告同意？</div>
+        <div class="faq-a">此版本设置中尚无广告隐私选择中心。手机广告标识设置和支持服务不替代处理前必需的同意表单。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">提醒为什么没显示？</div>
+        <div class="faq-a">请检查应用提醒设置及手机通知权限。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">如何申请退款？</div>
-        <div class="faq-a">购买由 Apple 或 Google 处理。请在 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 向 Apple 申请退款，或按照<a href="https://support.google.com/googleplay/answer/15574897">此流程</a>向 Google 申请。您也可以给我们写信。</div>
+        <div class="faq-a">按购买商店向Apple或Google申请。条款提供相关链接，也可联系支持。</div>
       </div>
     </div>
 

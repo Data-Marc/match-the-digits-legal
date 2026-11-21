@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "de/";
 const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, französisches Einzelunternehmen), unter der Geschäftsbezeichnung Primisia";
@@ -7,7 +7,7 @@ export const de: Locale = {
   code: "de",
   dir,
   name: "Deutsch",
-  updated: "21. Oktober 2026",
+  updated: "21. November 2026",
   ui: {
     legalDocuments: "Rechtliche Dokumente",
     privacyPolicy: "Datenschutzerklärung",
@@ -19,7 +19,7 @@ export const de: Locale = {
     lastUpdated: "Zuletzt aktualisiert",
     footer: "Herausgegeben von Marc SAMSON EI, unter der Bezeichnung Primisia",
     indexDesc: "Datenschutzerklärung, Nutzungsbedingungen und Support für das Denkspiel Match the Digits.",
-    privacyDesc: "Datenschutzerklärung des Spiels Match the Digits: kein Konto, Spieldaten auf Ihrem Gerät, Google-AdMob-Werbung mit Einwilligung.",
+    privacyDesc: "Datenschutz bei Match the Digits: lokaler Fortschritt, Rangliste, Sicherheit, Werbung, Premium und Kontolöschung.",
     termsDesc: "Nutzungsbedingungen des Spiels Match the Digits: Lizenz, Werbung, einmaliger Kauf „Werbung entfernen“, Haftung und anwendbares Recht.",
     supportDesc: "Support, Kontakt und häufige Fragen zum Denkspiel Match the Digits.",
     supportIntro: "Brauchen Sie Hilfe? Schreiben Sie uns und nennen Sie nach Möglichkeit Ihr Gerätemodell.",
@@ -29,132 +29,57 @@ export const de: Locale = {
     translationNote: "Diese Übersetzung dient nur der Information. Bei Abweichungen ist die französische Fassung maßgeblich.",
   },
   faq: [
-    ["Muss ich ein Konto erstellen?", "Nein. Match the Digits erfordert weder Konto noch Registrierung noch Anmeldung. Sie können direkt nach der Installation spielen."],
-    ["Ich habe „Werbung entfernen“ gekauft, sehe aber noch Werbung", "Öffnen Sie die Einstellungen der App und tippen Sie auf <strong>Käufe wiederherstellen</strong>. Achten Sie darauf, mit demselben App-Store- oder Google-Play-Konto wie beim Kauf angemeldet zu sein."],
-    ["Ist „Werbung entfernen“ ein Abonnement?", "Nein. Es ist ein einmaliger Kauf: Er wird nur einmal berechnet und verlängert sich nie. Er entfernt jegliche Werbung, auch die freiwillige Werbung mit Belohnung für Hinweise und Ergänzungen. Er verschafft keinen Spielvorteil: Jeder Spieler hat 4 Hinweise pro Spiel."],
-    ["Wie funktionieren Hinweise?", "Jedes Spiel gibt Ihnen 4 Hinweise. Ohne den Kauf „Werbung entfernen“ können Sie sich eine kurze Werbung ansehen, um einen Hinweis aufzudecken. Das ist freiwillig: Sie können jederzeit auch ohne weiterspielen."],
-    ["Wie funktioniert die Schaltfläche „+“?", "Die Schaltfläche „+“ fügt dem Spielfeld eine Kopie der verbleibenden Zahlen hinzu, bis zu 5-mal pro Spielfeld. Das erste Mal ist kostenlos. Für die nächsten vier können Sie sich eine kurze Werbung ansehen. Das ist freiwillig."],
-    ["Wie ändere ich meine Werbeeinstellungen?", "Öffnen Sie die Einstellungen der App, um die für Werbung erteilte Einwilligung einzusehen oder zu ändern. Unter Android können Sie Ihre Werbe-ID auch in den Geräteeinstellungen zurücksetzen oder löschen."],
-    ["Meine Erinnerung wird nicht angezeigt", "Prüfen Sie, ob Mitteilungen für Match the Digits in den Geräteeinstellungen erlaubt sind und ob die Erinnerungen in den Einstellungen der App aktiviert sind."],
-    ["Verliere ich meinen Fortschritt?", "Ihr Spiel, Ihre Punktzahlen, Tagesergebnisse und Einstellungen werden nur auf Ihrem Gerät gespeichert. Wenn Sie die App deinstallieren, ihre Daten löschen oder das Gerät wechseln, werden sie endgültig gelöscht: Wir haben keine Kopie und können sie nicht wiederherstellen."],
-    ["Wie erhalte ich eine Erstattung?", `Käufe werden von Apple oder Google abgewickelt. Beantragen Sie eine Erstattung bei Apple unter <a href="${APPLE_REFUND}">reportaproblem.apple.com</a> oder bei Google nach <a href="${GOOGLE_REFUND}">diesem Verfahren</a>. Sie können uns auch schreiben.`],
+    ["Benötige ich ein Konto?", "Zum Spielen sind weder E-Mail noch Passwort nötig. Die Rangliste erstellt eine anonyme Identität mit zugeteiltem Namen."],
+    ["Wie viele Hinweise und Ergänzungen gibt es?", "Pro Spielfeld maximal 4 Hinweise und 5 Ergänzungen. Die ersten 2 Ergänzungen sind kostenlos; ohne Premium werden für die nächsten 3 und Hinweise Belohnungsanzeigen angeboten."],
+    ["Was passiert bei einer nicht verfügbaren Anzeige?", "Nach Ihrer Anfrage kann die Aktion innerhalb des Restkontingents ohne Video gewährt werden. Ablehnung oder freiwilliges Schließen vor der Belohnung gewährt sie nicht."],
+    ["Ist Premium ein Abonnement?", "Nein, ein einmaliger werbefreier Kauf, auch für Hinweise und Ergänzungen. Die Spielgrenzen bleiben gleich."],
+    ["Wie stelle ich Premium wieder her?", "Über „Käufe wiederherstellen“ in den Einstellungen mit ursprünglichem Storekonto. Kein automatischer Transfer zwischen Apple und Google."],
+    ["Wie lösche ich das Ranglistenkonto?", "Nutzen Sie den Kontobereich in den Einstellungen und verfolgen Sie den Vorgang. Ohne App-Zugriff schreiben Sie dem Support mit Match the Digits und Ranglistenname/Kennung, niemals Token oder Passwort. Eine Prüfung kann nötig sein."],
+    ["Kann ich nach der Löschung zurückkehren?", "Nach Abschluss können Sie vorbehaltlich Missbrauchsbeschränkungen eine neue Identität und einen neuen Namen anfordern. Erhaltener Fortschritt kann erneut veröffentlicht werden. Premium bleibt nach den Storeregeln bestehen."],
+    ["Was bewirkt das zusätzliche Löschen des Fortschritts?", "Partie, Rekord und betroffene lokale Ergebnisse werden zurückgesetzt; Premium und Einstellungen bleiben. Ohne diese Option bleibt der lokale Fortschritt."],
+    ["Löscht eine Deinstallation alles?", "Lokaler Fortschritt kann verloren gehen; das Serverkonto wird dadurch nicht zur Löschung angemeldet. Die Rangliste ist keine vollständige Sicherung."],
+    ["Wo verwalte ich die Werbeeinwilligung?", "Diese Version hat noch keine Werbedatenschutzverwaltung in den App-Einstellungen. Geräte-Werbekennungseinstellungen und Support ersetzen kein vor Verarbeitung erforderliches Formular."],
+    ["Warum erscheint meine Erinnerung nicht?", "Prüfen Sie App-Erinnerungen und die Benachrichtigungsberechtigung des Telefons."],
+    ["Wie beantrage ich eine Erstattung?", "Wenden Sie sich an den jeweiligen Store Apple oder Google. Die Verfahren sind in den Bedingungen verlinkt; unser Support hilft ebenfalls."]
   ],
   privacy: {
     sections: [
-      {
-        id: "0",
-        title: "Zusammenfassung",
-        content:
-          "Gültig ab: 21. Oktober 2026.\n\nDiese Erklärung beschreibt, welche Daten bei der Nutzung der mobilen Anwendung Match the Digits (die „App“) unter iOS und Android verarbeitet werden, warum, durch wen, wie lange und wie Sie Ihre Rechte ausüben können.\n\n• Die App verlangt kein Konto und fragt zum Spielen weder nach Ihrem Namen noch nach Ihrer E-Mail-Adresse oder Ihrem Geburtsdatum.\n• Ihr Fortschritt und Ihre Einstellungen werden nur auf Ihrem Gerät gespeichert. Wir erhalten sie nicht.\n• Die App zeigt Werbung von Google (AdMob). Dafür verarbeitet Google bestimmte Daten Ihres Geräts, die in Abschnitt 5 beschrieben sind. Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz wird vor jeder personalisierten Werbung Ihre Einwilligung eingeholt.\n• Wir erhalten nur dann Daten über Sie, wenn Sie uns schreiben (Support).",
-      },
+      { id: "0", title: "Zusammenfassung", content: "Stand: 21. November 2026.\n\nZum Spielen sind weder Name noch E-Mail oder Passwort erforderlich. Die Rangliste verwendet ein anonymes Konto; eine technische Kennung macht zugehörige Daten nicht anonym. Spielstand und Einstellungen bleiben auf dem Gerät, während Ranglistenname und Rekord auf unserem Server gespeichert und in der Rangliste sichtbar sind. Dritte erbringen Sicherheits-, Werbe- und Kaufdienste. Das Ranglistenkonto kann mit oder ohne Löschung des lokalen Fortschritts gelöscht werden." },
       {
         id: "1",
         title: "1. Verantwortlicher",
         content: `Die App wird herausgegeben von:\n\n${PUBLISHER}\n${ADDRESS}\n${IDS}\n\nKontakt für alle Fragen zu Ihren Daten: ${EMAIL}\n\nFür die von Google verarbeiteten Werbedaten handelt Google als eigenständiger Verantwortlicher nach seinen eigenen Regeln (Abschnitt 5).`,
       },
-      {
-        id: "2",
-        title: "2. Nur auf Ihrem Gerät gespeicherte Daten",
-        content:
-          "Die folgenden Daten werden im lokalen Speicher der App auf Ihrem Gerät gespeichert. Sie werden nicht an uns und an keinen Server des Herausgebers übermittelt:\n\n• Laufendes Spiel (Spielfeld, Punktzahl, verbleibende Hinweise und Ergänzungen): um Ihr Spiel fortzusetzen\n• Bestpunktzahl: Anzeige auf dem Startbildschirm und bei den Trophäen\n• Tagesergebnisse (abgeschlossene Spielfelder, Punkte, Paare, Tagesherausforderungen): Kalender, Statistiken, Trophäen\n• Einstellungen: Sprache, haptisches Feedback, Soundeffekte, Erinnerungen: um Ihre Einstellungen zu berücksichtigen\n• Daten bereits angezeigter Bewertungsanfragen: damit Sie nicht zu oft um eine Bewertung gebeten werden\n\nDiese Daten werden gespeichert, solange die App installiert ist. Sie können sie jederzeit löschen, indem Sie die Daten der App löschen (Android) oder die App deinstallieren (iOS und Android). Danach können sie nicht wiederhergestellt werden: Der Herausgeber erstellt keine Sicherung.",
-      },
+      { id: "2", title: "2. Lokaler Fortschritt und Einstellungen", content: "Das Gerät speichert die aktuelle Partie, den lokalen Bestwert, tägliche Herausforderungsergebnisse, Trophäenstatistiken, Einstellungen und Zeitpunkte von Bewertungsanfragen. Der Ranglistenrekord wird gesondert übertragen.\n\nWir bieten keine Serversicherung zur Wiederherstellung des gesamten Fortschritts auf einem anderen Gerät. Das Löschen von App-Daten oder die Deinstallation kann zum Verlust führen. Betriebssystemsicherungen hängen von Ihren Geräteeinstellungen ab." },
+      { id: "2a", title: "2a. Konto und Rangliste", content: "Beim ersten Ranglistenzugriff wird ein technisches anonymes Konto erstellt. Unser selbst gehosteter Supabase-Dienst speichert Anmeldeidentität, Sitzungen, zugeteilten Namen, veröffentlichten Rekord, zugehörige Zeitangaben und Kontostatus. Sitzungszugangsdaten werden auch auf dem Gerät gespeichert.\n\nName, Punktzahl und Platzierung sind sichtbar, Anmeldezugangsdaten und Löschbelege nicht. Ein geeigneter Rekord einer beendeten oder abgebrochenen Partie kann nach einem Netzwerkfehler später übertragen werden. Die Rangliste ist keine Spielstandsicherung." },
+      { id: "2b", title: "2b. Sicherheit und Missbrauchsschutz", content: "Wir verarbeiten technische Anfragedaten, darunter die IP-Adresse am Diensteingang, Installations- oder Netzwerk-Hashes sowie Zeitangaben und Zähler. Dies schützt die Rangliste, begrenzt wiederholte Registrierungen und ermöglicht Löschungen und Beschränkungen. Hashes bleiben pseudonyme Daten.\n\nFirebase App Check und Apple-/Google-Attestierungsverfahren prüfen App-Anfragen anhand technischer Daten und Attestierungstoken. Firebase stellt nicht mehr die Authentifizierung oder Speicherung der Rangliste bereit. Informationen: https://firebase.google.com/support/privacy" },
       {
         id: "3",
         title: "3. Erinnerungen (Mitteilungen)",
         content:
           "Wenn Sie Erinnerungen in den Einstellungen aktivieren, bittet die App um die Erlaubnis, Mitteilungen anzuzeigen. Erinnerungen werden lokal auf Ihrem Gerät geplant: Es wird kein Mitteilungs-Token erstellt oder an einen Server gesendet. Sie können sie jederzeit in den Einstellungen der App oder Ihres Geräts deaktivieren. Erinnerungen enthalten keine Werbung.",
       },
-      {
-        id: "4",
-        title: "4. Support (wenn Sie uns schreiben)",
-        content: `Die Schaltfläche „Support kontaktieren“ öffnet Ihre E-Mail-App mit einer vorausgefüllten E-Mail an ${EMAIL}. Wenn Sie sie senden, erhalten wir:\n\n• Ihre E-Mail-Adresse und den Inhalt Ihrer Nachricht;\n• die App-Version, das Betriebssystem (iOS oder Android) und dessen Version, die automatisch am Ende der Nachricht eingefügt werden, um uns bei der Problemlösung zu helfen. Sie können sie vor dem Senden entfernen.\n\nDiese Daten werden nur zur Beantwortung Ihrer Anfrage verwendet. Sie werden gelöscht, sobald Ihre Anfrage bearbeitet ist.`,
-      },
-      {
-        id: "5",
-        title: "5. Werbung (Google AdMob)",
-        subsections: [
-          {
-            subtitle: "Von Google verarbeitete Daten",
-            content:
-              "Die App zeigt Werbung von Google AdMob über das in die App integrierte Google Mobile Ads SDK. Laut der von Google für Entwickler veröffentlichten Dokumentation verarbeitet Google:\n\n• IP-Adresse, die zur Schätzung des ungefähren Standorts des Geräts dienen kann: Werbung, Messung, Betrugsprävention\n• Interaktionen mit der App (Starts, Tippen, angesehene Videos): Werbung, Messung, Betrugsprävention\n• Diagnose- und Leistungsdaten (Startzeit, Hänger, Energieverbrauch); unter iOS nicht mit dem Nutzer verknüpfte Absturzprotokolle: Diagnose, Verbesserung, Werbung, Messung\n• Gerätekennungen: Werbe-ID (Android), App Set ID, weitere app- oder entwicklerbezogene Kennungen: Werbung und Messung\n• Werbedaten (angesehene Anzeigen): Werbung und Messung\n\nGoogle gibt an, dass diese Daten bei der Übertragung verschlüsselt werden (TLS). Der Herausgeber hat keinen Zugriff auf diese Einzeldaten: Er erhält nur zusammengefasste Statistiken (Anzahl der Einblendungen, Einnahmen).",
-          },
-          {
-            subtitle: "In der App gezeigte Werbung",
-            content:
-              "• ein Banner auf dem Spielbildschirm;\n• eine freiwillige Werbung mit Belohnung: Sie können ein Video ansehen, um einen Hinweis zu erhalten oder die Schaltfläche „+“ erneut zu nutzen (das erste „+“ jedes Spielfelds ist kostenlos). Eine Ablehnung hindert Sie nicht am Spielen.\n\nWenn Sie „Werbung entfernen“ gekauft haben (Abschnitt 6), wird keine Werbung angezeigt.",
-          },
-          {
-            subtitle: "Ihre Einwilligung (EWR, Vereinigtes Königreich, Schweiz)",
-            content:
-              "Beim ersten Start können Sie in einem Einwilligungsfenster, das vom Einwilligungstool von Google verwaltet wird, die Nutzung Ihrer Daten zu Werbezwecken für jeden Zweck einzeln annehmen oder ablehnen. Wenn Sie ablehnen, bleibt die App vollständig spielbar; es kann dann nicht personalisierte oder eingeschränkte Werbung angezeigt werden. Sie können Ihre Wahl jederzeit in den Einstellungen der App ändern.",
-          },
-          {
-            subtitle: "iOS: Tracking",
-            content:
-              "Die App fragt nicht um Erlaubnis, Ihre Aktivitäten zu verfolgen (App Tracking Transparency): Die Werbekennung Ihres Geräts (IDFA) wird nicht verwendet. Die App verlangt nie, dass Sie Tracking akzeptieren, um zu spielen.",
-          },
-          {
-            subtitle: "Android: Werbe-ID",
-            content: "Sie können Ihre Werbe-ID in den Einstellungen Ihres Geräts zurücksetzen oder löschen.",
-          },
-          {
-            subtitle: "Vereinigte Staaten",
-            content:
-              "Je nach Bundesstaat, in dem Sie leben, kann Ihnen das Gesetz das Recht geben, dem „Verkauf“ oder der „Weitergabe“ Ihrer Daten für gezielte Werbung zu widersprechen. Sie können diese Wahl in den Datenschutzeinstellungen der App treffen oder uns schreiben.",
-          },
-          {
-            subtitle: "Weitere Informationen",
-            content: `Datenschutzerklärung von Google: ${GOOGLE_PRIVACY}\nWie Google Daten von Websites und Apps nutzt, die seine Dienste verwenden: ${GOOGLE_PARTNERS}`,
-          },
-        ],
-      },
-      {
-        id: "6",
-        title: "6. Kauf „Werbung entfernen“",
-        content:
-          "Der einmalige Kauf, der die Werbung entfernt, wird ausschließlich über den App Store (Apple) oder Google Play (Google) abgewickelt. Wir erhalten nie Ihre Zahlungsdaten (Bankkarte, Name, Rechnungsadresse). Die App erhält vom Store nur die Bestätigung, dass der Kauf erfolgt ist, um die Werbung zu entfernen und die Wiederherstellung zu ermöglichen. Für die Zahlungsabwicklung gelten die Datenschutzrichtlinien von Apple oder Google.",
-      },
+      { id: "4", title: "4. Support", content: `Bei einer Nachricht an ${EMAIL} erhalten wir Ihre E-Mail-Adresse, Nachricht und freiwillig gesendete Anhänge. Die vorbereitete Nachricht kann App- und Systemversion enthalten; diese können Sie entfernen.\n\nDie Angaben dienen der Antwort, Prüfung von Kontoanfragen und Problemlösung. Sie werden während der Bearbeitung aufbewahrt, danach nur soweit für Nachfragen, Rechtsansprüche oder gesetzliche Pflichten erforderlich. Senden Sie niemals Passwörter, Anmeldetoken oder Bankdaten.` },
+      { id: "5", title: "5. Werbung und Datenschutzentscheidungen", content: `Google AdMob liefert Banner und freiwillige Belohnungsvideos. Abhängig von System und Berechtigungen verarbeitet das SDK IP-Adressen, Werbe- oder App-Kennungen, App-/Werbeinteraktionen und Diagnosedaten zur Werbeauslieferung, Messung und Betrugsabwehr. Premium entfernt auch Belohnungsvideos.\n\nDie Zustimmung zum Ansehen eines Videos ist keine Einwilligung in die Werbedatenverarbeitung. Erforderliche Einwilligungen müssen ablehnbar und widerrufbar sein. Diese Version bietet noch keine Verwaltung der Werbedatenschutzentscheidungen in den App-Einstellungen. Sie können Ihre Rechte bei uns geltend machen; dies ersetzt kein vor der Verarbeitung erforderliches Einwilligungsformular.\n\nUnter Android lässt sich die Werbekennung in den Geräteeinstellungen zurücksetzen oder löschen. Unter iOS erfordern IDFA-Zugriff und ATT-pflichtiges Tracking die entsprechende Apple-Freigabe. Damit werden bereits bei Anbietern vorhandene Daten nicht automatisch gelöscht. Lokale Rechte, einschließlich bestimmter Widerspruchsrechte gegen zielgerichtete Werbung, bleiben bestehen.\n\nGoogle: ${GOOGLE_PRIVACY}\nPartnerdienste: ${GOOGLE_PARTNERS}` },
+      { id: "6", title: "6. Premium und Wiederherstellung", content: "Apple oder Google wickelt die Zahlung ab und verwahrt Rechnungsdaten nach eigenen Regeln. Wir erhalten keine Zahlungskartennummer.\n\nRevenueCat prüft und restauriert den einmaligen werbefreien Kauf. Verarbeitet werden eine pseudonyme Kennung, Transaktions-/Belegdaten, Produkt, Store und Premium-Berechtigung. Die App speichert ebenfalls den benötigten Zugriffsstatus. Die Löschung des Ranglistenkontos löscht den Kauf nicht; Wiederherstellungsdaten und gesetzlich erforderliche Daten werden getrennt behandelt.\n\nInformationen: https://www.revenuecat.com/privacy" },
       {
         id: "7",
         title: "7. Bewertungen und Rezensionen",
         content:
           "Wenn die App Sie um eine Bewertung bittet, verwendet sie das offizielle Fenster von Apple oder Google. Ihre Bewertung und Rezension werden vom jeweiligen Store nach seinen eigenen Regeln verarbeitet; die App hat keinen Zugriff darauf.",
       },
-      {
-        id: "8",
-        title: "8. Rechtsgrundlagen (DSGVO)",
-        content:
-          "• Betrieb des Spiels und lokale Speicherung Ihres Fortschritts und Ihrer Einstellungen: Erbringung des von Ihnen angeforderten Dienstes (Vertrag)\n• Zugriff auf Gerätekennungen und Werbung, personalisiert oder nicht, wenn das Gesetz eine Einwilligung verlangt: Einwilligung, jederzeit widerrufbar (Abschnitt 5)\n• Anzeige von Erinnerungen: Einwilligung (Mitteilungserlaubnis), jederzeit widerrufbar\n• Beantwortung Ihrer Support-Anfragen: berechtigtes Interesse an der Beantwortung; oder vorvertragliche Maßnahmen / Vertrag, wenn die Anfrage einen Kauf betrifft\n• Erfüllung gesetzlicher Pflichten (z. B. Buchführungspflichten bei Käufen): rechtliche Verpflichtung",
-      },
-      {
-        id: "9",
-        title: "9. Empfänger und Übermittlungen außerhalb der Europäischen Union",
-        content:
-          "Die von der App verarbeiteten Daten werden vom Herausgeber weder verkauft noch vermietet. Die einzigen Empfänger sind:\n\n• Google, für Werbung (Abschnitt 5);\n• Apple oder Google, für Käufe, Bewertungen und Systemmitteilungen, je nach Ihrem Gerät;\n• Behörden, nur wenn das Gesetz es verlangt.\n\nGoogle kann Daten außerhalb der Europäischen Union verarbeiten, insbesondere in den Vereinigten Staaten, unter den in seiner Datenschutzerklärung beschriebenen Garantien.",
-      },
+      { id: "8", title: "8. Zwecke und Rechtsgrundlagen", content: "Spiel, angefordertes Ranglistenkonto und Premium-Verwaltung/-Wiederherstellung beruhen auf der Erfüllung der angeforderten Leistung oder des Vertrags. Sicherheit, Missbrauchslimits und Support beruhen auf unserem berechtigten Interesse am Schutz des Dienstes und seiner Nutzer, vorbehaltlich Ihrer Rechte. Erinnerungen sind freiwillig und benötigen eine Geräteberechtigung.\n\nWerbeverarbeitung und Kennungszugriff beruhen auf Einwilligung, soweit erforderlich. Manche Aufbewahrung dient gesetzlichen Pflichten oder der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen. Dies erlaubt keine uneingeschränkte Nutzung für andere Zwecke." },
+      { id: "9", title: "9. Dienstleister und Übermittlungen", content: `Erforderliche Empfänger sind:\n• Contabo für den Supabase- und Ranglistenserver;\n• Cloudflare für Weiterleitung und Schutz der Anfragen;\n• Backblaze für verschlüsselte Sicherungen und das Entscheidungsjournal;\n• Google/Firebase und Apple für Attestierung und Systemdienste;\n• Google AdMob für Werbung;\n• RevenueCat und Apple/Google für Käufe;\n• GitHub Pages für diese öffentlichen Dokumente; Behörden bei gesetzlicher Verpflichtung.\n\nSupabase wird selbst gehostet, nicht automatisch in Supabase Cloud. Internationale Anbieter können Daten außerhalb des EWR, insbesondere in den USA, verarbeiten. Übermittlungsgarantien hängen vom Dienst und Vertrag ab; Informationen erhalten Sie unter ${EMAIL}. Eine ausschließlich europäische Verarbeitung wird nicht zugesichert. Wir verkaufen keine Ranglistendaten.\n\nHinweise: https://contabo.com/en/legal/privacy/ ; https://www.cloudflare.com/privacypolicy/ ; https://www.backblaze.com/company/privacy ; https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement` },
       {
         id: "10",
         title: "10. Kinder",
         content: `Die App richtet sich an Personen ab 16 Jahren. Sie richtet sich nicht an Kinder, und wir erheben nicht wissentlich Daten über sie.\n\nIn Frankreich kann ein Minderjähriger unter 15 Jahren der auf Einwilligung beruhenden Verarbeitung seiner Daten nicht allein zustimmen: Die Zustimmung eines Inhabers der elterlichen Sorge ist ebenfalls erforderlich (Artikel 45 des französischen Datenschutzgesetzes, Loi Informatique et Libertés). Wenn Sie ein Elternteil sind und glauben, dass Ihr Kind eine Einwilligung erteilt hat, schreiben Sie uns an ${EMAIL}: Wir erklären Ihnen, wie Sie sie widerrufen.`,
       },
-      {
-        id: "11",
-        title: "11. Ihre Rechte",
-        content: `Nach geltendem Recht (insbesondere der DSGVO) haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Datenübertragbarkeit sowie das Recht, Ihre Einwilligung jederzeit zu widerrufen, ohne dass die Rechtmäßigkeit der bisherigen Verarbeitung berührt wird.\n\n• Daten auf Ihrem Gerät: Sie kontrollieren sie direkt (Abschnitt 2).\n• Werbeeinwilligung: jederzeit in den Einstellungen der App änderbar (Abschnitt 5).\n• Bei Google gespeicherte Werbedaten: Werkzeuge und Kontakte laut der Datenschutzerklärung von Google.\n• Support-Daten: schreiben Sie an ${EMAIL}. Wir antworten innerhalb eines Monats; diese Frist kann unter den Bedingungen der DSGVO verlängert werden.\n\nWenn Sie der Ansicht sind, dass Ihre Rechte nicht gewahrt wurden, können Sie Beschwerde einlegen bei der ${CNIL}, online unter ${CNIL_URL}, oder bei der Datenschutzbehörde Ihres Wohnsitzlandes.`,
-      },
-      {
-        id: "12",
-        title: "12. Sicherheit",
-        content:
-          "Spieldaten bleiben auf Ihrem Gerät und profitieren von dessen Schutzmaßnahmen. Der Austausch mit Google ist verschlüsselt (TLS). Es werden keine Spieldaten auf einem Server des Herausgebers gespeichert.",
-      },
-      {
-        id: "13",
-        title: "13. Änderungen",
-        content:
-          "Wir können diese Erklärung ändern, insbesondere wenn sich die App weiterentwickelt. Das Datum der letzten Aktualisierung steht oben auf dieser Seite. Bei einer wesentlichen Änderung werden Sie in der App informiert, bevor sie wirksam wird.",
-      },
-      { id: "14", title: "14. Kontakt", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "11", title: "11. Kontolöschung und Ihre Rechte", content: `Im Ranglistenkontobereich der Einstellungen können Sie die Löschung beantragen und verfolgen. Nach Annahme durch den Server verschwindet das Profil aus der Rangliste; Identität und zugehörige aktive Daten werden anschließend gelöscht. Eine Offline-Anfrage muss zunächst übertragen werden. Deinstallation allein löscht das Serverkonto nicht.\n\n„Auch meinen Fortschritt löschen“ setzt Partie, Rekord und betroffene lokale Ergebnisse zurück. Ohne diese Option bleiben sie auf dem Gerät. Premium und Einstellungen bleiben erhalten. Nach Abschluss kann ein freiwilliger Wiedereintritt eine neue Identität und einen neuen Namen erstellen, vorbehaltlich Missbrauchsbeschränkungen. Ein erhaltener lokaler Rekord kann erneut eingereicht werden; das alte Konto wird nicht wiederhergestellt und sein Name kann neu vergeben werden.\n\nOhne App-Zugriff schreiben Sie an ${EMAIL} und nennen Match the Digits sowie den verfügbaren Ranglistennamen/die Kennung, niemals Token oder Passwort. Zum Schutz fremder Konten kann eine angemessene Prüfung notwendig sein.\n\nJe nach Voraussetzungen haben Sie Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Übertragbarkeit und Einwilligungswiderruf. Die Antwort erfolgt grundsätzlich innerhalb eines Monats, mit gesetzlich erlaubter Verlängerung. Beschwerden sind bei der CNIL unter ${CNIL_URL} oder Ihrer zuständigen Behörde möglich.` },
+      { id: "12", title: "12. Sicherheit", content: "Netzwerkübertragungen sind verschlüsselt. Administrationszugriffe sind beschränkt; Sicherungen und Entscheidungsjournal werden verschlüsselt. Dies senkt Risiken, garantiert aber keine absolute Sicherheit. Die öffentliche Rangliste bleibt sichtbar; senden Sie keine Geheimnisse über Supportkanäle." },
+      { id: "12a", title: "12a. Aufbewahrung und Sicherungen", content: `Lokale Daten bleiben bis zur Löschung oder Ersetzung. Ranglistenkonto und Rekord bleiben bis zur Kontolöschung. Temporäre Zähler und Sicherheitsbeschränkungen haben eigene Ablaufzeiten; bestimmte Spuren werden zur Missbrauchsabwehr und Klärung von Streitfällen benötigt.\n\nDie Sicherungsrotation umfasst 7 tägliche, 4 wöchentliche und 2 monatliche Wiederherstellungspunkte. Dies garantiert keine Löschung aller Kopien an einem bestimmten Tag. Das Entscheidungsjournal verhindert, dass eine Wiederherstellung gelöschte Konten erneut aktiviert.\n\nLöschbelege und dieses Journal werden derzeit ohne automatische Bereinigung aufbewahrt. Sie können technische Kennungen, Hashes, Daten und Statusangaben enthalten. Eine Prüfung der Aufbewahrung oder Löschung können Sie unter ${EMAIL} verlangen. Kaufdaten richten sich gesondert nach Wiederherstellungsbedarf und geltenden Pflichten.` },
+      { id: "13", title: "13. Änderungen", content: "Diese Erklärung ist in den Einstellungen und auf unserer Website zugänglich. Das Datum kennzeichnet die Textversion. Änderungen berücksichtigen die Entwicklung des Dienstes. Gesetzliche Informationspflichten und erforderliche erneute Einwilligungen bleiben maßgeblich." },
+      { id: "14", title: "14. Kontakt", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` }
     ],
   },
   terms: {
@@ -180,43 +105,15 @@ export const de: Locale = {
         content:
           "Sie verpflichten sich, Folgendes zu unterlassen:\n\n• die App zu kopieren, zu verändern, zu dekompilieren, zu disassemblieren oder zu versuchen, ihren Quellcode zu extrahieren, sofern dies nicht ausdrücklich gesetzlich erlaubt ist;\n• ihre technischen Mechanismen zu umgehen oder zu stören, einschließlich der Anzeige von Werbung und In-App-Käufen;\n• künstlich Werbeeinblendungen oder Klicks zu erzeugen;\n• die App rechtswidrig oder unter Verletzung von Rechten Dritter zu nutzen.",
       },
-      {
-        id: "5",
-        title: "5. Das Spiel und Ihr Fortschritt",
-        content:
-          "Die App erfordert kein Konto. Ihr Fortschritt (laufendes Spiel, Punktzahlen, Tagesergebnisse, Trophäen) und Ihre Einstellungen werden nur auf Ihrem Gerät gespeichert.\n\nSie werden vom Herausgeber nicht gesichert: Sie gehen verloren, wenn Sie die App deinstallieren, ihre Daten löschen oder das Gerät wechseln. Der Herausgeber kann sie nicht wiederherstellen.\n\nDie Spielregeln, die Anzahl der verfügbaren Hinweise und Ergänzungen sowie die angebotenen Spielfelder können sich von Version zu Version ändern.",
-      },
-      {
-        id: "6",
-        title: "6. Werbung",
-        content:
-          "Die App ist kostenlos und wird durch Werbung von Google AdMob finanziert:\n\n• ein Banner auf dem Spielbildschirm;\n• eine freiwillige Werbung mit Belohnung: Sie können ein Video ansehen, um einen Hinweis zu erhalten oder die Schaltfläche „+“ erneut zu nutzen (das erste „+“ jedes Spielfelds ist kostenlos). Die Belohnung wird vor dem Video angegeben und nach dem Ansehen gewährt. Wenn Sie ablehnen oder keine Werbung verfügbar ist, können Sie weiterspielen.\n\nDie Werbung wird von Google ausgewählt. Der Herausgeber kontrolliert ihren Inhalt nicht und ist nicht für die darin vorgestellten Produkte oder Dienstleistungen verantwortlich. Ihre Wahlmöglichkeiten zur Nutzung Ihrer Daten für Werbung sind in der Datenschutzerklärung beschrieben.",
-      },
-      {
-        id: "7",
-        title: "7. Kauf „Werbung entfernen“",
-        subsections: [
-          {
-            subtitle: "Was Sie erhalten",
-            content:
-              "Die App bietet einen einmaligen, dauerhaften Kauf („Werbung entfernen“):\n\n• er entfernt jegliche Werbung aus der App, einschließlich der Werbung mit Belohnung: Hinweise und Ergänzungen werden dann direkt gewährt;\n• er verschafft keinen Spielvorteil: Jeder Spieler hat 4 Hinweise pro Spiel, mit oder ohne Kauf; die Anzahl der Ergänzungen und die Regeln sind für alle gleich;\n• er ist kein Abonnement: Er wird nur einmal berechnet und verlängert sich nicht.",
-          },
-          {
-            subtitle: "Preis und Zahlung",
-            content:
-              "Der Preis wird vor dem Kauf im App Store oder bei Google Play angezeigt, einschließlich der in Ihrem Land geltenden Steuern. Die Zahlung wird ausschließlich von Apple oder Google nach deren Bedingungen abgewickelt. Der Herausgeber erhält nie Ihre Zahlungsdaten.",
-          },
-          {
-            subtitle: "Wiederherstellung Ihres Kaufs",
-            content:
-              "Der Kauf ist mit dem Apple- oder Google-Konto verknüpft, mit dem er getätigt wurde. Sie können ihn auf einem neuen Gerät oder nach einer Neuinstallation mit demselben Konto kostenlos über die Schaltfläche „Käufe wiederherstellen“ in den Einstellungen wiederherstellen.",
-          },
-          {
+      { id: "5", title: "5. Spiel, Fortschritt und Rangliste", content: "Zum Spielen ist kein E-Mail-/Passwortkonto erforderlich. Die Rangliste nutzt eine technische anonyme Identität mit zugeteiltem Namen. Gekennzeichnete virtuelle Profile sind keine echten Spieler. Es gibt keine Geldpreise.\n\nPartien, Herausforderungen, Trophäen und Einstellungen sind überwiegend lokal. Der Server speichert den veröffentlichten Rekord, keine vollständige Fortschrittssicherung. Beim Beenden oder Abbrechen zugunsten einer neuen Partie kann der geeignete Rekord übertragen werden, bei Netzwerkfehlern später erneut.\n\nPro Spielfeld gelten maximal fünf Ergänzungen, davon die ersten zwei kostenlos, und vier Hinweise. Ohne Premium werden für die weiteren drei Ergänzungen und Hinweise Belohnungsanzeigen angeboten. Für Premium gelten dieselben Grenzen.\n\nBetrug, gefälschte Punktzahlen oder missbräuchliche Mehrfachregistrierungen können zur Beschränkung oder zum Ausschluss führen. Einwände können Sie an den Support richten." },
+      { id: "6", title: "6. Werbung und Belohnungen", content: "Während des Spiels kann ein Banner erscheinen. Vor einem betroffenen Hinweis oder einer Aufladung wird mit Ihrer Zustimmung ein Belohnungsvideo angeboten. Nach Bestätigung der Belohnung wird die Aktion innerhalb des verbleibenden Kontingents gewährt.\n\nIst die Anzeige nach Ihrer Anfrage technisch nicht verfügbar, kann die App die Aktion ohne Video gewähren und einen dezenten Hinweis anzeigen. Ablehnung oder Schließen vor Erhalt der Belohnung gewährt diese Aktion nicht. Premium erhöht erschöpfte Kontingente nicht über das Limit.\n\nAnzeigen und Zielseiten stammen von Dritten. Die Datenschutzerklärung erläutert die Datenverarbeitung; die Videozustimmung ist keine Datenschutzeinwilligung." },
+      { id: "7", title: "7. Kauf „Werbung entfernen“", subsections: [{ subtitle: "Leistungsumfang", content: "Premium ist ein Einmalkauf ohne automatische Verlängerung. Banner und Belohnungsanzeigen entfallen; Hinweise und Ergänzungen sind direkt verfügbar, bei denselben Grenzen von vier Hinweisen und fünf Ergänzungen pro Spielfeld. Das Spielfeld kann den frei gewordenen Bannerplatz nutzen." },
+{ subtitle: "Preis und Zahlung", content: "Soweit verfügbar zeigt das Angebot den lokalisierten Storepreis. Prüfen Sie Preis und Bedingungen in der Apple-/Google-Bestätigung. Abgebrochene, ausstehende oder fehlgeschlagene Käufe gelten nicht als abgeschlossen. RevenueCat prüft Premium; wir erhalten keine Kartendaten." },
+{ subtitle: "Wiederherstellung", content: "Wählen Sie in den Einstellungen „Käufe wiederherstellen“ mit ursprünglichem Konto und Store. Eine Verbindung kann nötig sein. Apple-Käufe werden nicht automatisch zu Google Play übertragen oder umgekehrt. Konto- oder Fortschrittslöschung hebt den Kauf nicht auf." },
+{
             subtitle: "Widerruf und Erstattung",
             content: `Der Kauf betrifft digitale Inhalte, die unmittelbar nach der Zahlung bereitgestellt werden. Das Widerrufsrecht und Erstattungsanträge werden zu den Bedingungen des geltenden Rechts und der Regeln des jeweiligen Stores ausgeübt:\n\n• App Store: Antrag bei Apple unter ${APPLE_REFUND}\n• Google Play: Antrag bei Google nach dem Verfahren unter ${GOOGLE_REFUND}\n\nSie können uns auch an ${EMAIL} schreiben.`,
-          },
-        ],
-      },
+          }] },
       {
         id: "8",
         title: "8. Erinnerungen",
@@ -228,36 +125,17 @@ export const de: Locale = {
         title: "9. Geistiges Eigentum",
         content: `Die App, ihr Name, ihre Grafiken, Texte, Töne, ihr Code und ihre Gestaltung sind durch das Recht des geistigen Eigentums geschützt und gehören dem Herausgeber oder seinen Lizenzgebern. Bestimmte Elemente Dritter werden unter ihrer eigenen Lizenz verwendet:\n\n${LICENSES}\n\nJede nicht genehmigte Vervielfältigung oder Wiederverwendung ist untersagt.`,
       },
-      {
-        id: "10",
-        title: "10. Verfügbarkeit und Updates",
-        content:
-          "Der Herausgeber kann die App ändern, Fehler beheben, Funktionen ändern oder entfernen oder ihren Vertrieb einstellen. Einige Updates können erforderlich sein, um die App weiter zu nutzen. Der Herausgeber bemüht sich um ihr ordnungsgemäßes Funktionieren, garantiert jedoch keine unterbrechungsfreie Verfügbarkeit, insbesondere bei der Anzeige von Werbung, die von Google abhängt.",
-      },
+      { id: "10", title: "10. Verfügbarkeit und Updates", content: "Rangliste, Käufe und einige Prüfungen benötigen eine Verbindung und hängen von Dienstleistern ab. Ausfälle, Wartung, Sicherheitsbeschränkungen oder fehlende Anzeigen können sie beeinträchtigen. Lokales Spielen kann je nach Spielzustand möglich bleiben.\n\nWir können die App korrigieren oder weiterentwickeln. Zwingende Verbraucherrechte und Pflichten für digitale Dienste bleiben bestehen. Ein werbefreier Kauf garantiert keine zeitlich unbegrenzte Verfügbarkeit des Onlinedienstes." },
       {
         id: "11",
         title: "11. Gewährleistung und Haftung",
         content:
           "Die App wird „wie besehen“ bereitgestellt. Nichts in diesen Bedingungen schränkt die Rechte ein, die Ihnen als Verbraucher gesetzlich zustehen, insbesondere die gesetzliche Gewährleistung für digitale Inhalte und Dienstleistungen.\n\nSoweit gesetzlich zulässig, haftet der Herausgeber nicht für:\n\n• den Verlust Ihres auf Ihrem Gerät gespeicherten Fortschritts (Abschnitt 5);\n• mittelbare Schäden;\n• von Dritten bereitgestellte Werbeinhalte;\n• Nichtverfügbarkeit, die durch Ihr Gerät, Ihr Betriebssystem, Ihre Verbindung oder die Dienste von Apple und Google verursacht wird.\n\nDiese Beschränkungen gelten nicht bei grober Fahrlässigkeit oder Vorsatz, bei Personenschäden oder wenn das Gesetz sie untersagt.",
       },
-      {
-        id: "12",
-        title: "12. Ende der Nutzung",
-        content:
-          "Sie können die Nutzung der App jederzeit beenden, indem Sie sie deinstallieren. Der Herausgeber kann Ihre Lizenz kündigen, wenn Sie diese Bedingungen nicht einhalten. Die Abschnitte 9, 11 und 14 gelten nach dem Ende der Lizenz fort.",
-      },
-      {
-        id: "13",
-        title: "13. Änderungen dieser Bedingungen",
-        content:
-          "Der Herausgeber kann diese Bedingungen ändern, insbesondere um Änderungen der App oder des Rechts zu berücksichtigen. Das Datum der letzten Aktualisierung steht oben auf dieser Seite. Bei einer wesentlichen Änderung werden Sie in der App informiert, bevor sie wirksam wird. Wenn Sie die neuen Bedingungen nicht akzeptieren, können Sie die Nutzung der App beenden.",
-      },
-      {
-        id: "14",
-        title: "14. Anwendbares Recht, Schlichtung und Streitigkeiten",
-        content: `Diese Bedingungen unterliegen französischem Recht. Wenn Sie Verbraucher mit Wohnsitz in einem anderen Land sind, behalten Sie den Schutz der zwingenden Vorschriften des Rechts Ihres Landes.\n\nSchreiben Sie bei Schwierigkeiten zuerst an ${EMAIL}: Wir suchen nach einer gütlichen Lösung.\n\nVerbraucherschlichtung: Wenn Sie Verbraucher sind und Ihre schriftliche Beschwerde nicht gelöst wurde, können Sie kostenlos die folgende Verbraucherschlichtungsstelle anrufen: ${MEDIATOR}.\n\nKommt keine Einigung zustande, wird die Streitigkeit vor die zuständigen Gerichte gebracht; als Verbraucher können Sie insbesondere das Gericht Ihres Wohnorts anrufen.`,
-      },
-      { id: "15", title: "15. Kontakt", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "12", title: "12. Löschung und Nutzungsende", content: `Sie können jederzeit aufhören. Das Serverkonto löschen Sie über den Ranglistenbereich der Einstellungen oder ${EMAIL}; Deinstallation genügt nicht. Verarbeitung und Sicherungen beschreibt die Datenschutzerklärung.\n\nDas Löschen lokalen Fortschritts ist optional. Das gelöschte Konto ist nicht wiederherstellbar; ein zulässiger Wiedereintritt erstellt eine neue Identität und einen neuen Namen. Ein erhaltener lokaler Rekord kann erneut genutzt werden. Premium bleibt unabhängig davon an den Kauf gebunden.\n\nMissbrauch kann Ranglistenbeschränkungen auslösen, ohne gesetzliche Rechte aufzuheben. Bestimmungen zu geistigem Eigentum, Haftung und Streitbeilegung gelten weiter.` },
+      { id: "13", title: "13. Änderungen der Bedingungen", content: "Die aktuelle Fassung steht mit Aktualisierungsdatum in App und Website. Entwicklungen des Dienstes oder Rechts können Änderungen erfordern. Gesetzliche Informationspflichten und erworbene Verbraucherrechte bleiben bestehen." },
+      { id: "14", title: "14. Recht, Mediation und Streitigkeiten", content: `Es gilt französisches Recht, ohne Verbrauchern zwingende Schutzrechte ihres Wohnsitzlandes zu entziehen.\n\nBeschwerden richten Sie an ${EMAIL}. Nach vorheriger schriftlicher Beschwerde bleibt Ihr Recht auf kostenlose Verbrauchermediation unter den gesetzlichen Voraussetzungen bestehen. Der Beitritt des Herausgebers zu einer Mediationsstelle ist noch abzuschließen; deren Kontaktdaten werden anschließend veröffentlicht. Diese Bedingungen benennen noch keinen Mediator.\n\nOhne Einigung können die zuständigen Gerichte angerufen werden; insbesondere bleiben Verbrauchern die Rechtsbehelfe ihres Wohnsitzes erhalten.` },
+      { id: "15", title: "15. Kontakt", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` }
     ],
   },
 };

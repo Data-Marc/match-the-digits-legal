@@ -1,4 +1,4 @@
-// Valeurs partagées par toutes les langues. Un champ [TO BE CONFIRMED] rempli ici l'est partout.
+// Coordonnées publiques et références partagées par toutes les langues.
 export interface LegalSection {
   id: string;
   title: string;
@@ -45,7 +45,6 @@ export const PHONE = "+33 7 69 18 24 97";
 export const IDS = "SIREN 106684699, SIRET 10668469900015";
 export const VAT = "FR87106684699";
 export const REG = "RCS Nanterre 106 684 699";
-export const MEDIATOR = "[TO BE CONFIRMED: consumer mediator]";
 export const HOST = "GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA";
 // Official support portal; do not invent a telephone number or an unverified email.
 export const HOST_SUPPORT = "https://support.github.com";

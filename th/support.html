@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>คำถามที่พบบ่อย</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">ฉันต้องสร้างบัญชีหรือไม่?</div>
-        <div class="faq-a">ไม่ต้อง Match the Digits ไม่ต้องใช้บัญชี การลงทะเบียน หรือการเข้าสู่ระบบ คุณเริ่มเล่นได้ทันทีหลังติดตั้ง</div>
+        <div class="faq-q">ต้องมีบัญชีไหม?</div>
+        <div class="faq-a">ไม่ต้องใช้อีเมลหรือรหัสผ่านเพื่อเล่น อันดับสร้างตัวตนนิรนามพร้อมชื่อที่กำหนด</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">ฉันซื้อ &quot;ลบโฆษณา&quot; แล้วแต่ยังเห็นโฆษณา</div>
-        <div class="faq-a">เปิดการตั้งค่าของแอปแล้วแตะ <strong>กู้คืนการซื้อ</strong> ตรวจสอบว่าคุณลงชื่อเข้าใช้ด้วยบัญชี App Store หรือ Google Play เดียวกับที่ใช้ซื้อ</div>
+        <div class="faq-q">มีคำใบ้และการเพิ่มกี่ครั้ง?</div>
+        <div class="faq-a">สูงสุด 4 คำใบ้และเพิ่ม 5 ครั้งต่อกระดาน สองครั้งแรกฟรี หากไม่มี Premium อีก 3 ครั้งและคำใบ้จะเสนอโฆษณารับรางวัล</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">&quot;ลบโฆษณา&quot; เป็นการสมัครสมาชิกหรือไม่?</div>
-        <div class="faq-a">ไม่ใช่ เป็นการซื้อครั้งเดียว: เรียกเก็บเงินเพียงครั้งเดียวและไม่ต่ออายุ การซื้อนี้ลบโฆษณาทั้งหมด รวมถึงโฆษณาแบบมีรางวัลที่ไม่บังคับสำหรับคำใบ้และการเพิ่ม และไม่ให้ข้อได้เปรียบใดในเกม: ผู้เล่นทุกคนมีคำใบ้ 4 ครั้งต่อเกม</div>
+        <div class="faq-q">ถ้าโฆษณาไม่ทำงาน?</div>
+        <div class="faq-a">หากไม่พร้อมหลังขอ อาจให้การกระทำไม่ต้องดูวิดีโอภายในจำนวนที่เหลือ การปฏิเสธหรือปิดเองก่อนรับรางวัลไม่ให้สิทธิ</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">คำใบ้ทำงานอย่างไร?</div>
-        <div class="faq-a">แต่ละเกมให้คำใบ้ 4 ครั้ง หากยังไม่ได้ซื้อ "ลบโฆษณา" คุณเลือกดูโฆษณาสั้น ๆ เพื่อเปิดคำใบ้ได้ การดูเป็นทางเลือก: คุณเล่นต่อได้เสมอโดยไม่ต้องดู</div>
+        <div class="faq-q">Premium เป็นสมาชิกไหม?</div>
+        <div class="faq-a">ไม่ใช่ ซื้อครั้งเดียวไม่มีโฆษณารวมถึงคำใบ้และการเพิ่ม เพดานเท่าเดิม</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">ปุ่ม “+” ทำงานอย่างไร?</div>
-        <div class="faq-a">ปุ่ม “+” จะเพิ่มสำเนาของตัวเลขที่เหลือลงในกระดาน ได้สูงสุด 5 ครั้งต่อกระดาน ครั้งแรกใช้ได้ฟรี สำหรับอีกสี่ครั้งถัดไป คุณเลือกดูโฆษณาสั้น ๆ ได้ การดูเป็นทางเลือก</div>
+        <div class="faq-q">กู้คืน Premium อย่างไร?</div>
+        <div class="faq-a">ในการตั้งค่าใช้กู้คืนการซื้อด้วยบัญชีและร้านเดิม ไม่มีการย้ายอัตโนมัติระหว่าง Apple กับ Google</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">ลบบัญชีอันดับอย่างไร?</div>
+        <div class="faq-a">ขอและติดตามในส่วนบัญชีของการตั้งค่า หากเข้าไม่ได้ อีเมลสนับสนุนพร้อม Match the Digits และชื่อเล่น/ตัวระบุอันดับ ห้ามส่งโทเค็นหรือรหัสผ่าน อาจต้องตรวจสอบ<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">ฉันจะเปลี่ยนตัวเลือกด้านโฆษณาได้อย่างไร?</div>
-        <div class="faq-a">เปิดการตั้งค่าของแอปเพื่อดูหรือเปลี่ยนความยินยอมที่คุณให้ไว้สำหรับโฆษณา บน Android คุณยังรีเซ็ตหรือลบรหัสโฆษณาได้ในการตั้งค่าอุปกรณ์</div>
+        <div class="faq-q">กลับมาได้ไหมหลังลบ?</div>
+        <div class="faq-a">เมื่อเสร็จอาจขอตัวตนและชื่อใหม่ภายใต้ข้อจำกัดป้องกันการใช้ผิด ความคืบหน้าที่เก็บอาจนำสถิติกลับเผยแพร่ได้ Premium อยู่ตามกฎร้านค้า</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">การแจ้งเตือนของฉันไม่แสดง</div>
-        <div class="faq-a">ตรวจสอบว่าอนุญาตการแจ้งเตือนสำหรับ Match the Digits ในการตั้งค่าอุปกรณ์แล้ว และเปิดการแจ้งเตือนในการตั้งค่าของแอปแล้ว</div>
+        <div class="faq-q">ลบความคืบหน้าด้วยทำอะไร?</div>
+        <div class="faq-a">รีเซ็ตเกม สถิติและผลในเครื่องที่เกี่ยวข้อง ไม่ลบ Premium หรือการตั้งค่า หากไม่เลือกจะเก็บความคืบหน้า</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">ความคืบหน้าของฉันจะหายไปหรือไม่?</div>
-        <div class="faq-a">เกม คะแนน ผลรายวัน และการตั้งค่าของคุณถูกเก็บไว้ในอุปกรณ์ของคุณเท่านั้น การถอนการติดตั้งแอป การล้างข้อมูลแอป หรือการเปลี่ยนอุปกรณ์จะลบข้อมูลเหล่านี้อย่างถาวร: เราไม่ได้เก็บสำเนาและไม่สามารถกู้คืนได้</div>
+        <div class="faq-q">ถอนแอปลบทุกอย่างไหม?</div>
+        <div class="faq-a">ความคืบหน้าในเครื่องอาจหาย แต่ไม่ได้ขอลบบัญชีเซิร์ฟเวอร์ อันดับไม่ใช่สำเนาทั้งหมด</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">ฉันจะขอคืนเงินได้อย่างไร?</div>
-        <div class="faq-a">การซื้อดำเนินการโดย Apple หรือ Google ขอคืนเงินจาก Apple ที่ <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> หรือจาก Google ตาม<a href="https://support.google.com/googleplay/answer/15574897">ขั้นตอนนี้</a> คุณยังเขียนถึงเราได้ด้วย</div>
+        <div class="faq-q">จัดการความยินยอมโฆษณาที่ไหน?</div>
+        <div class="faq-a">รุ่นนี้ยังไม่มีศูนย์ทางเลือกโฆษณาในการตั้งค่า การควบคุมของโทรศัพท์และสนับสนุนไม่แทนแบบฟอร์มที่ต้องมีล่วงหน้า</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">ทำไมไม่เห็นการเตือน?</div>
+        <div class="faq-a">ตรวจการเตือนในแอปและสิทธิแจ้งเตือนของโทรศัพท์</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">ขอเงินคืนอย่างไร?</div>
+        <div class="faq-a">ติดต่อ Apple หรือ Google ตามร้านที่ซื้อ ขั้นตอนมีลิงก์ในข้อกำหนด หรือติดต่อสนับสนุนของเรา</div>
       </div>
     </div>
 

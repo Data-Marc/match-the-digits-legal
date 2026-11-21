@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>Frequently asked questions</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">Do I need to create an account?</div>
-        <div class="faq-a">No. Match the Digits requires no account, no registration and no login. You can start playing right after installing.</div>
+        <div class="faq-q">Do I need an account?</div>
+        <div class="faq-a">No email or password is required to play. The leaderboard creates an anonymous identity with an assigned nickname.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">I bought &quot;Remove ads&quot; but I still see ads</div>
-        <div class="faq-a">Open the settings in the app and tap <strong>Restore purchases</strong>. Make sure you are signed in with the same App Store or Google Play account used for the original purchase.</div>
+        <div class="faq-q">How many hints and adds are available?</div>
+        <div class="faq-a">Each board allows up to 4 hints and 5 adds. The first 2 adds are free; without Premium, the next 3 and hints offer a rewarded ad.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Is &quot;Remove ads&quot; a subscription?</div>
-        <div class="faq-a">No. It is a one-time purchase: it is charged once and never renews. It removes all ads, including the optional rewarded ads for hints and additions. It gives no gameplay advantage: every player has 4 hints per game.</div>
+        <div class="faq-q">What if an ad does not work?</div>
+        <div class="faq-a">If unavailable after your request, the action may be granted without a video within your remaining allowance. Declining or voluntarily closing the video before the reward does not grant the action.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How do hints work?</div>
-        <div class="faq-a">Each game gives you 4 hints. Without the "Remove ads" purchase, you can choose to watch a short ad to reveal a hint. Watching is optional: you can always keep playing without it.</div>
+        <div class="faq-q">Is Premium a subscription?</div>
+        <div class="faq-a">No. It is a one-time ad-free purchase, including hints and adds. Gameplay limits stay the same.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How does the “+” button work?</div>
-        <div class="faq-a">The “+” button adds a copy of the remaining numbers to the board, up to 5 times per board. The first one is free. For the next four, you can choose to watch a short ad. Watching is optional.</div>
+        <div class="faq-q">How do I restore Premium?</div>
+        <div class="faq-a">In Settings, choose Restore purchases using the original store and account. There is no automatic transfer between Apple and Google.</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">How do I delete my leaderboard account?</div>
+        <div class="faq-a">Use the account section in Settings and follow its progress. Without app access, email support with Match the Digits and your leaderboard nickname/identifier, never a token or password. Verification may be needed.<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How do I change my advertising choices?</div>
-        <div class="faq-a">Open the app's settings to review or change the consent you gave for advertising. On Android, you can also reset or delete your advertising ID in your device settings.</div>
+        <div class="faq-q">Can I return after deletion?</div>
+        <div class="faq-a">Once completed, you can request a new identity and nickname, subject to anti-abuse restrictions. Retained progress may allow resubmitting your record. Premium remains available under the store’s rules.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">My reminder does not show up</div>
-        <div class="faq-a">Check that notifications are allowed for Match the Digits in your device settings, then confirm that reminders are turned on in the app's settings.</div>
+        <div class="faq-q">What does Also erase my progress do?</div>
+        <div class="faq-a">It resets the game, record and relevant local results, without deleting Premium or preferences. Without this option, local progress is kept.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Will I lose my progress?</div>
-        <div class="faq-a">Your game, scores, daily results and settings are stored only on your device. Uninstalling the app, clearing its data or changing devices permanently deletes them: we keep no copy and cannot restore them.</div>
+        <div class="faq-q">Does uninstalling delete everything?</div>
+        <div class="faq-a">It may lose local progress, but does not request deletion of the server account. The leaderboard is not a full game backup.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How do I get a refund?</div>
-        <div class="faq-a">Purchases are processed by Apple or Google. Request a refund from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, or from Google following <a href="https://support.google.com/googleplay/answer/15574897">this procedure</a>. You can also write to us.</div>
+        <div class="faq-q">Where can I manage advertising consent?</div>
+        <div class="faq-a">This version does not yet have an advertising privacy-choice centre in Settings. Phone advertising-identifier controls and support are available; they do not replace a form required before processing.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why is my reminder not appearing?</div>
+        <div class="faq-a">Check reminders in the app and notification permission in phone settings.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I request a refund?</div>
+        <div class="faq-a">Contact Apple or Google according to the purchase store. Their procedures are linked in the terms; you can also contact our support.</div>
       </div>
     </div>
 

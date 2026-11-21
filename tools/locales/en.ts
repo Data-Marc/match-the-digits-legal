@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "";
 const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, French sole proprietorship), trading as Primisia";
@@ -7,7 +7,7 @@ export const en: Locale = {
   code: "en",
   dir,
   name: "English",
-  updated: "October 21, 2026",
+  updated: "November 21, 2026",
   ui: {
     legalDocuments: "Legal Documents",
     privacyPolicy: "Privacy Policy",
@@ -19,7 +19,7 @@ export const en: Locale = {
     lastUpdated: "Last updated",
     footer: "Published by Marc SAMSON EI, trading as Primisia",
     indexDesc: "Privacy Policy, Terms of Use and Support for the Match the Digits puzzle game.",
-    privacyDesc: "Privacy Policy of the Match the Digits puzzle game: no account, game data stored on your device, Google AdMob advertising with consent.",
+    privacyDesc: "Match the Digits privacy: local progress, leaderboards, security, ads, Premium purchases and account deletion.",
     termsDesc: "Terms of Use of the Match the Digits puzzle game: license, advertising, one-time Remove ads purchase, liability and governing law.",
     supportDesc: "Support, contact and frequently asked questions for the Match the Digits puzzle game.",
     supportIntro: "Need help? Write to us and include your device model if you can.",
@@ -29,132 +29,57 @@ export const en: Locale = {
     translationNote: "This translation is provided for convenience. In case of discrepancy, the French version prevails.",
   },
   faq: [
-    ["Do I need to create an account?", "No. Match the Digits requires no account, no registration and no login. You can start playing right after installing."],
-    ["I bought \"Remove ads\" but I still see ads", "Open the settings in the app and tap <strong>Restore purchases</strong>. Make sure you are signed in with the same App Store or Google Play account used for the original purchase."],
-    ["Is \"Remove ads\" a subscription?", "No. It is a one-time purchase: it is charged once and never renews. It removes all ads, including the optional rewarded ads for hints and additions. It gives no gameplay advantage: every player has 4 hints per game."],
-    ["How do hints work?", "Each game gives you 4 hints. Without the \"Remove ads\" purchase, you can choose to watch a short ad to reveal a hint. Watching is optional: you can always keep playing without it."],
-    ["How does the “+” button work?", "The “+” button adds a copy of the remaining numbers to the board, up to 5 times per board. The first one is free. For the next four, you can choose to watch a short ad. Watching is optional."],
-    ["How do I change my advertising choices?", "Open the app's settings to review or change the consent you gave for advertising. On Android, you can also reset or delete your advertising ID in your device settings."],
-    ["My reminder does not show up", "Check that notifications are allowed for Match the Digits in your device settings, then confirm that reminders are turned on in the app's settings."],
-    ["Will I lose my progress?", "Your game, scores, daily results and settings are stored only on your device. Uninstalling the app, clearing its data or changing devices permanently deletes them: we keep no copy and cannot restore them."],
-    ["How do I get a refund?", `Purchases are processed by Apple or Google. Request a refund from Apple at <a href="${APPLE_REFUND}">reportaproblem.apple.com</a>, or from Google following <a href="${GOOGLE_REFUND}">this procedure</a>. You can also write to us.`],
+    ["Do I need an account?", "No email or password is required to play. The leaderboard creates an anonymous identity with an assigned nickname."],
+    ["How many hints and adds are available?", "Each board allows up to 4 hints and 5 adds. The first 2 adds are free; without Premium, the next 3 and hints offer a rewarded ad."],
+    ["What if an ad does not work?", "If unavailable after your request, the action may be granted without a video within your remaining allowance. Declining or voluntarily closing the video before the reward does not grant the action."],
+    ["Is Premium a subscription?", "No. It is a one-time ad-free purchase, including hints and adds. Gameplay limits stay the same."],
+    ["How do I restore Premium?", "In Settings, choose Restore purchases using the original store and account. There is no automatic transfer between Apple and Google."],
+    ["How do I delete my leaderboard account?", "Use the account section in Settings and follow its progress. Without app access, email support with Match the Digits and your leaderboard nickname/identifier, never a token or password. Verification may be needed."],
+    ["Can I return after deletion?", "Once completed, you can request a new identity and nickname, subject to anti-abuse restrictions. Retained progress may allow resubmitting your record. Premium remains available under the store’s rules."],
+    ["What does Also erase my progress do?", "It resets the game, record and relevant local results, without deleting Premium or preferences. Without this option, local progress is kept."],
+    ["Does uninstalling delete everything?", "It may lose local progress, but does not request deletion of the server account. The leaderboard is not a full game backup."],
+    ["Where can I manage advertising consent?", "This version does not yet have an advertising privacy-choice centre in Settings. Phone advertising-identifier controls and support are available; they do not replace a form required before processing."],
+    ["Why is my reminder not appearing?", "Check reminders in the app and notification permission in phone settings."],
+    ["How do I request a refund?", "Contact Apple or Google according to the purchase store. Their procedures are linked in the terms; you can also contact our support."]
   ],
   privacy: {
     sections: [
-      {
-        id: "0",
-        title: "Summary",
-        content:
-          "Effective date: October 21, 2026.\n\nThis policy explains what data is processed when you use the Match the Digits mobile application (the \"App\") on iOS and Android, why, by whom, for how long, and how to exercise your rights.\n\n• The App does not ask you to create an account, and does not ask for your name, email address or date of birth to play.\n• Your progress and settings are stored only on your device. We do not receive them.\n• The App displays advertising provided by Google (AdMob). To do so, Google processes some data from your device, described in Section 5. In the European Economic Area, the United Kingdom and Switzerland, your consent is requested before any personalized advertising.\n• We only receive data about you if you write to us (support).",
-      },
+      { id: "0", title: "Summary", content: "Updated November 21, 2026.\n\nYou can play without providing a name, email or password. The leaderboard uses an anonymous account; a technical identifier does not make the associated data anonymous. Your game and settings stay on your device, while your leaderboard nickname and record are stored on our server and visible in the leaderboard. Third parties provide security, advertising and purchase services. You can request deletion of your leaderboard account, with or without erasing local progress." },
       {
         id: "1",
         title: "1. Data Controller",
         content: `The App is published by:\n\n${PUBLISHER}\n${ADDRESS}\n${IDS}\n\nContact for any question about your data: ${EMAIL}\n\nFor the advertising data processed by Google, Google acts as an independent controller, under its own rules (Section 5).`,
       },
-      {
-        id: "2",
-        title: "2. Data Stored Only on Your Device",
-        content:
-          "The following data is stored in the App's local storage, on your device. It is not sent to us and is not sent to any server operated by the publisher:\n\n• Game in progress (board, score, remaining hints and additions): to resume your game\n• Best score: to show it on the home screen and in the trophies\n• Daily results (boards cleared, points, pairs, daily challenges): calendar, statistics, trophies\n• Preferences: language, haptic feedback, sound effects, reminders: to respect your settings\n• Dates of the rating requests already shown: so that you are not asked too often to rate the App\n\nThis data is kept as long as the App is installed. You can delete it at any time by clearing the App's data (Android) or by uninstalling it (iOS and Android). It cannot be recovered afterwards: the publisher makes no backup.",
-      },
+      { id: "2", title: "2. Local progress and preferences", content: "Your device stores your current game, local best score, daily challenge results, trophy statistics, preferences and rating-prompt dates. These support resuming play and displaying progress. The record intended for the leaderboard is transmitted separately as described below.\n\nWe do not offer a server backup that restores all your progress on another device. Clearing app data or uninstalling may lose that progress. Any operating-system backup depends on your device settings." },
+      { id: "2a", title: "2a. Account and leaderboard", content: "A technical anonymous account is created when you first access the leaderboard. Our self-hosted Supabase service stores the login identity, sessions, assigned nickname, published record, associated dates and account status. Session credentials are also kept on your device to recognize your account.\n\nYour nickname, score and position are visible in the leaderboard; login credentials and deletion receipts are not public. An eligible record from a finished or abandoned game may be sent or retried later after a network failure. The leaderboard is not a backup of your game." },
+      { id: "2b", title: "2b. Security and abuse prevention", content: "We process technical request information, including the IP address at the service entry point, installation or network hashes and dates/counters, to protect the leaderboard, limit repeated registrations and handle deletions and restrictions. These hashes remain pseudonymous data.\n\nFirebase App Check and Apple/Google attestation mechanisms verify app requests using technical data and attestation tokens. Firebase no longer provides leaderboard authentication or storage. Details: https://firebase.google.com/support/privacy" },
       {
         id: "3",
         title: "3. Reminders (Notifications)",
         content:
           "If you turn on reminders in the settings, the App asks for permission to show notifications. Reminders are scheduled locally on your device: no notification token is created or sent to a server. You can turn them off at any time in the App's settings or in your device settings. Reminders contain no advertising.",
       },
-      {
-        id: "4",
-        title: "4. Support (When You Write to Us)",
-        content: `The "Contact support" button opens your email application with a pre-filled email addressed to ${EMAIL}. If you send it, we receive:\n\n• your email address and the content of your message;\n• the App version, the operating system (iOS or Android) and its version, added automatically at the bottom of the message to help us solve the problem. You can remove them before sending.\n\nThis data is used only to reply to you. It is deleted as soon as your request has been handled.`,
-      },
-      {
-        id: "5",
-        title: "5. Advertising (Google AdMob)",
-        subsections: [
-          {
-            subtitle: "Data processed by Google",
-            content:
-              "The App displays advertising provided by Google AdMob, through the Google Mobile Ads SDK built into the App. According to the documentation Google publishes for developers, Google processes:\n\n• IP address, which may be used to estimate the approximate location of the device: advertising, measurement, fraud prevention\n• Interactions with the App (launches, taps, videos viewed): advertising, measurement, fraud prevention\n• Diagnostic and performance data (launch time, hang rate, energy use); on iOS, crash logs not linked to the user: diagnostics, improvement, advertising, measurement\n• Device identifiers: advertising ID (Android), App Set ID, other app- or developer-scoped identifiers: advertising and measurement\n• Advertising data (ads viewed): advertising and measurement\n\nGoogle states that this data is encrypted in transit (TLS). The publisher has no access to this individual data: it only receives aggregated statistics (number of impressions, revenue).",
-          },
-          {
-            subtitle: "Ads shown in the App",
-            content:
-              "• a banner on the game screen;\n• an optional rewarded ad: you can choose to watch a video to get a hint, or to use the “+” button again (the first “+” of each board is free). Declining does not prevent you from playing.\n\nIf you have purchased \"Remove ads\" (Section 6), no ads are shown.",
-          },
-          {
-            subtitle: "Your consent (EEA, United Kingdom, Switzerland)",
-            content:
-              "On first launch, a consent window managed by Google's consent tool lets you accept or refuse the use of your data for advertising purposes, purpose by purpose. If you refuse, the App remains fully playable; non-personalized or limited ads may then be shown. You can change your choice at any time in the App's settings.",
-          },
-          {
-            subtitle: "iOS: tracking",
-            content:
-              "The App does not ask for permission to track your activity (App Tracking Transparency): your device's advertising identifier (IDFA) is not used. The App never requires you to accept tracking in order to play.",
-          },
-          {
-            subtitle: "Android: advertising ID",
-            content: "You can reset or delete your advertising ID in your device settings.",
-          },
-          {
-            subtitle: "United States",
-            content:
-              "Depending on the State where you live, the law may give you the right to opt out of the \"sale\" or \"sharing\" of your data for targeted advertising. You can exercise this choice from the App's privacy settings, or by writing to us.",
-          },
-          {
-            subtitle: "Learn more",
-            content: `Google Privacy Policy: ${GOOGLE_PRIVACY}\nHow Google uses information from sites or apps that use its services: ${GOOGLE_PARTNERS}`,
-          },
-        ],
-      },
-      {
-        id: "6",
-        title: "6. \"Remove ads\" Purchase",
-        content:
-          "The one-time purchase that removes ads is processed exclusively by the App Store (Apple) or Google Play (Google). We never receive your payment data (bank card, name, billing address). The App only receives confirmation from the store that the purchase was made, in order to remove the ads and allow it to be restored. Payment processing is governed by Apple's or Google's privacy policies.",
-      },
+      { id: "4", title: "4. Support", content: `When you contact ${EMAIL}, we receive your email address, message and any attachments you choose to send. The app-prepared message may include app and operating-system versions; you can remove them.\n\nWe use this information to respond, verify account-related requests and resolve issues. It is kept while handling the request, and afterwards only where needed for follow-up, legal claims or a legal obligation. Never send passwords, login tokens or banking details.` },
+      { id: "5", title: "5. Advertising and privacy choices", content: `Google AdMob supplies a banner and optional rewarded videos. Depending on the system and permissions, its SDK processes IP addresses, advertising or app identifiers, app/ad interactions and diagnostics to deliver and measure ads and prevent fraud. Premium removes ads, including rewarded videos.\n\nAgreeing to watch a video does not itself consent to advertising data processing. Where consent is required, it must be possible to refuse or withdraw it. This version does not yet provide an advertising privacy-choice centre in app settings. You may contact us to exercise your rights; this does not replace a consent form required before processing.\n\nAndroid lets you reset or delete the advertising identifier in phone settings. On iOS, IDFA access and tracking subject to ATT require the corresponding Apple authorization. These settings alone do not erase data already held by providers. Local rights, including rights to opt out of certain targeted advertising, remain applicable.\n\nGoogle: ${GOOGLE_PRIVACY}\nPartner-service data: ${GOOGLE_PARTNERS}` },
+      { id: "6", title: "6. Premium purchase and restoration", content: "Apple or Google processes payment and retains billing information under its own rules. We do not receive your payment-card number.\n\nRevenueCat helps verify and restore the one-time ad-free purchase. It processes a pseudonymous identifier, transaction/receipt information, product, store and Premium entitlement status. The app also stores information needed for Premium access. Deleting your leaderboard account does not delete this purchase; data needed for restoration and applicable obligations is handled separately.\n\nDetails: https://www.revenuecat.com/privacy" },
       {
         id: "7",
         title: "7. Ratings and Reviews",
         content:
           "When the App invites you to rate it, it uses Apple's or Google's official window. Your rating and review are processed by the store concerned, under its own rules; the App has no access to them.",
       },
-      {
-        id: "8",
-        title: "8. Legal Bases (GDPR)",
-        content:
-          "• Running the game and storing your progress and settings locally: performance of the service you request (contract)\n• Access to device identifiers and advertising, personalized or not, where the law requires consent: consent, which you can withdraw at any time (Section 5)\n• Showing reminders: consent (notification permission), which you can withdraw at any time\n• Replying to your support requests: legitimate interest in replying to you; or pre-contractual measures / contract if the request concerns a purchase\n• Compliance with legal obligations (for example, accounting obligations for purchases): legal obligation",
-      },
-      {
-        id: "9",
-        title: "9. Recipients and Transfers Outside the European Union",
-        content:
-          "The data processed by the App is neither sold nor rented by the publisher. The only recipients are:\n\n• Google, for advertising (Section 5);\n• Apple or Google, for purchases, ratings and system notifications, depending on your device;\n• the authorities, only where required by law.\n\nGoogle may process data outside the European Union, in particular in the United States, under the safeguards described in its privacy policy.",
-      },
+      { id: "8", title: "8. Purposes and legal bases", content: "Gameplay, the requested leaderboard account and managing/restoring Premium rely on providing the service or contract. Security, anti-abuse limits and support rely on our legitimate interest in protecting the service and its users, subject to your rights. Reminders are optional and require device permission.\n\nAdvertising processing and identifier access rely on consent where required. Some retention is needed for legal obligations or establishing, exercising or defending legal claims. These bases do not authorize unrestricted reuse for other purposes." },
+      { id: "9", title: "9. Providers and international transfers", content: `Necessary recipients include:\n• Contabo for the server hosting Supabase and the leaderboard;\n• Cloudflare for routing and protecting requests;\n• Backblaze for encrypted backups and the decision journal;\n• Google/Firebase and Apple for attestation and system services;\n• Google AdMob for advertising;\n• RevenueCat and Apple/Google for purchases;\n• GitHub Pages for these public documents; and authorities where legally required.\n\nSupabase is self-hosted; this does not mean player data is hosted in Supabase Cloud. International providers may process data outside the European Economic Area, including the United States. Transfer safeguards depend on the applicable service and contract; request details from ${EMAIL}. We do not guarantee that all processing stays in Europe. We do not sell leaderboard data.\n\nNotices: https://contabo.com/en/legal/privacy/ ; https://www.cloudflare.com/privacypolicy/ ; https://www.backblaze.com/company/privacy ; https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement` },
       {
         id: "10",
         title: "10. Children",
         content: `The App is intended for people aged at least 16. It is not directed at children, and we do not knowingly collect data about them.\n\nIn France, a minor under 15 cannot consent alone to the processing of their data based on consent: the agreement of a holder of parental authority is also required (Article 45 of the French Data Protection Act, Loi Informatique et Libertés). If you are a parent and believe your child has given consent, write to us at ${EMAIL}: we will tell you how to withdraw it.`,
       },
-      {
-        id: "11",
-        title: "11. Your Rights",
-        content: `Depending on the applicable law (in particular the GDPR), you have the rights of access, rectification, erasure, restriction, objection and portability, and the right to withdraw your consent at any time, without affecting processing already carried out.\n\n• Data on your device: you control it directly (Section 2).\n• Advertising consent: can be changed at any time from the App's settings (Section 5).\n• Advertising data held by Google: tools and contacts described in Google's privacy policy.\n• Support data: write to ${EMAIL}. We reply within one month, which may be extended under the conditions set out in the GDPR.\n\nIf you believe your rights have not been respected, you may lodge a complaint with the ${CNIL}, or online at ${CNIL_URL}, or with the data protection authority of your country of residence.`,
-      },
-      {
-        id: "12",
-        title: "12. Security",
-        content:
-          "Game data stays on your device and benefits from its protections. Exchanges with Google are encrypted (TLS). No game data is stored on a server operated by the publisher.",
-      },
-      {
-        id: "13",
-        title: "13. Changes",
-        content:
-          "We may change this policy, in particular if the App evolves. The date of the last update is shown at the top of this page. In the event of a significant change, you will be informed in the App before it applies.",
-      },
-      { id: "14", title: "14. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "11", title: "11. Account deletion and your rights", content: `The leaderboard account section in Settings lets you request deletion and follow its progress. Once the server accepts the request, the profile is removed from the leaderboard and its identity and related active data are subsequently deleted. An offline request must first be transmitted; uninstalling alone does not delete the server account.\n\n“Also erase my progress” resets the game, record and relevant local results. Without it, they remain on your device. Premium and preferences are preserved. After deletion completes, voluntarily rejoining creates a new identity and nickname, subject to anti-abuse restrictions. Your retained local record may be submitted again; the old account is not restored and its nickname may be reassigned.\n\nWithout app access, email ${EMAIL}, identifying Match the Digits and the leaderboard nickname/identifier you have, never a token or password. Proportionate verification may be necessary to avoid deleting someone else’s account.\n\nDepending on your circumstances, you have rights of access, rectification, erasure, restriction, objection, portability and consent withdrawal. We normally respond within one month, extendable as permitted by law. You may complain to the CNIL at ${CNIL_URL} or your competent national authority.` },
+      { id: "12", title: "12. Security", content: "Network exchanges use encryption in transit. Administrative access is restricted; backups and the decision journal are encrypted. These measures reduce risk without guaranteeing absolute security. The public leaderboard remains visible to its users; do not send secrets through support channels." },
+      { id: "12a", title: "12a. Retention and backups", content: `Local data remains until erased or replaced. The leaderboard account and record remain until the account is deleted. Temporary counters and security restrictions have their own expiry times; some traces are needed to prevent abuse and handle disputes.\n\nBackups rotate through 7 daily, 4 weekly and 2 monthly restore points. This does not guarantee erasure of every copy on an exact date. The decision journal helps prevent a restore from reintroducing a deleted account.\n\nDeletion receipts and this journal currently remain stored without automatic purging. They may contain technical identifiers, hashes, dates and status information. You may request a review of their retention or erasure at ${EMAIL}. Purchase data separately follows restoration needs and applicable obligations.` },
+      { id: "13", title: "13. Policy changes", content: "This policy is available in settings and on our website. Its date identifies the text version. It is updated to reflect service changes. Applicable duties to inform you and obtain new consent where required remain in force." },
+      { id: "14", title: "14. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` }
     ],
   },
   terms: {
@@ -180,43 +105,15 @@ export const en: Locale = {
         content:
           "You agree not to:\n\n• copy, modify, decompile, disassemble or attempt to extract the source code of the App, except where expressly permitted by law;\n• circumvent or disrupt its technical mechanisms, including the display of ads and in-app purchases;\n• artificially generate ad impressions or clicks;\n• use the App in a way that is unlawful or infringes the rights of third parties.",
       },
-      {
-        id: "5",
-        title: "5. The Game and Your Progress",
-        content:
-          "The App does not require an account. Your progress (game in progress, scores, daily results, trophies) and your settings are stored only on your device.\n\nThey are not backed up by the publisher: they are lost if you uninstall the App, clear its data or change devices. The publisher cannot restore them.\n\nThe game rules, the number of hints and additions available, and the boards offered may change from one version to another.",
-      },
-      {
-        id: "6",
-        title: "6. Advertising",
-        content:
-          "The App is free and funded by advertising, provided by Google AdMob:\n\n• a banner on the game screen;\n• an optional rewarded ad: you can choose to watch a video to get a hint, or to use the “+” button again (the first “+” of each board is free). The reward is stated before the video and granted once the video has been watched. If you decline, or if no ad is available, you can keep playing.\n\nAds are selected by Google. The publisher does not control their content and is not responsible for the products or services they present. Your choices regarding the use of your data for advertising are described in the Privacy Policy.",
-      },
-      {
-        id: "7",
-        title: "7. \"Remove ads\" Purchase",
-        subsections: [
-          {
-            subtitle: "What you get",
-            content:
-              "The App offers a one-time, permanent purchase (\"Remove ads\"):\n\n• it removes all ads from the App, including the rewarded ad: hints and additions are then granted directly;\n• it gives no gameplay advantage: every player has 4 hints per game, with or without the purchase; the number of additions and the rules are the same for everyone;\n• it is not a subscription: it is charged only once and does not renew.",
-          },
-          {
-            subtitle: "Price and payment",
-            content:
-              "The price is shown in the App Store or Google Play before purchase, including taxes applicable in your country. Payment is processed exclusively by Apple or Google, under their terms. The publisher never receives your payment data.",
-          },
-          {
-            subtitle: "Restoring your purchase",
-            content:
-              "The purchase is linked to the Apple or Google account used to make it. You can recover it free of charge on a new device or after reinstalling, with the same account, using the \"Restore purchases\" button in the settings.",
-          },
-          {
+      { id: "5", title: "5. Gameplay, progress and leaderboard", content: "You can play without an email/password account. The leaderboard uses a technical anonymous identity and an assigned nickname. Marked virtual profiles do not represent real players. The leaderboard does not award cash prizes.\n\nGames, challenges, trophies and settings are mainly local. The server stores the published record, not a complete progress backup. Finishing or abandoning a game to start a new one may submit the eligible record, with later retries after network failure.\n\nEach board allows at most five adds, the first two free, and four hints. Without Premium, the remaining three adds and hints offer rewarded advertising. Premium uses the same limits.\n\nCheating, falsified scores and abusive repeated registrations may lead to leaderboard restrictions or exclusion. You may dispute a restriction through support." },
+      { id: "6", title: "6. Ads and rewards", content: "A banner may appear during play. A rewarded video is offered, with your agreement, before a relevant hint or recharge. Once the reward is confirmed, the action is granted within the remaining allowance.\n\nIf the ad is technically unavailable after your request, the app may grant that action without a video and show a discreet notice. Declining or closing the video before earning the reward does not grant that action. Premium does not provide adds beyond the limit when the allowance is exhausted.\n\nAds and linked destinations are provided by third parties. The Privacy Policy describes related data processing; agreeing to watch a video is not privacy consent." },
+      { id: "7", title: "7. \"Remove ads\" Purchase", subsections: [{ subtitle: "What you receive", content: "Premium is a one-time purchase without automatic renewal. It removes banners and rewarded ads: hints and adds are available directly within the same limits of four hints and five adds per board. The grid may use the space freed by the banner." },
+{ subtitle: "Price and payment", content: "When available, the offer shows the store-provided localized price. Check the price and conditions in the Apple or Google confirmation before paying. Cancelled, pending or failed purchases are not treated as completed. RevenueCat verifies Premium entitlement; we do not receive your payment-card details." },
+{ subtitle: "Restoration", content: "Use Restore purchases in Settings with the original store and account. Connectivity may be required. An Apple purchase does not automatically transfer to Google Play, or vice versa. Deleting leaderboard data or progress does not cancel the purchase." },
+{
             subtitle: "Withdrawal and refunds",
             content: `The purchase concerns digital content supplied immediately after payment. The right of withdrawal and refund requests are exercised under the conditions provided by applicable law and by the rules of the store concerned:\n\n• App Store: request from Apple, at ${APPLE_REFUND}\n• Google Play: request from Google, following the procedure at ${GOOGLE_REFUND}\n\nYou can also write to us at ${EMAIL}.`,
-          },
-        ],
-      },
+          }] },
       {
         id: "8",
         title: "8. Reminders",
@@ -228,36 +125,17 @@ export const en: Locale = {
         title: "9. Intellectual Property",
         content: `The App, its name, visuals, texts, sounds, code and presentation are protected by intellectual property law and belong to the publisher or its licensors. Certain third-party elements are used under their own license:\n\n${LICENSES}\n\nAny unauthorized reproduction or reuse is prohibited.`,
       },
-      {
-        id: "10",
-        title: "10. Availability and Updates",
-        content:
-          "The publisher may change the App, fix errors, modify or remove features, or stop distributing it. Some updates may be necessary to keep using the App. The publisher strives to ensure that it works properly but does not guarantee that it will be available without interruption, in particular for the display of ads, which depends on Google.",
-      },
+      { id: "10", title: "10. Availability and updates", content: "The leaderboard, purchases and some verification require connectivity and also depend on providers. Outages, maintenance, security restrictions or unavailable ads may affect these services. Local play may remain available depending on the game state.\n\nWe may fix or develop the app. Mandatory consumer rights and digital-service obligations remain applicable; an ad-free purchase does not guarantee perpetual availability of the online service." },
       {
         id: "11",
         title: "11. Warranties and Liability",
         content:
           "The App is provided \"as is\". Nothing in these Terms limits the rights you have under the law as a consumer, in particular the legal guarantee of conformity of digital content and services.\n\nTo the extent permitted by law, the publisher is not liable for:\n\n• the loss of your progress stored on your device (Section 5);\n• indirect damages;\n• advertising content provided by third parties;\n• unavailability caused by your device, your operating system, your connection or the services of Apple and Google.\n\nThese limitations do not apply in the event of gross negligence or wilful misconduct, to personal injury, or where the law prohibits them.",
       },
-      {
-        id: "12",
-        title: "12. End of Use",
-        content:
-          "You can stop using the App at any time by uninstalling it. The publisher may terminate your license if you do not comply with these Terms. Sections 9, 11 and 14 continue to apply after the license ends.",
-      },
-      {
-        id: "13",
-        title: "13. Changes to These Terms",
-        content:
-          "The publisher may change these Terms, in particular to follow changes to the App or to the law. The date of the last update is shown at the top of this page. In the event of a significant change, you will be informed in the App before it takes effect. If you do not accept the new Terms, you can stop using the App.",
-      },
-      {
-        id: "14",
-        title: "14. Governing Law, Mediation and Disputes",
-        content: `These Terms are governed by French law. If you are a consumer living in another country, you keep the protection of the mandatory rules of the law of your country.\n\nIn case of difficulty, first write to ${EMAIL}: we will look for an amicable solution.\n\nConsumer mediation: if you are a consumer and your written complaint has not been resolved, you may use the following consumer mediator free of charge: ${MEDIATOR}.\n\nFailing agreement, the dispute will be brought before the competent courts; if you are a consumer, you may in particular bring proceedings before the court of your place of residence.`,
-      },
-      { id: "15", title: "15. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "12", title: "12. Deletion and ending use", content: `You may stop playing at any time. To delete the server account, use the leaderboard section in Settings or contact ${EMAIL}; uninstalling is not enough. Processing and backups are described in the Privacy Policy.\n\nErasing local progress is optional. A deleted account cannot be recovered; permitted rejoining creates a new identity and nickname. A retained local record may be reused. Premium remains tied to the purchase independently of leaderboard deletion.\n\nAbuse may lead to leaderboard restrictions without removing your statutory rights. Intellectual-property, liability and dispute-resolution provisions continue after use ends.` },
+      { id: "13", title: "13. Changes to these terms", content: "The current version is available in the app and on the website with its update date. Service and legal developments may require revisions. Statutory information duties and acquired consumer rights remain applicable." },
+      { id: "14", title: "14. Applicable law, mediation and disputes", content: `French law applies without depriving consumers of mandatory protections in their country of residence.\n\nSend complaints to ${EMAIL}. You retain the right to free consumer mediation under applicable legal conditions after a prior written complaint. The publisher’s membership of a mediation scheme is still to be finalized; the mediator’s contact details will be published after joining. These terms do not appoint a mediator.\n\nIf no agreement is reached, competent courts may be approached; consumers retain applicable remedies associated with their place of residence.` },
+      { id: "15", title: "15. Contact", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` }
     ],
   },
 };

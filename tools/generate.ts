@@ -203,7 +203,7 @@ const support = (l: Locale) => `${head(l, "support.html", l.ui.support, l.ui.sup
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }`)}
 <body>
   <div class="card">
@@ -227,7 +227,7 @@ const support = (l: Locale) => `${head(l, "support.html", l.ui.support, l.ui.sup
 
     <h2>${l.ui.faqTitle}</h2>
     <div class="faq">
-${l.faq.map(([q, a]) => `      <div class="faq-item">\n        <div class="faq-q">${esc(q)}</div>\n        <div class="faq-a">${a}</div>\n      </div>`).join("\n")}
+${l.faq.map(([q, a], i) => `      <div class="faq-item"${i === 5 ? ' id="account-deletion"' : ''}>\n        <div class="faq-q">${esc(q)}</div>\n        <div class="faq-a">${a}${i === 5 ? `<br><a href="mailto:${EMAIL}?subject=Match%20the%20Digits%20-%20account%20deletion">${EMAIL}</a>` : ''}</div>\n      </div>`).join("\n")}
     </div>
 
     <div class="links">
@@ -262,5 +262,18 @@ if (process.argv.includes("--app") && appDir) {
     const data = { lastUpdated: `${l.ui.lastUpdated}: ${l.updated}`, note: l.ui.translationNote, privacy: l.privacy.sections, terms: l.terms.sections };
     writeFileSync(join(appDir, `${l.code}.json`), JSON.stringify(data, null, 1) + "\n");
   }
+  // Keep the French reference copies beside content/ synchronized with the same source.
+  const markdownDoc = (title: string, doc: LegalDoc) => [
+    `# ${title} — ${APP}`,
+    `${fr.ui.lastUpdated} : ${fr.updated}`,
+    '<!-- Copie générée depuis match-the-digits-legal/tools/locales/fr.ts ; ne pas modifier séparément. -->',
+    ...doc.sections.flatMap((section) => [
+      `## ${section.title}`,
+      ...(section.content ? [section.content] : []),
+      ...(section.subsections ?? []).flatMap(sub => [`### ${sub.subtitle}`, sub.content]),
+    ]),
+  ].join('\n\n') + '\n';
+  writeFileSync(join(appDir, '..', 'politique-de-confidentialite.md'), markdownDoc(fr.ui.privacyPolicy, fr.privacy));
+  writeFileSync(join(appDir, '..', 'conditions-utilisation.md'), markdownDoc(fr.ui.termsOfUse, fr.terms));
   console.log("copie app :", appDir);
 }

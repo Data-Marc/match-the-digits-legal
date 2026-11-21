@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "vi/";
 const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, doanh nghiệp tư nhân theo luật Pháp), với tên thương mại Primisia";
@@ -7,7 +7,7 @@ export const vi: Locale = {
   code: "vi",
   dir,
   name: "Tiếng Việt",
-  updated: "21 tháng 10 năm 2026",
+  updated: "21 tháng 11 năm 2026",
   ui: {
     legalDocuments: "Tài liệu pháp lý",
     privacyPolicy: "Chính sách quyền riêng tư",
@@ -19,7 +19,7 @@ export const vi: Locale = {
     lastUpdated: "Cập nhật lần cuối",
     footer: "Phát hành bởi Marc SAMSON EI, với tên thương mại Primisia",
     indexDesc: "Chính sách quyền riêng tư, điều khoản sử dụng và hỗ trợ cho trò chơi giải đố Match the Digits.",
-    privacyDesc: "Chính sách quyền riêng tư của trò chơi Match the Digits: không cần tài khoản, dữ liệu trò chơi lưu trên thiết bị của bạn, quảng cáo Google AdMob có sự đồng ý.",
+    privacyDesc: "Quyền riêng tư Match the Digits: tiến trình trên máy, bảng xếp hạng, bảo mật, quảng cáo, Premium và xóa tài khoản.",
     termsDesc: "Điều khoản sử dụng của trò chơi Match the Digits: giấy phép, quảng cáo, giao dịch mua một lần Xóa quảng cáo, trách nhiệm và luật áp dụng.",
     supportDesc: "Hỗ trợ, liên hệ và câu hỏi thường gặp về trò chơi giải đố Match the Digits.",
     supportIntro: "Bạn cần trợ giúp? Hãy viết cho chúng tôi và ghi rõ mẫu thiết bị nếu có thể.",
@@ -29,132 +29,57 @@ export const vi: Locale = {
     translationNote: "Bản dịch này chỉ nhằm mục đích tham khảo. Trong trường hợp có khác biệt, bản tiếng Pháp được ưu tiên áp dụng.",
   },
   faq: [
-    ["Tôi có cần tạo tài khoản không?", "Không. Match the Digits không yêu cầu tài khoản, đăng ký hay đăng nhập. Bạn có thể chơi ngay sau khi cài đặt."],
-    ["Tôi đã mua \"Xóa quảng cáo\" nhưng vẫn thấy quảng cáo", "Mở phần cài đặt của ứng dụng và nhấn <strong>Khôi phục giao dịch mua</strong>. Hãy chắc chắn rằng bạn đăng nhập bằng cùng tài khoản App Store hoặc Google Play đã dùng để mua."],
-    ["\"Xóa quảng cáo\" có phải là gói đăng ký không?", "Không. Đây là giao dịch mua một lần: chỉ tính phí một lần và không bao giờ gia hạn. Giao dịch này xóa mọi quảng cáo, kể cả quảng cáo có thưởng tùy chọn để nhận gợi ý và lượt thêm. Nó không mang lại lợi thế nào trong trò chơi: mỗi người chơi có 4 gợi ý mỗi ván."],
-    ["Gợi ý hoạt động thế nào?", "Mỗi ván cho bạn 4 gợi ý. Nếu chưa mua \"Xóa quảng cáo\", bạn có thể chọn xem một quảng cáo ngắn để hiện một gợi ý. Việc xem là tùy chọn: bạn luôn có thể tiếp tục chơi mà không cần xem."],
-    ["Nút “+” hoạt động thế nào?", "Nút “+” thêm vào bàn chơi một bản sao của các số còn lại, tối đa 5 lần mỗi bàn chơi. Lần đầu tiên miễn phí. Với bốn lần tiếp theo, bạn có thể chọn xem một quảng cáo ngắn. Việc xem là tùy chọn."],
-    ["Làm sao để thay đổi lựa chọn quảng cáo?", "Mở phần cài đặt của ứng dụng để xem hoặc thay đổi sự đồng ý bạn đã đưa ra cho quảng cáo. Trên Android, bạn cũng có thể đặt lại hoặc xóa mã nhận dạng quảng cáo trong cài đặt thiết bị."],
-    ["Lời nhắc của tôi không hiện", "Kiểm tra xem thông báo của Match the Digits đã được cho phép trong cài đặt thiết bị chưa, và lời nhắc đã được bật trong cài đặt của ứng dụng chưa."],
-    ["Tôi có bị mất tiến trình không?", "Ván chơi, điểm số, kết quả hằng ngày và cài đặt của bạn chỉ được lưu trên thiết bị. Gỡ cài đặt ứng dụng, xóa dữ liệu của ứng dụng hoặc đổi thiết bị sẽ xóa vĩnh viễn chúng: chúng tôi không giữ bản sao nào và không thể khôi phục."],
-    ["Làm sao để được hoàn tiền?", `Giao dịch mua do Apple hoặc Google xử lý. Hãy yêu cầu hoàn tiền với Apple tại <a href="${APPLE_REFUND}">reportaproblem.apple.com</a>, hoặc với Google theo <a href="${GOOGLE_REFUND}">quy trình này</a>. Bạn cũng có thể viết cho chúng tôi.`],
+    ["Cần tài khoản không?", "Không cần email hoặc mật khẩu để chơi. Bảng xếp hạng tạo danh tính ẩn danh với biệt danh được cấp."],
+    ["Có bao nhiêu gợi ý và lần thêm?", "Tối đa 4 gợi ý, 5 lần thêm mỗi bảng. Hai lần thêm đầu miễn phí; không Premium, 3 lần sau và gợi ý đề nghị quảng cáo thưởng."],
+    ["Nếu quảng cáo không chạy?", "Nếu không khả dụng sau yêu cầu, thao tác có thể được cấp không video trong số lượt còn lại. Từ chối hoặc tự đóng trước thưởng không được cấp."],
+    ["Premium là thuê bao?", "Không, mua một lần không quảng cáo, cả gợi ý và thêm. Giới hạn không đổi."],
+    ["Khôi phục Premium thế nào?", "Trong Cài đặt, khôi phục với tài khoản và cửa hàng gốc. Không tự chuyển giữa Apple và Google."],
+    ["Xóa tài khoản xếp hạng thế nào?", "Yêu cầu và theo dõi ở mục tài khoản trong Cài đặt. Không vào được ứng dụng, email hỗ trợ với Match the Digits và biệt danh/mã xếp hạng, không mã truy cập hay mật khẩu. Có thể cần xác minh."],
+    ["Có thể trở lại sau xóa?", "Sau hoàn tất có thể xin danh tính và biệt danh mới, tùy hạn chế chống lạm dụng. Tiến trình giữ lại có thể đăng lại kỷ lục. Premium giữ theo quy tắc cửa hàng."],
+    ["Xóa cả tiến trình làm gì?", "Đặt lại ván, kỷ lục và kết quả cục bộ liên quan, không xóa Premium hay tùy chọn. Không chọn thì tiến trình được giữ."],
+    ["Gỡ ứng dụng xóa hết không?", "Có thể mất tiến trình cục bộ nhưng không yêu cầu xóa tài khoản máy chủ. Bảng xếp hạng không phải sao lưu đầy đủ."],
+    ["Quản lý đồng ý quảng cáo ở đâu?", "Phiên bản này chưa có trung tâm lựa chọn quảng cáo trong Cài đặt. Điều khiển điện thoại và hỗ trợ không thay biểu mẫu cần trước xử lý."],
+    ["Sao không thấy nhắc nhở?", "Kiểm tra nhắc nhở trong ứng dụng và quyền thông báo trên điện thoại."],
+    ["Xin hoàn tiền thế nào?", "Liên hệ Apple hoặc Google theo cửa hàng mua. Điều khoản có liên kết thủ tục; bạn cũng có thể hỏi hỗ trợ."]
   ],
   privacy: {
     sections: [
-      {
-        id: "0",
-        title: "Tóm tắt",
-        content:
-          "Ngày có hiệu lực: 21 tháng 10 năm 2026.\n\nChính sách này giải thích dữ liệu nào được xử lý khi bạn sử dụng ứng dụng di động Match the Digits (\"Ứng dụng\") trên iOS và Android, vì sao, bởi ai, trong bao lâu và cách thực hiện các quyền của bạn.\n\n• Ứng dụng không yêu cầu bạn tạo tài khoản và không hỏi tên, địa chỉ email hay ngày sinh của bạn để chơi.\n• Tiến trình và cài đặt của bạn chỉ được lưu trên thiết bị của bạn. Chúng tôi không nhận được chúng.\n• Ứng dụng hiển thị quảng cáo do Google (AdMob) cung cấp. Để làm việc này, Google xử lý một số dữ liệu từ thiết bị của bạn, được mô tả tại Mục 5. Tại Khu vực Kinh tế Châu Âu, Vương quốc Anh và Thụy Sĩ, sự đồng ý của bạn được yêu cầu trước mọi quảng cáo được cá nhân hóa.\n• Chúng tôi chỉ nhận dữ liệu về bạn nếu bạn viết cho chúng tôi (hỗ trợ).",
-      },
+      { id: "0", title: "Tóm tắt", content: "Cập nhật ngày 21 tháng 11 năm 2026.\n\nBạn có thể chơi mà không cung cấp tên, email hay mật khẩu. Bảng xếp hạng dùng tài khoản ẩn danh; mã định danh kỹ thuật không khiến dữ liệu liên quan được ẩn danh hóa. Ván chơi và cài đặt ở trên thiết bị; biệt danh và kỷ lục xếp hạng được lưu trên máy chủ và hiển thị trong bảng xếp hạng. Bên thứ ba hỗ trợ bảo mật, quảng cáo và mua hàng. Bạn có thể yêu cầu xóa tài khoản xếp hạng, kèm hoặc không kèm xóa tiến trình cục bộ." },
       {
         id: "1",
         title: "1. Bên kiểm soát dữ liệu",
         content: `Ứng dụng được phát hành bởi:\n\n${PUBLISHER}\n${ADDRESS}\n${IDS}\n\nLiên hệ cho mọi câu hỏi về dữ liệu của bạn: ${EMAIL}\n\nĐối với dữ liệu quảng cáo do Google xử lý, Google hoạt động với tư cách bên kiểm soát độc lập, theo các quy tắc riêng của mình (Mục 5).`,
       },
-      {
-        id: "2",
-        title: "2. Dữ liệu chỉ lưu trên thiết bị của bạn",
-        content:
-          "Các dữ liệu sau được lưu trong bộ nhớ cục bộ của Ứng dụng, trên thiết bị của bạn. Chúng không được gửi cho chúng tôi và không được gửi đến bất kỳ máy chủ nào của nhà phát hành:\n\n• Ván đang chơi (bàn chơi, điểm số, số gợi ý và lượt thêm còn lại): để tiếp tục ván chơi\n• Điểm cao nhất: để hiển thị trên màn hình chính và trong mục cúp\n• Kết quả hằng ngày (bàn chơi đã hoàn thành, điểm, cặp số, thử thách hằng ngày): lịch, thống kê, cúp\n• Tùy chọn: ngôn ngữ, phản hồi xúc giác, hiệu ứng âm thanh, lời nhắc: để tôn trọng cài đặt của bạn\n• Ngày của các yêu cầu đánh giá đã hiển thị: để không đề nghị bạn đánh giá Ứng dụng quá thường xuyên\n\nDữ liệu này được giữ chừng nào Ứng dụng còn được cài đặt. Bạn có thể xóa chúng bất cứ lúc nào bằng cách xóa dữ liệu của Ứng dụng (Android) hoặc gỡ cài đặt Ứng dụng (iOS và Android). Sau đó không thể khôi phục: nhà phát hành không sao lưu.",
-      },
+      { id: "2", title: "2. Tiến trình và tùy chọn cục bộ", content: "Thiết bị lưu ván đang chơi, kỷ lục cục bộ, kết quả thử thách hằng ngày, thống kê cúp, tùy chọn và ngày mời đánh giá. Kỷ lục dành cho bảng xếp hạng được gửi riêng.\n\nChúng tôi không cung cấp bản sao máy chủ để khôi phục toàn bộ tiến trình trên thiết bị khác. Xóa dữ liệu hoặc gỡ ứng dụng có thể làm mất tiến trình. Sao lưu của hệ điều hành tùy thuộc cài đặt thiết bị." },
+      { id: "2a", title: "2a. Tài khoản và bảng xếp hạng", content: "Một tài khoản kỹ thuật ẩn danh được tạo khi truy cập bảng xếp hạng lần đầu. Dịch vụ Supabase tự lưu trữ của chúng tôi giữ danh tính đăng nhập, phiên, biệt danh được cấp, kỷ lục công bố, ngày liên quan và trạng thái tài khoản. Thông tin xác thực phiên cũng được lưu trên thiết bị.\n\nBiệt danh, điểm và thứ hạng hiển thị công khai trong bảng; thông tin đăng nhập và biên nhận xóa không công khai. Kỷ lục đủ điều kiện từ ván kết thúc hoặc bỏ dở có thể được gửi lại sau lỗi mạng. Bảng xếp hạng không phải bản sao lưu ván chơi." },
+      { id: "2b", title: "2b. Bảo mật và ngăn lạm dụng", content: "Chúng tôi xử lý dữ liệu kỹ thuật yêu cầu, gồm IP ở đầu vào dịch vụ, giá trị băm cài đặt/mạng, ngày và bộ đếm, để bảo vệ bảng xếp hạng, hạn chế đăng ký lặp và xử lý xóa, hạn chế. Giá trị băm vẫn là dữ liệu được định danh giả.\n\nFirebase App Check và cơ chế chứng thực Apple/Google xác minh yêu cầu bằng dữ liệu kỹ thuật và mã chứng thực. Firebase không còn cung cấp xác thực hay lưu trữ bảng xếp hạng. Chi tiết: https://firebase.google.com/support/privacy" },
       {
         id: "3",
         title: "3. Lời nhắc (thông báo)",
         content:
           "Nếu bạn bật lời nhắc trong cài đặt, Ứng dụng sẽ xin quyền hiển thị thông báo. Lời nhắc được lên lịch cục bộ trên thiết bị của bạn: không có mã thông báo nào được tạo hoặc gửi đến máy chủ. Bạn có thể tắt chúng bất cứ lúc nào trong cài đặt của Ứng dụng hoặc của thiết bị. Lời nhắc không chứa quảng cáo.",
       },
-      {
-        id: "4",
-        title: "4. Hỗ trợ (khi bạn viết cho chúng tôi)",
-        content: `Nút \"Liên hệ hỗ trợ\" mở ứng dụng email của bạn với một email soạn sẵn gửi đến ${EMAIL}. Nếu bạn gửi, chúng tôi nhận được:\n\n• địa chỉ email và nội dung tin nhắn của bạn;\n• phiên bản Ứng dụng, hệ điều hành (iOS hoặc Android) và phiên bản của nó, được tự động thêm vào cuối tin nhắn để giúp chúng tôi giải quyết vấn đề. Bạn có thể xóa chúng trước khi gửi.\n\nDữ liệu này chỉ được dùng để trả lời bạn. Chúng được xóa ngay khi yêu cầu của bạn đã được xử lý.`,
-      },
-      {
-        id: "5",
-        title: "5. Quảng cáo (Google AdMob)",
-        subsections: [
-          {
-            subtitle: "Dữ liệu do Google xử lý",
-            content:
-              "Ứng dụng hiển thị quảng cáo do Google AdMob cung cấp, thông qua Google Mobile Ads SDK được tích hợp trong Ứng dụng. Theo tài liệu Google công bố cho nhà phát triển, Google xử lý:\n\n• Địa chỉ IP, có thể dùng để ước tính vị trí gần đúng của thiết bị: quảng cáo, đo lường, phòng chống gian lận\n• Tương tác với Ứng dụng (lần mở, lần chạm, video đã xem): quảng cáo, đo lường, phòng chống gian lận\n• Dữ liệu chẩn đoán và hiệu suất (thời gian khởi động, tỷ lệ treo, mức tiêu thụ năng lượng); trên iOS, nhật ký sự cố không liên kết với người dùng: chẩn đoán, cải thiện, quảng cáo, đo lường\n• Mã nhận dạng thiết bị: mã nhận dạng quảng cáo (Android), App Set ID, các mã nhận dạng khác theo phạm vi ứng dụng hoặc nhà phát triển: quảng cáo và đo lường\n• Dữ liệu quảng cáo (quảng cáo đã xem): quảng cáo và đo lường\n\nGoogle cho biết dữ liệu này được mã hóa khi truyền (TLS). Nhà phát hành không có quyền truy cập dữ liệu cá nhân này: chỉ nhận số liệu thống kê tổng hợp (số lần hiển thị, doanh thu).",
-          },
-          {
-            subtitle: "Quảng cáo hiển thị trong Ứng dụng",
-            content:
-              "• một biểu ngữ trên màn hình chơi;\n• một quảng cáo có thưởng tùy chọn: bạn có thể chọn xem video để nhận một gợi ý hoặc để dùng lại nút “+” (lần “+” đầu tiên của mỗi bàn chơi là miễn phí). Từ chối không ngăn bạn chơi.\n\nNếu bạn đã mua \"Xóa quảng cáo\" (Mục 6), sẽ không có quảng cáo nào được hiển thị.",
-          },
-          {
-            subtitle: "Sự đồng ý của bạn (EEA, Vương quốc Anh, Thụy Sĩ)",
-            content:
-              "Ở lần mở đầu tiên, một cửa sổ xin đồng ý do công cụ quản lý sự đồng ý của Google điều hành cho phép bạn chấp nhận hoặc từ chối việc sử dụng dữ liệu cho mục đích quảng cáo, theo từng mục đích. Nếu bạn từ chối, Ứng dụng vẫn chơi được đầy đủ; khi đó có thể hiển thị quảng cáo không được cá nhân hóa hoặc bị giới hạn. Bạn có thể thay đổi lựa chọn bất cứ lúc nào trong cài đặt của Ứng dụng.",
-          },
-          {
-            subtitle: "iOS: theo dõi",
-            content:
-              "Ứng dụng không xin quyền theo dõi hoạt động của bạn (App Tracking Transparency): mã nhận dạng quảng cáo của thiết bị (IDFA) không được sử dụng. Ứng dụng không bao giờ bắt buộc bạn chấp nhận theo dõi để chơi.",
-          },
-          {
-            subtitle: "Android: mã nhận dạng quảng cáo",
-            content: "Bạn có thể đặt lại hoặc xóa mã nhận dạng quảng cáo trong cài đặt thiết bị.",
-          },
-          {
-            subtitle: "Hoa Kỳ",
-            content:
-              "Tùy theo Tiểu bang nơi bạn sinh sống, luật có thể cho bạn quyền từ chối việc \"bán\" hoặc \"chia sẻ\" dữ liệu của bạn cho quảng cáo nhắm mục tiêu. Bạn có thể thực hiện lựa chọn này trong cài đặt quyền riêng tư của Ứng dụng hoặc bằng cách viết cho chúng tôi.",
-          },
-          {
-            subtitle: "Tìm hiểu thêm",
-            content: `Chính sách quyền riêng tư của Google: ${GOOGLE_PRIVACY}\nCách Google sử dụng thông tin từ các trang web hoặc ứng dụng sử dụng dịch vụ của Google: ${GOOGLE_PARTNERS}`,
-          },
-        ],
-      },
-      {
-        id: "6",
-        title: "6. Giao dịch mua \"Xóa quảng cáo\"",
-        content:
-          "Giao dịch mua một lần để xóa quảng cáo được xử lý độc quyền bởi App Store (Apple) hoặc Google Play (Google). Chúng tôi không bao giờ nhận dữ liệu thanh toán của bạn (thẻ ngân hàng, tên, địa chỉ thanh toán). Ứng dụng chỉ nhận từ cửa hàng xác nhận rằng giao dịch đã được thực hiện, để xóa quảng cáo và cho phép khôi phục giao dịch. Việc xử lý thanh toán tuân theo chính sách quyền riêng tư của Apple hoặc Google.",
-      },
+      { id: "4", title: "4. Hỗ trợ", content: `Khi liên hệ ${EMAIL}, chúng tôi nhận địa chỉ email, nội dung và tệp bạn chọn gửi. Tin nhắn chuẩn bị sẵn có thể gồm phiên bản ứng dụng và hệ điều hành; bạn có thể xóa chúng.\n\nDữ liệu dùng để trả lời, xác minh yêu cầu tài khoản và giải quyết vấn đề. Chúng được giữ trong thời gian xử lý, sau đó chỉ khi cần theo dõi, bảo vệ quyền hoặc thực hiện nghĩa vụ pháp lý. Không gửi mật khẩu, mã đăng nhập hay thông tin ngân hàng.` },
+      { id: "5", title: "5. Quảng cáo và lựa chọn quyền riêng tư", content: `Google AdMob cung cấp biểu ngữ và video thưởng tùy chọn. Tùy hệ thống và quyền, SDK xử lý IP, mã quảng cáo hoặc ứng dụng, tương tác và chẩn đoán để hiển thị, đo lường quảng cáo và ngăn gian lận. Premium bỏ cả video thưởng.\n\nĐồng ý xem video không phải đồng ý xử lý dữ liệu quảng cáo. Khi cần sự đồng ý, phải có thể từ chối hoặc rút lại. Phiên bản này chưa có trung tâm lựa chọn quyền riêng tư quảng cáo trong cài đặt. Bạn có thể liên hệ để thực hiện quyền; việc này không thay cho biểu mẫu đồng ý bắt buộc trước khi xử lý.\n\nAndroid cho phép đặt lại hoặc xóa mã quảng cáo. Trên iOS, truy cập IDFA và theo dõi thuộc ATT cần quyền Apple tương ứng. Những cài đặt này không tự xóa dữ liệu nhà cung cấp đã giữ. Các quyền theo luật địa phương, gồm từ chối một số quảng cáo nhắm mục tiêu, vẫn áp dụng.\n\nGoogle: ${GOOGLE_PRIVACY}\nDịch vụ đối tác: ${GOOGLE_PARTNERS}` },
+      { id: "6", title: "6. Mua Premium và khôi phục", content: "Apple hoặc Google xử lý thanh toán và giữ thông tin hóa đơn theo quy tắc riêng. Chúng tôi không nhận số thẻ.\n\nRevenueCat xác minh và khôi phục giao dịch mua một lần không quảng cáo. Dịch vụ xử lý mã định danh giả, giao dịch/biên lai, sản phẩm, cửa hàng và quyền Premium. Ứng dụng cũng giữ trạng thái cần cho truy cập. Xóa tài khoản xếp hạng không xóa giao dịch mua; dữ liệu phục hồi và nghĩa vụ liên quan được xử lý riêng.\n\nChi tiết: https://www.revenuecat.com/privacy" },
       {
         id: "7",
         title: "7. Xếp hạng và đánh giá",
         content:
           "Khi Ứng dụng mời bạn đánh giá, nó sử dụng cửa sổ chính thức của Apple hoặc Google. Xếp hạng và nhận xét của bạn được cửa hàng tương ứng xử lý theo quy tắc riêng; Ứng dụng không có quyền truy cập.",
       },
-      {
-        id: "8",
-        title: "8. Cơ sở pháp lý (GDPR)",
-        content:
-          "• Vận hành trò chơi và lưu cục bộ tiến trình, cài đặt của bạn: thực hiện dịch vụ bạn yêu cầu (hợp đồng)\n• Truy cập mã nhận dạng thiết bị và quảng cáo, được cá nhân hóa hay không, khi luật yêu cầu sự đồng ý: sự đồng ý, có thể rút lại bất cứ lúc nào (Mục 5)\n• Hiển thị lời nhắc: sự đồng ý (quyền thông báo), có thể rút lại bất cứ lúc nào\n• Trả lời yêu cầu hỗ trợ: lợi ích chính đáng trong việc trả lời bạn; hoặc biện pháp tiền hợp đồng / hợp đồng nếu yêu cầu liên quan đến giao dịch mua\n• Tuân thủ nghĩa vụ pháp lý (ví dụ, nghĩa vụ kế toán đối với giao dịch mua): nghĩa vụ pháp lý",
-      },
-      {
-        id: "9",
-        title: "9. Bên nhận và chuyển dữ liệu ra ngoài Liên minh Châu Âu",
-        content:
-          "Nhà phát hành không bán và không cho thuê dữ liệu do Ứng dụng xử lý. Các bên nhận duy nhất là:\n\n• Google, cho quảng cáo (Mục 5);\n• Apple hoặc Google, cho giao dịch mua, đánh giá và thông báo hệ thống, tùy theo thiết bị của bạn;\n• cơ quan chức năng, chỉ khi luật yêu cầu.\n\nGoogle có thể xử lý dữ liệu bên ngoài Liên minh Châu Âu, đặc biệt là tại Hoa Kỳ, với các biện pháp bảo đảm được mô tả trong chính sách quyền riêng tư của Google.",
-      },
+      { id: "8", title: "8. Mục đích và cơ sở pháp lý", content: "Trò chơi, tài khoản xếp hạng được yêu cầu và quản lý/khôi phục Premium dựa trên cung cấp dịch vụ hoặc hợp đồng. Bảo mật, giới hạn chống lạm dụng và hỗ trợ dựa trên lợi ích chính đáng bảo vệ dịch vụ, người dùng, đồng thời tôn trọng quyền của bạn. Nhắc nhở là tùy chọn và cần quyền của thiết bị.\n\nXử lý quảng cáo và truy cập mã định danh dựa trên đồng ý khi bắt buộc. Một số lưu giữ phục vụ nghĩa vụ pháp lý hoặc xác lập, thực hiện, bảo vệ quyền. Các cơ sở này không cho phép tái sử dụng tùy ý." },
+      { id: "9", title: "9. Nhà cung cấp và chuyển dữ liệu", content: `Bên nhận cần thiết:\n• Contabo: máy chủ Supabase và bảng xếp hạng;\n• Cloudflare: định tuyến và bảo vệ yêu cầu;\n• Backblaze: bản sao và nhật ký quyết định được mã hóa;\n• Google/Firebase và Apple: chứng thực, dịch vụ hệ thống;\n• Google AdMob: quảng cáo;\n• RevenueCat và Apple/Google: mua hàng;\n• GitHub Pages: các tài liệu công khai này; cơ quan có thẩm quyền khi luật yêu cầu.\n\nSupabase được tự lưu trữ, không có nghĩa dữ liệu người chơi ở Supabase Cloud. Nhà cung cấp quốc tế có thể xử lý ngoài EEA, gồm Hoa Kỳ. Bảo đảm chuyển dữ liệu tùy dịch vụ và hợp đồng; hỏi tại ${EMAIL}. Chúng tôi không bảo đảm mọi xử lý ở châu Âu, không bán dữ liệu bảng xếp hạng.\n\nChính sách: https://contabo.com/en/legal/privacy/ ; https://www.cloudflare.com/privacypolicy/ ; https://www.backblaze.com/company/privacy ; https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement` },
       {
         id: "10",
         title: "10. Trẻ em",
         content: `Ứng dụng dành cho người từ 16 tuổi trở lên. Ứng dụng không hướng đến trẻ em và chúng tôi không cố ý thu thập dữ liệu về trẻ em.\n\nTại Pháp, người chưa thành niên dưới 15 tuổi không thể tự mình đồng ý với việc xử lý dữ liệu dựa trên sự đồng ý: cần có thêm sự chấp thuận của một người nắm quyền cha mẹ (Điều 45 Luật bảo vệ dữ liệu của Pháp, Loi Informatique et Libertés). Nếu bạn là cha mẹ và cho rằng con bạn đã đưa ra sự đồng ý, hãy viết cho chúng tôi tại ${EMAIL}: chúng tôi sẽ hướng dẫn bạn cách rút lại.`,
       },
-      {
-        id: "11",
-        title: "11. Quyền của bạn",
-        content: `Theo luật áp dụng (đặc biệt là GDPR), bạn có quyền truy cập, chỉnh sửa, xóa, hạn chế xử lý, phản đối và di chuyển dữ liệu, cũng như quyền rút lại sự đồng ý bất cứ lúc nào mà không ảnh hưởng đến việc xử lý đã thực hiện.\n\n• Dữ liệu trên thiết bị: bạn kiểm soát trực tiếp (Mục 2).\n• Sự đồng ý về quảng cáo: có thể thay đổi bất cứ lúc nào trong cài đặt của Ứng dụng (Mục 5).\n• Dữ liệu quảng cáo do Google nắm giữ: công cụ và đầu mối liên hệ được mô tả trong chính sách quyền riêng tư của Google.\n• Dữ liệu hỗ trợ: viết cho ${EMAIL}. Chúng tôi trả lời trong vòng một tháng, thời hạn có thể được gia hạn theo các điều kiện của GDPR.\n\nNếu bạn cho rằng quyền của mình không được tôn trọng, bạn có thể khiếu nại với ${CNIL}, trực tuyến tại ${CNIL_URL}, hoặc với cơ quan bảo vệ dữ liệu của quốc gia nơi bạn cư trú.`,
-      },
-      {
-        id: "12",
-        title: "12. Bảo mật",
-        content:
-          "Dữ liệu trò chơi ở lại trên thiết bị của bạn và được hưởng các biện pháp bảo vệ của thiết bị. Trao đổi với Google được mã hóa (TLS). Không có dữ liệu trò chơi nào được lưu trên máy chủ của nhà phát hành.",
-      },
-      {
-        id: "13",
-        title: "13. Thay đổi",
-        content:
-          "Chúng tôi có thể thay đổi chính sách này, đặc biệt khi Ứng dụng phát triển. Ngày cập nhật lần cuối được hiển thị ở đầu trang này. Trong trường hợp có thay đổi quan trọng, bạn sẽ được thông báo trong Ứng dụng trước khi thay đổi được áp dụng.",
-      },
-      { id: "14", title: "14. Liên hệ", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "11", title: "11. Xóa tài khoản và quyền của bạn", content: `Mục tài khoản bảng xếp hạng trong Cài đặt cho phép yêu cầu và theo dõi xóa. Khi máy chủ chấp nhận, hồ sơ bị gỡ khỏi bảng, sau đó danh tính và dữ liệu đang hoạt động liên quan bị xóa. Yêu cầu ngoại tuyến phải được gửi trước; gỡ ứng dụng không xóa tài khoản máy chủ.\n\n“Xóa cả tiến trình của tôi” đặt lại ván, kỷ lục và kết quả cục bộ liên quan. Không chọn thì dữ liệu ở lại thiết bị. Premium và tùy chọn được giữ. Sau khi xóa xong, tự nguyện tham gia lại tạo danh tính và biệt danh mới, tùy giới hạn chống lạm dụng. Kỷ lục cục bộ giữ lại có thể đăng lại; tài khoản cũ không khôi phục, biệt danh có thể cấp lại cho người khác.\n\nKhông vào được ứng dụng, hãy gửi ${EMAIL} tên Match the Digits và biệt danh/mã xếp hạng bạn có, không gửi mã truy cập hay mật khẩu. Có thể cần xác minh phù hợp để không xóa tài khoản người khác.\n\nTùy trường hợp, bạn có quyền truy cập, sửa, xóa, hạn chế, phản đối, chuyển dữ liệu và rút đồng ý. Thường trả lời trong một tháng, có thể gia hạn theo luật. Bạn có thể khiếu nại CNIL tại ${CNIL_URL} hoặc cơ quan có thẩm quyền của nước mình.` },
+      { id: "12", title: "12. An toàn dữ liệu", content: "Thông tin trao đổi được mã hóa khi truyền. Quyền quản trị bị giới hạn; bản sao và nhật ký quyết định được mã hóa. Điều này giảm rủi ro nhưng không bảo đảm an toàn tuyệt đối. Bảng xếp hạng công khai vẫn hiển thị; không gửi bí mật qua hỗ trợ." },
+      { id: "12a", title: "12a. Thời gian lưu và sao lưu", content: `Dữ liệu cục bộ giữ đến khi bị xóa hoặc thay. Tài khoản và kỷ lục giữ đến khi xóa tài khoản. Bộ đếm tạm và hạn chế có thời hạn riêng; một số dấu vết cần cho chống lạm dụng và tranh chấp.\n\nChu kỳ sao lưu giữ 7 điểm hằng ngày, 4 hằng tuần và 2 hằng tháng. Không bảo đảm mọi bản sao bị xóa đúng một ngày. Nhật ký ngăn phục hồi lại tài khoản đã xóa.\n\nBiên nhận xóa và nhật ký hiện vẫn được giữ mà chưa tự động dọn. Chúng có thể chứa mã kỹ thuật, giá trị băm, ngày và trạng thái. Bạn có thể đề nghị xem xét lưu giữ hoặc xóa qua ${EMAIL}. Dữ liệu mua hàng theo riêng nhu cầu khôi phục và nghĩa vụ áp dụng.` },
+      { id: "13", title: "13. Thay đổi", content: "Chính sách có trong cài đặt và trên website. Ngày cho biết phiên bản. Nội dung được cập nhật theo dịch vụ; nghĩa vụ thông báo và xin đồng ý mới khi cần vẫn áp dụng." },
+      { id: "14", title: "14. Liên hệ", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` }
     ],
   },
   terms: {
@@ -180,43 +105,15 @@ export const vi: Locale = {
         content:
           "Bạn cam kết không:\n\n• sao chép, sửa đổi, dịch ngược, tháo rời hoặc tìm cách trích xuất mã nguồn của Ứng dụng, trừ khi luật cho phép rõ ràng;\n• lách hoặc làm gián đoạn các cơ chế kỹ thuật của Ứng dụng, bao gồm việc hiển thị quảng cáo và giao dịch mua trong ứng dụng;\n• tạo lượt hiển thị hoặc lượt nhấp quảng cáo một cách giả tạo;\n• sử dụng Ứng dụng theo cách trái pháp luật hoặc xâm phạm quyền của bên thứ ba.",
       },
-      {
-        id: "5",
-        title: "5. Trò chơi và tiến trình của bạn",
-        content:
-          "Ứng dụng không yêu cầu tài khoản. Tiến trình của bạn (ván đang chơi, điểm số, kết quả hằng ngày, cúp) và cài đặt của bạn chỉ được lưu trên thiết bị.\n\nNhà phát hành không sao lưu chúng: chúng sẽ mất nếu bạn gỡ cài đặt Ứng dụng, xóa dữ liệu của Ứng dụng hoặc đổi thiết bị. Nhà phát hành không thể khôi phục.\n\nLuật chơi, số gợi ý và lượt thêm có sẵn, cũng như các bàn chơi được cung cấp có thể thay đổi giữa các phiên bản.",
-      },
-      {
-        id: "6",
-        title: "6. Quảng cáo",
-        content:
-          "Ứng dụng miễn phí và được tài trợ bằng quảng cáo do Google AdMob cung cấp:\n\n• một biểu ngữ trên màn hình chơi;\n• một quảng cáo có thưởng tùy chọn: bạn có thể chọn xem video để nhận một gợi ý hoặc để dùng lại nút “+” (lần “+” đầu tiên của mỗi bàn chơi là miễn phí). Phần thưởng được nêu rõ trước video và được trao sau khi xem xong. Nếu bạn từ chối, hoặc không có quảng cáo nào, bạn vẫn có thể tiếp tục chơi.\n\nQuảng cáo do Google lựa chọn. Nhà phát hành không kiểm soát nội dung và không chịu trách nhiệm về sản phẩm hoặc dịch vụ được giới thiệu. Các lựa chọn của bạn về việc sử dụng dữ liệu cho quảng cáo được mô tả trong Chính sách quyền riêng tư.",
-      },
-      {
-        id: "7",
-        title: "7. Giao dịch mua \"Xóa quảng cáo\"",
-        subsections: [
-          {
-            subtitle: "Bạn nhận được gì",
-            content:
-              "Ứng dụng cung cấp một giao dịch mua một lần, vĩnh viễn (\"Xóa quảng cáo\"):\n\n• xóa mọi quảng cáo khỏi Ứng dụng, kể cả quảng cáo có thưởng: khi đó gợi ý và lượt thêm được trao trực tiếp;\n• không mang lại lợi thế nào trong trò chơi: mỗi người chơi có 4 gợi ý mỗi ván, dù có mua hay không; số lượt thêm và luật chơi như nhau cho mọi người;\n• không phải gói đăng ký: chỉ tính phí một lần và không gia hạn.",
-          },
-          {
-            subtitle: "Giá và thanh toán",
-            content:
-              "Giá được hiển thị trên App Store hoặc Google Play trước khi mua, đã bao gồm thuế áp dụng tại quốc gia của bạn. Việc thanh toán do Apple hoặc Google xử lý độc quyền theo điều khoản của họ. Nhà phát hành không bao giờ nhận dữ liệu thanh toán của bạn.",
-          },
-          {
-            subtitle: "Khôi phục giao dịch mua",
-            content:
-              "Giao dịch mua được liên kết với tài khoản Apple hoặc Google đã dùng để mua. Bạn có thể khôi phục miễn phí trên thiết bị mới hoặc sau khi cài đặt lại, với cùng tài khoản, bằng nút \"Khôi phục giao dịch mua\" trong cài đặt.",
-          },
-          {
+      { id: "5", title: "5. Trò chơi, tiến trình và bảng xếp hạng", content: "Không cần tài khoản email/mật khẩu để chơi. Bảng xếp hạng dùng danh tính kỹ thuật ẩn danh và biệt danh được cấp. Hồ sơ ảo được đánh dấu không phải người chơi thật. Không có giải tiền mặt.\n\nVán, thử thách, cúp và cài đặt chủ yếu ở máy. Máy chủ giữ kỷ lục công bố, không sao lưu toàn bộ tiến trình. Kết thúc hoặc bỏ ván để chơi mới có thể gửi kỷ lục đủ điều kiện và thử lại khi lỗi mạng.\n\nMỗi bảng tối đa năm lần thêm, hai lần đầu miễn phí, và bốn gợi ý. Không Premium, ba lần thêm còn lại và gợi ý đề nghị quảng cáo thưởng. Premium có cùng giới hạn.\n\nGian lận, điểm giả hoặc đăng ký lặp lạm dụng có thể bị hạn chế hoặc loại khỏi bảng. Bạn có thể phản đối qua hỗ trợ." },
+      { id: "6", title: "6. Quảng cáo và phần thưởng", content: "Có thể xuất hiện biểu ngữ khi chơi. Trước gợi ý hoặc lượt nạp tương ứng, video thưởng được đề nghị với sự chấp nhận của bạn. Khi thưởng được xác nhận, thao tác được cấp trong số lượt còn lại.\n\nNếu sau yêu cầu quảng cáo không khả dụng do kỹ thuật, ứng dụng có thể cấp thao tác không cần video với thông báo nhỏ. Từ chối hoặc đóng trước khi nhận thưởng không được cấp. Premium không tăng thêm lượt quá giới hạn đã hết.\n\nQuảng cáo và đích đến do bên thứ ba cung cấp. Chính sách giải thích xử lý dữ liệu; chấp nhận video không phải đồng ý về quyền riêng tư." },
+      { id: "7", title: "7. Giao dịch mua \"Xóa quảng cáo\"", subsections: [{ subtitle: "Bạn nhận được gì", content: "Premium mua một lần, không tự gia hạn. Bỏ biểu ngữ và quảng cáo thưởng; gợi ý và thêm được dùng trực tiếp với cùng giới hạn bốn gợi ý, năm lần thêm mỗi bảng. Lưới có thể dùng khoảng trống của biểu ngữ." },
+{ subtitle: "Giá và thanh toán", content: "Khi khả dụng, đề nghị hiển thị giá địa phương do cửa hàng cung cấp. Kiểm tra giá và điều kiện trong xác nhận Apple/Google. Mua hủy, chờ hoặc thất bại không coi là đã sở hữu. RevenueCat xác minh Premium; chúng tôi không nhận dữ liệu thẻ." },
+{ subtitle: "Khôi phục", content: "Dùng Khôi phục giao dịch mua trong Cài đặt với tài khoản và cửa hàng gốc. Có thể cần mạng. Mua Apple không tự chuyển sang Google Play hoặc ngược lại. Xóa bảng xếp hạng hay tiến trình không hủy mua." },
+{
             subtitle: "Rút lại và hoàn tiền",
             content: `Giao dịch mua liên quan đến nội dung số được cung cấp ngay sau khi thanh toán. Quyền rút lại và yêu cầu hoàn tiền được thực hiện theo các điều kiện của luật áp dụng và quy tắc của cửa hàng tương ứng:\n\n• App Store: yêu cầu với Apple tại ${APPLE_REFUND}\n• Google Play: yêu cầu với Google theo quy trình tại ${GOOGLE_REFUND}\n\nBạn cũng có thể viết cho chúng tôi tại ${EMAIL}.`,
-          },
-        ],
-      },
+          }] },
       {
         id: "8",
         title: "8. Lời nhắc",
@@ -228,36 +125,17 @@ export const vi: Locale = {
         title: "9. Sở hữu trí tuệ",
         content: `Ứng dụng, tên, hình ảnh, văn bản, âm thanh, mã nguồn và cách trình bày của Ứng dụng được bảo hộ bởi luật sở hữu trí tuệ và thuộc về nhà phát hành hoặc bên cấp phép. Một số thành phần của bên thứ ba được sử dụng theo giấy phép riêng:\n\n${LICENSES}\n\nNghiêm cấm mọi hành vi sao chép hoặc tái sử dụng khi chưa được phép.`,
       },
-      {
-        id: "10",
-        title: "10. Tính khả dụng và cập nhật",
-        content:
-          "Nhà phát hành có thể thay đổi Ứng dụng, sửa lỗi, sửa đổi hoặc gỡ bỏ tính năng, hoặc ngừng phân phối. Một số bản cập nhật có thể cần thiết để tiếp tục sử dụng Ứng dụng. Nhà phát hành nỗ lực để Ứng dụng hoạt động tốt nhưng không bảo đảm Ứng dụng luôn sẵn sàng không gián đoạn, đặc biệt đối với việc hiển thị quảng cáo vốn phụ thuộc vào Google.",
-      },
+      { id: "10", title: "10. Khả dụng và cập nhật", content: "Bảng xếp hạng, mua hàng và một số kiểm tra cần mạng và nhà cung cấp. Lỗi, bảo trì, hạn chế an ninh hay thiếu quảng cáo có thể ảnh hưởng. Chơi cục bộ có thể tiếp tục tùy trạng thái ván.\n\nChúng tôi có thể sửa hoặc phát triển ứng dụng. Quyền bắt buộc của người tiêu dùng và nghĩa vụ dịch vụ số vẫn áp dụng. Mua không quảng cáo không bảo đảm dịch vụ trực tuyến tồn tại vĩnh viễn." },
       {
         id: "11",
         title: "11. Bảo đảm và trách nhiệm",
         content:
           "Ứng dụng được cung cấp \"nguyên trạng\". Không điều gì trong Điều khoản này hạn chế các quyền mà luật trao cho bạn với tư cách người tiêu dùng, đặc biệt là bảo đảm pháp lý về tính phù hợp của nội dung và dịch vụ số.\n\nTrong phạm vi luật cho phép, nhà phát hành không chịu trách nhiệm về:\n\n• việc mất tiến trình được lưu trên thiết bị của bạn (Mục 5);\n• thiệt hại gián tiếp;\n• nội dung quảng cáo do bên thứ ba cung cấp;\n• tình trạng không khả dụng do thiết bị, hệ điều hành, kết nối của bạn hoặc dịch vụ của Apple và Google.\n\nCác giới hạn này không áp dụng trong trường hợp lỗi nặng hoặc cố ý, đối với thương tích cá nhân, hoặc khi luật cấm.",
       },
-      {
-        id: "12",
-        title: "12. Chấm dứt sử dụng",
-        content:
-          "Bạn có thể ngừng sử dụng Ứng dụng bất cứ lúc nào bằng cách gỡ cài đặt. Nhà phát hành có thể chấm dứt giấy phép của bạn nếu bạn không tuân thủ Điều khoản này. Các Mục 9, 11 và 14 tiếp tục áp dụng sau khi giấy phép chấm dứt.",
-      },
-      {
-        id: "13",
-        title: "13. Thay đổi Điều khoản",
-        content:
-          "Nhà phát hành có thể thay đổi Điều khoản này, đặc biệt để theo kịp các thay đổi của Ứng dụng hoặc của luật. Ngày cập nhật lần cuối được hiển thị ở đầu trang này. Trong trường hợp có thay đổi quan trọng, bạn sẽ được thông báo trong Ứng dụng trước khi thay đổi có hiệu lực. Nếu không chấp nhận Điều khoản mới, bạn có thể ngừng sử dụng Ứng dụng.",
-      },
-      {
-        id: "14",
-        title: "14. Luật áp dụng, hòa giải và tranh chấp",
-        content: `Điều khoản này chịu sự điều chỉnh của luật Pháp. Nếu bạn là người tiêu dùng cư trú tại quốc gia khác, bạn vẫn được hưởng sự bảo vệ của các quy định bắt buộc trong luật của quốc gia mình.\n\nKhi gặp khó khăn, trước tiên hãy viết cho ${EMAIL}: chúng tôi sẽ tìm giải pháp thiện chí.\n\nHòa giải tiêu dùng: nếu bạn là người tiêu dùng và khiếu nại bằng văn bản của bạn chưa được giải quyết, bạn có thể sử dụng miễn phí hòa giải viên tiêu dùng sau: ${MEDIATOR}.\n\nNếu không đạt được thỏa thuận, tranh chấp sẽ được đưa ra tòa án có thẩm quyền; nếu bạn là người tiêu dùng, bạn có thể khởi kiện tại tòa án nơi bạn cư trú.`,
-      },
-      { id: "15", title: "15. Liên hệ", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "12", title: "12. Xóa và ngừng sử dụng", content: `Bạn có thể dừng bất cứ lúc nào. Để xóa tài khoản máy chủ, dùng mục bảng xếp hạng trong Cài đặt hoặc ${EMAIL}; gỡ ứng dụng chưa đủ. Chính sách mô tả xử lý và sao lưu.\n\nXóa tiến trình cục bộ là tùy chọn. Tài khoản đã xóa không khôi phục; được phép quay lại sẽ tạo danh tính và biệt danh mới. Kỷ lục cục bộ giữ lại có thể dùng lại. Premium gắn với giao dịch mua, độc lập bảng xếp hạng.\n\nLạm dụng có thể hạn chế bảng xếp hạng nhưng không tước quyền luật định. Sở hữu trí tuệ, trách nhiệm và giải quyết tranh chấp tiếp tục áp dụng.` },
+      { id: "13", title: "13. Sửa đổi điều khoản", content: "Bản hiện hành kèm ngày có trong ứng dụng và website. Thay đổi dịch vụ hoặc luật có thể cần sửa đổi. Nghĩa vụ thông tin và quyền người tiêu dùng đã có vẫn được giữ." },
+      { id: "14", title: "14. Luật, hòa giải và tranh chấp", content: `Luật Pháp áp dụng mà không tước bảo vệ bắt buộc của người tiêu dùng tại nước cư trú.\n\nGửi khiếu nại đến ${EMAIL}. Sau khiếu nại bằng văn bản, bạn giữ quyền hòa giải tiêu dùng miễn phí theo điều kiện luật định. Nhà phát hành chưa hoàn tất tham gia cơ chế hòa giải; liên hệ của hòa giải viên sẽ được công bố sau khi tham gia. Điều khoản này chưa chỉ định hòa giải viên.\n\nNếu không thỏa thuận được, có thể yêu cầu tòa có thẩm quyền, giữ các biện pháp bảo vệ gắn với nơi cư trú của người tiêu dùng.` },
+      { id: "15", title: "15. Liên hệ", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` }
     ],
   },
 };

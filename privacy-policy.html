@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy | Match the Digits</title>
-  <meta name="description" content="Privacy Policy of the Match the Digits puzzle game: no account, game data stored on your device, Google AdMob advertising with consent.">
+  <meta name="description" content="Match the Digits privacy: local progress, leaderboards, security, ads, Premium purchases and account deletion.">
   <link rel="canonical" href="https://data-marc.github.io/match-the-digits-legal/privacy-policy.html">
   <link rel="alternate" hreflang="en" href="https://data-marc.github.io/match-the-digits-legal/privacy-policy.html">
   <link rel="alternate" hreflang="fr" href="https://data-marc.github.io/match-the-digits-legal/fr/privacy-policy.html">
@@ -62,7 +62,7 @@
     <header>
       <div class="badge">Privacy Policy</div>
       <h1>Match the Digits</h1>
-      <p class="meta">Last updated: October 21, 2026</p>
+      <p class="meta">Last updated: November 21, 2026</p>
     <p class="note">This translation is provided for convenience. In case of discrepancy, the French version prevails. <a href="fr/privacy-policy.html">Français</a></p>
     </header>
 
@@ -70,12 +70,8 @@
 
       <section id="s0">
         <h2>Summary</h2>
-        <p>Effective date: October 21, 2026.</p>
-        <p>This policy explains what data is processed when you use the Match the Digits mobile application (the &quot;App&quot;) on iOS and Android, why, by whom, for how long, and how to exercise your rights.</p>
-        <p>• The App does not ask you to create an account, and does not ask for your name, email address or date of birth to play.<br>
-        • Your progress and settings are stored only on your device. We do not receive them.<br>
-        • The App displays advertising provided by Google (AdMob). To do so, Google processes some data from your device, described in Section 5. In the European Economic Area, the United Kingdom and Switzerland, your consent is requested before any personalized advertising.<br>
-        • We only receive data about you if you write to us (support).</p>
+        <p>Updated November 21, 2026.</p>
+        <p>You can play without providing a name, email or password. The leaderboard uses an anonymous account; a technical identifier does not make the associated data anonymous. Your game and settings stay on your device, while your leaderboard nickname and record are stored on our server and visible in the leaderboard. Third parties provide security, advertising and purchase services. You can request deletion of your leaderboard account, with or without erasing local progress.</p>
       </section>
 
       <section id="s1">
@@ -89,14 +85,21 @@
       </section>
 
       <section id="s2">
-        <h2>2. Data Stored Only on Your Device</h2>
-        <p>The following data is stored in the App's local storage, on your device. It is not sent to us and is not sent to any server operated by the publisher:</p>
-        <p>• Game in progress (board, score, remaining hints and additions): to resume your game<br>
-        • Best score: to show it on the home screen and in the trophies<br>
-        • Daily results (boards cleared, points, pairs, daily challenges): calendar, statistics, trophies<br>
-        • Preferences: language, haptic feedback, sound effects, reminders: to respect your settings<br>
-        • Dates of the rating requests already shown: so that you are not asked too often to rate the App</p>
-        <p>This data is kept as long as the App is installed. You can delete it at any time by clearing the App's data (Android) or by uninstalling it (iOS and Android). It cannot be recovered afterwards: the publisher makes no backup.</p>
+        <h2>2. Local progress and preferences</h2>
+        <p>Your device stores your current game, local best score, daily challenge results, trophy statistics, preferences and rating-prompt dates. These support resuming play and displaying progress. The record intended for the leaderboard is transmitted separately as described below.</p>
+        <p>We do not offer a server backup that restores all your progress on another device. Clearing app data or uninstalling may lose that progress. Any operating-system backup depends on your device settings.</p>
+      </section>
+
+      <section id="s2a">
+        <h2>2a. Account and leaderboard</h2>
+        <p>A technical anonymous account is created when you first access the leaderboard. Our self-hosted Supabase service stores the login identity, sessions, assigned nickname, published record, associated dates and account status. Session credentials are also kept on your device to recognize your account.</p>
+        <p>Your nickname, score and position are visible in the leaderboard; login credentials and deletion receipts are not public. An eligible record from a finished or abandoned game may be sent or retried later after a network failure. The leaderboard is not a backup of your game.</p>
+      </section>
+
+      <section id="s2b">
+        <h2>2b. Security and abuse prevention</h2>
+        <p>We process technical request information, including the IP address at the service entry point, installation or network hashes and dates/counters, to protect the leaderboard, limit repeated registrations and handle deletions and restrictions. These hashes remain pseudonymous data.</p>
+        <p>Firebase App Check and Apple/Google attestation mechanisms verify app requests using technical data and attestation tokens. Firebase no longer provides leaderboard authentication or storage. Details: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
       </section>
 
       <section id="s3">
@@ -105,57 +108,25 @@
       </section>
 
       <section id="s4">
-        <h2>4. Support (When You Write to Us)</h2>
-        <p>The &quot;Contact support&quot; button opens your email application with a pre-filled email addressed to hello@primisia.com. If you send it, we receive:</p>
-        <p>• your email address and the content of your message;<br>
-        • the App version, the operating system (iOS or Android) and its version, added automatically at the bottom of the message to help us solve the problem. You can remove them before sending.</p>
-        <p>This data is used only to reply to you. It is deleted as soon as your request has been handled.</p>
+        <h2>4. Support</h2>
+        <p>When you contact hello@primisia.com, we receive your email address, message and any attachments you choose to send. The app-prepared message may include app and operating-system versions; you can remove them.</p>
+        <p>We use this information to respond, verify account-related requests and resolve issues. It is kept while handling the request, and afterwards only where needed for follow-up, legal claims or a legal obligation. Never send passwords, login tokens or banking details.</p>
       </section>
 
       <section id="s5">
-        <h2>5. Advertising (Google AdMob)</h2>
-        <div class="subsection">
-          <div class="sub-title">Data processed by Google</div>
-        <p>The App displays advertising provided by Google AdMob, through the Google Mobile Ads SDK built into the App. According to the documentation Google publishes for developers, Google processes:</p>
-        <p>• IP address, which may be used to estimate the approximate location of the device: advertising, measurement, fraud prevention<br>
-        • Interactions with the App (launches, taps, videos viewed): advertising, measurement, fraud prevention<br>
-        • Diagnostic and performance data (launch time, hang rate, energy use); on iOS, crash logs not linked to the user: diagnostics, improvement, advertising, measurement<br>
-        • Device identifiers: advertising ID (Android), App Set ID, other app- or developer-scoped identifiers: advertising and measurement<br>
-        • Advertising data (ads viewed): advertising and measurement</p>
-        <p>Google states that this data is encrypted in transit (TLS). The publisher has no access to this individual data: it only receives aggregated statistics (number of impressions, revenue).</p>
-        </div>
-        <div class="subsection">
-          <div class="sub-title">Ads shown in the App</div>
-        <p>• a banner on the game screen;<br>
-        • an optional rewarded ad: you can choose to watch a video to get a hint, or to use the “+” button again (the first “+” of each board is free). Declining does not prevent you from playing.</p>
-        <p>If you have purchased &quot;Remove ads&quot; (Section 6), no ads are shown.</p>
-        </div>
-        <div class="subsection">
-          <div class="sub-title">Your consent (EEA, United Kingdom, Switzerland)</div>
-        <p>On first launch, a consent window managed by Google's consent tool lets you accept or refuse the use of your data for advertising purposes, purpose by purpose. If you refuse, the App remains fully playable; non-personalized or limited ads may then be shown. You can change your choice at any time in the App's settings.</p>
-        </div>
-        <div class="subsection">
-          <div class="sub-title">iOS: tracking</div>
-        <p>The App does not ask for permission to track your activity (App Tracking Transparency): your device's advertising identifier (IDFA) is not used. The App never requires you to accept tracking in order to play.</p>
-        </div>
-        <div class="subsection">
-          <div class="sub-title">Android: advertising ID</div>
-        <p>You can reset or delete your advertising ID in your device settings.</p>
-        </div>
-        <div class="subsection">
-          <div class="sub-title">United States</div>
-        <p>Depending on the State where you live, the law may give you the right to opt out of the &quot;sale&quot; or &quot;sharing&quot; of your data for targeted advertising. You can exercise this choice from the App's privacy settings, or by writing to us.</p>
-        </div>
-        <div class="subsection">
-          <div class="sub-title">Learn more</div>
-        <p>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
-        How Google uses information from sites or apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
-        </div>
+        <h2>5. Advertising and privacy choices</h2>
+        <p>Google AdMob supplies a banner and optional rewarded videos. Depending on the system and permissions, its SDK processes IP addresses, advertising or app identifiers, app/ad interactions and diagnostics to deliver and measure ads and prevent fraud. Premium removes ads, including rewarded videos.</p>
+        <p>Agreeing to watch a video does not itself consent to advertising data processing. Where consent is required, it must be possible to refuse or withdraw it. This version does not yet provide an advertising privacy-choice centre in app settings. You may contact us to exercise your rights; this does not replace a consent form required before processing.</p>
+        <p>Android lets you reset or delete the advertising identifier in phone settings. On iOS, IDFA access and tracking subject to ATT require the corresponding Apple authorization. These settings alone do not erase data already held by providers. Local rights, including rights to opt out of certain targeted advertising, remain applicable.</p>
+        <p>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
+        Partner-service data: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
       </section>
 
       <section id="s6">
-        <h2>6. &quot;Remove ads&quot; Purchase</h2>
-        <p>The one-time purchase that removes ads is processed exclusively by the App Store (Apple) or Google Play (Google). We never receive your payment data (bank card, name, billing address). The App only receives confirmation from the store that the purchase was made, in order to remove the ads and allow it to be restored. Payment processing is governed by Apple's or Google's privacy policies.</p>
+        <h2>6. Premium purchase and restoration</h2>
+        <p>Apple or Google processes payment and retains billing information under its own rules. We do not receive your payment-card number.</p>
+        <p>RevenueCat helps verify and restore the one-time ad-free purchase. It processes a pseudonymous identifier, transaction/receipt information, product, store and Premium entitlement status. The app also stores information needed for Premium access. Deleting your leaderboard account does not delete this purchase; data needed for restoration and applicable obligations is handled separately.</p>
+        <p>Details: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
       </section>
 
       <section id="s7">
@@ -164,21 +135,23 @@
       </section>
 
       <section id="s8">
-        <h2>8. Legal Bases (GDPR)</h2>
-        <p>• Running the game and storing your progress and settings locally: performance of the service you request (contract)<br>
-        • Access to device identifiers and advertising, personalized or not, where the law requires consent: consent, which you can withdraw at any time (Section 5)<br>
-        • Showing reminders: consent (notification permission), which you can withdraw at any time<br>
-        • Replying to your support requests: legitimate interest in replying to you; or pre-contractual measures / contract if the request concerns a purchase<br>
-        • Compliance with legal obligations (for example, accounting obligations for purchases): legal obligation</p>
+        <h2>8. Purposes and legal bases</h2>
+        <p>Gameplay, the requested leaderboard account and managing/restoring Premium rely on providing the service or contract. Security, anti-abuse limits and support rely on our legitimate interest in protecting the service and its users, subject to your rights. Reminders are optional and require device permission.</p>
+        <p>Advertising processing and identifier access rely on consent where required. Some retention is needed for legal obligations or establishing, exercising or defending legal claims. These bases do not authorize unrestricted reuse for other purposes.</p>
       </section>
 
       <section id="s9">
-        <h2>9. Recipients and Transfers Outside the European Union</h2>
-        <p>The data processed by the App is neither sold nor rented by the publisher. The only recipients are:</p>
-        <p>• Google, for advertising (Section 5);<br>
-        • Apple or Google, for purchases, ratings and system notifications, depending on your device;<br>
-        • the authorities, only where required by law.</p>
-        <p>Google may process data outside the European Union, in particular in the United States, under the safeguards described in its privacy policy.</p>
+        <h2>9. Providers and international transfers</h2>
+        <p>Necessary recipients include:<br>
+        • Contabo for the server hosting Supabase and the leaderboard;<br>
+        • Cloudflare for routing and protecting requests;<br>
+        • Backblaze for encrypted backups and the decision journal;<br>
+        • Google/Firebase and Apple for attestation and system services;<br>
+        • Google AdMob for advertising;<br>
+        • RevenueCat and Apple/Google for purchases;<br>
+        • GitHub Pages for these public documents; and authorities where legally required.</p>
+        <p>Supabase is self-hosted; this does not mean player data is hosted in Supabase Cloud. International providers may process data outside the European Economic Area, including the United States. Transfer safeguards depend on the applicable service and contract; request details from hello@primisia.com. We do not guarantee that all processing stays in Europe. We do not sell leaderboard data.</p>
+        <p>Notices: <a href="https://contabo.com/en/legal/privacy/">https://contabo.com/en/legal/privacy/</a> ; <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a> ; <a href="https://www.backblaze.com/company/privacy">https://www.backblaze.com/company/privacy</a> ; <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a></p>
       </section>
 
       <section id="s10">
@@ -188,23 +161,28 @@
       </section>
 
       <section id="s11">
-        <h2>11. Your Rights</h2>
-        <p>Depending on the applicable law (in particular the GDPR), you have the rights of access, rectification, erasure, restriction, objection and portability, and the right to withdraw your consent at any time, without affecting processing already carried out.</p>
-        <p>• Data on your device: you control it directly (Section 2).<br>
-        • Advertising consent: can be changed at any time from the App's settings (Section 5).<br>
-        • Advertising data held by Google: tools and contacts described in Google's privacy policy.<br>
-        • Support data: write to hello@primisia.com. We reply within one month, which may be extended under the conditions set out in the GDPR.</p>
-        <p>If you believe your rights have not been respected, you may lodge a complaint with the CNIL (Commission nationale de l'informatique et des libertés), Service des plaintes, 3 place de Fontenoy, 75007 Paris, France, or online at <a href="https://www.cnil.fr/fr/adresser-une-plainte">https://www.cnil.fr/fr/adresser-une-plainte</a>, or with the data protection authority of your country of residence.</p>
+        <h2>11. Account deletion and your rights</h2>
+        <p>The leaderboard account section in Settings lets you request deletion and follow its progress. Once the server accepts the request, the profile is removed from the leaderboard and its identity and related active data are subsequently deleted. An offline request must first be transmitted; uninstalling alone does not delete the server account.</p>
+        <p>“Also erase my progress” resets the game, record and relevant local results. Without it, they remain on your device. Premium and preferences are preserved. After deletion completes, voluntarily rejoining creates a new identity and nickname, subject to anti-abuse restrictions. Your retained local record may be submitted again; the old account is not restored and its nickname may be reassigned.</p>
+        <p>Without app access, email hello@primisia.com, identifying Match the Digits and the leaderboard nickname/identifier you have, never a token or password. Proportionate verification may be necessary to avoid deleting someone else’s account.</p>
+        <p>Depending on your circumstances, you have rights of access, rectification, erasure, restriction, objection, portability and consent withdrawal. We normally respond within one month, extendable as permitted by law. You may complain to the CNIL at <a href="https://www.cnil.fr/fr/adresser-une-plainte">https://www.cnil.fr/fr/adresser-une-plainte</a> or your competent national authority.</p>
       </section>
 
       <section id="s12">
         <h2>12. Security</h2>
-        <p>Game data stays on your device and benefits from its protections. Exchanges with Google are encrypted (TLS). No game data is stored on a server operated by the publisher.</p>
+        <p>Network exchanges use encryption in transit. Administrative access is restricted; backups and the decision journal are encrypted. These measures reduce risk without guaranteeing absolute security. The public leaderboard remains visible to its users; do not send secrets through support channels.</p>
+      </section>
+
+      <section id="s12a">
+        <h2>12a. Retention and backups</h2>
+        <p>Local data remains until erased or replaced. The leaderboard account and record remain until the account is deleted. Temporary counters and security restrictions have their own expiry times; some traces are needed to prevent abuse and handle disputes.</p>
+        <p>Backups rotate through 7 daily, 4 weekly and 2 monthly restore points. This does not guarantee erasure of every copy on an exact date. The decision journal helps prevent a restore from reintroducing a deleted account.</p>
+        <p>Deletion receipts and this journal currently remain stored without automatic purging. They may contain technical identifiers, hashes, dates and status information. You may request a review of their retention or erasure at hello@primisia.com. Purchase data separately follows restoration needs and applicable obligations.</p>
       </section>
 
       <section id="s13">
-        <h2>13. Changes</h2>
-        <p>We may change this policy, in particular if the App evolves. The date of the last update is shown at the top of this page. In the event of a significant change, you will be informed in the App before it applies.</p>
+        <h2>13. Policy changes</h2>
+        <p>This policy is available in settings and on our website. Its date identifies the text version. It is updated to reflect service changes. Applicable duties to inform you and obtain new consent where required remain in force.</p>
       </section>
 
       <section id="s14">

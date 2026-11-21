@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>Câu hỏi thường gặp</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">Tôi có cần tạo tài khoản không?</div>
-        <div class="faq-a">Không. Match the Digits không yêu cầu tài khoản, đăng ký hay đăng nhập. Bạn có thể chơi ngay sau khi cài đặt.</div>
+        <div class="faq-q">Cần tài khoản không?</div>
+        <div class="faq-a">Không cần email hoặc mật khẩu để chơi. Bảng xếp hạng tạo danh tính ẩn danh với biệt danh được cấp.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Tôi đã mua &quot;Xóa quảng cáo&quot; nhưng vẫn thấy quảng cáo</div>
-        <div class="faq-a">Mở phần cài đặt của ứng dụng và nhấn <strong>Khôi phục giao dịch mua</strong>. Hãy chắc chắn rằng bạn đăng nhập bằng cùng tài khoản App Store hoặc Google Play đã dùng để mua.</div>
+        <div class="faq-q">Có bao nhiêu gợi ý và lần thêm?</div>
+        <div class="faq-a">Tối đa 4 gợi ý, 5 lần thêm mỗi bảng. Hai lần thêm đầu miễn phí; không Premium, 3 lần sau và gợi ý đề nghị quảng cáo thưởng.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">&quot;Xóa quảng cáo&quot; có phải là gói đăng ký không?</div>
-        <div class="faq-a">Không. Đây là giao dịch mua một lần: chỉ tính phí một lần và không bao giờ gia hạn. Giao dịch này xóa mọi quảng cáo, kể cả quảng cáo có thưởng tùy chọn để nhận gợi ý và lượt thêm. Nó không mang lại lợi thế nào trong trò chơi: mỗi người chơi có 4 gợi ý mỗi ván.</div>
+        <div class="faq-q">Nếu quảng cáo không chạy?</div>
+        <div class="faq-a">Nếu không khả dụng sau yêu cầu, thao tác có thể được cấp không video trong số lượt còn lại. Từ chối hoặc tự đóng trước thưởng không được cấp.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Gợi ý hoạt động thế nào?</div>
-        <div class="faq-a">Mỗi ván cho bạn 4 gợi ý. Nếu chưa mua "Xóa quảng cáo", bạn có thể chọn xem một quảng cáo ngắn để hiện một gợi ý. Việc xem là tùy chọn: bạn luôn có thể tiếp tục chơi mà không cần xem.</div>
+        <div class="faq-q">Premium là thuê bao?</div>
+        <div class="faq-a">Không, mua một lần không quảng cáo, cả gợi ý và thêm. Giới hạn không đổi.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Nút “+” hoạt động thế nào?</div>
-        <div class="faq-a">Nút “+” thêm vào bàn chơi một bản sao của các số còn lại, tối đa 5 lần mỗi bàn chơi. Lần đầu tiên miễn phí. Với bốn lần tiếp theo, bạn có thể chọn xem một quảng cáo ngắn. Việc xem là tùy chọn.</div>
+        <div class="faq-q">Khôi phục Premium thế nào?</div>
+        <div class="faq-a">Trong Cài đặt, khôi phục với tài khoản và cửa hàng gốc. Không tự chuyển giữa Apple và Google.</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">Xóa tài khoản xếp hạng thế nào?</div>
+        <div class="faq-a">Yêu cầu và theo dõi ở mục tài khoản trong Cài đặt. Không vào được ứng dụng, email hỗ trợ với Match the Digits và biệt danh/mã xếp hạng, không mã truy cập hay mật khẩu. Có thể cần xác minh.<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Làm sao để thay đổi lựa chọn quảng cáo?</div>
-        <div class="faq-a">Mở phần cài đặt của ứng dụng để xem hoặc thay đổi sự đồng ý bạn đã đưa ra cho quảng cáo. Trên Android, bạn cũng có thể đặt lại hoặc xóa mã nhận dạng quảng cáo trong cài đặt thiết bị.</div>
+        <div class="faq-q">Có thể trở lại sau xóa?</div>
+        <div class="faq-a">Sau hoàn tất có thể xin danh tính và biệt danh mới, tùy hạn chế chống lạm dụng. Tiến trình giữ lại có thể đăng lại kỷ lục. Premium giữ theo quy tắc cửa hàng.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Lời nhắc của tôi không hiện</div>
-        <div class="faq-a">Kiểm tra xem thông báo của Match the Digits đã được cho phép trong cài đặt thiết bị chưa, và lời nhắc đã được bật trong cài đặt của ứng dụng chưa.</div>
+        <div class="faq-q">Xóa cả tiến trình làm gì?</div>
+        <div class="faq-a">Đặt lại ván, kỷ lục và kết quả cục bộ liên quan, không xóa Premium hay tùy chọn. Không chọn thì tiến trình được giữ.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Tôi có bị mất tiến trình không?</div>
-        <div class="faq-a">Ván chơi, điểm số, kết quả hằng ngày và cài đặt của bạn chỉ được lưu trên thiết bị. Gỡ cài đặt ứng dụng, xóa dữ liệu của ứng dụng hoặc đổi thiết bị sẽ xóa vĩnh viễn chúng: chúng tôi không giữ bản sao nào và không thể khôi phục.</div>
+        <div class="faq-q">Gỡ ứng dụng xóa hết không?</div>
+        <div class="faq-a">Có thể mất tiến trình cục bộ nhưng không yêu cầu xóa tài khoản máy chủ. Bảng xếp hạng không phải sao lưu đầy đủ.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Làm sao để được hoàn tiền?</div>
-        <div class="faq-a">Giao dịch mua do Apple hoặc Google xử lý. Hãy yêu cầu hoàn tiền với Apple tại <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, hoặc với Google theo <a href="https://support.google.com/googleplay/answer/15574897">quy trình này</a>. Bạn cũng có thể viết cho chúng tôi.</div>
+        <div class="faq-q">Quản lý đồng ý quảng cáo ở đâu?</div>
+        <div class="faq-a">Phiên bản này chưa có trung tâm lựa chọn quảng cáo trong Cài đặt. Điều khiển điện thoại và hỗ trợ không thay biểu mẫu cần trước xử lý.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Sao không thấy nhắc nhở?</div>
+        <div class="faq-a">Kiểm tra nhắc nhở trong ứng dụng và quyền thông báo trên điện thoại.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Xin hoàn tiền thế nào?</div>
+        <div class="faq-a">Liên hệ Apple hoặc Google theo cửa hàng mua. Điều khoản có liên kết thủ tục; bạn cũng có thể hỏi hỗ trợ.</div>
       </div>
     </div>
 

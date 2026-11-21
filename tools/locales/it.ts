@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "it/";
 const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, impresa individuale francese), con l'insegna Primisia";
@@ -7,7 +7,7 @@ export const it: Locale = {
   code: "it",
   dir,
   name: "Italiano",
-  updated: "21 ottobre 2026",
+  updated: "21 novembre 2026",
   ui: {
     legalDocuments: "Documenti legali",
     privacyPolicy: "Informativa sulla privacy",
@@ -19,7 +19,7 @@ export const it: Locale = {
     lastUpdated: "Ultimo aggiornamento",
     footer: "Pubblicato da Marc SAMSON EI, con l'insegna Primisia",
     indexDesc: "Informativa sulla privacy, condizioni d'uso e assistenza del gioco di logica Match the Digits.",
-    privacyDesc: "Informativa sulla privacy del gioco Match the Digits: nessun account, dati di gioco sul tuo dispositivo, pubblicità Google AdMob con consenso.",
+    privacyDesc: "Privacy di Match the Digits: progressi locali, classifica, sicurezza, pubblicità, acquisti Premium ed eliminazione dell’account.",
     termsDesc: "Condizioni d'uso del gioco Match the Digits: licenza, pubblicità, acquisto unico Rimuovi pubblicità, responsabilità e legge applicabile.",
     supportDesc: "Assistenza, contatti e domande frequenti del gioco di logica Match the Digits.",
     supportIntro: "Hai bisogno di aiuto? Scrivici indicando, se possibile, il modello del tuo dispositivo.",
@@ -29,132 +29,57 @@ export const it: Locale = {
     translationNote: "Questa traduzione è fornita solo a titolo informativo. In caso di discordanza, prevale la versione francese.",
   },
   faq: [
-    ["Devo creare un account?", "No. Match the Digits non richiede account, registrazione né accesso. Puoi giocare subito dopo l'installazione."],
-    ["Ho acquistato «Rimuovi pubblicità» ma vedo ancora annunci", "Apri le impostazioni dell'app e tocca <strong>Ripristina acquisti</strong>. Verifica di aver effettuato l'accesso con lo stesso account App Store o Google Play usato per l'acquisto."],
-    ["«Rimuovi pubblicità» è un abbonamento?", "No. È un acquisto unico: viene addebitato una sola volta e non si rinnova mai. Rimuove tutti gli annunci, compreso gli annunci con premio facoltativi per indizi e aggiunte. Non dà alcun vantaggio di gioco: ogni giocatore ha 4 indizi per partita."],
-    ["Come funzionano gli indizi?", "Ogni partita ti dà 4 indizi. Senza l'acquisto «Rimuovi pubblicità», puoi scegliere di guardare un breve annuncio per scoprire un indizio. È facoltativo: puoi sempre continuare a giocare senza."],
-    ["Come funziona il pulsante «+»?", "Il pulsante «+» aggiunge al tabellone una copia dei numeri rimasti, fino a 5 volte per tabellone. La prima è gratuita. Per le quattro successive, puoi scegliere di guardare un breve annuncio. È facoltativo."],
-    ["Come modifico le mie scelte pubblicitarie?", "Apri le impostazioni dell'app per consultare o modificare il consenso dato per la pubblicità. Su Android puoi anche reimpostare o eliminare il tuo ID pubblicità nelle impostazioni del dispositivo."],
-    ["Il mio promemoria non compare", "Verifica che le notifiche di Match the Digits siano consentite nelle impostazioni del dispositivo e che i promemoria siano attivati nelle impostazioni dell'app."],
-    ["Perderò i miei progressi?", "La tua partita, i punteggi, i risultati giornalieri e le impostazioni sono salvati solo sul tuo dispositivo. Disinstallare l'app, cancellarne i dati o cambiare dispositivo li elimina definitivamente: non ne conserviamo copia e non possiamo ripristinarli."],
-    ["Come ottengo un rimborso?", `Gli acquisti sono gestiti da Apple o Google. Chiedi un rimborso ad Apple su <a href="${APPLE_REFUND}">reportaproblem.apple.com</a>, o a Google seguendo <a href="${GOOGLE_REFUND}">questa procedura</a>. Puoi anche scriverci.`],
+    ["Serve un account?", "Non servono e-mail o password per giocare. La classifica crea un’identità anonima con nickname assegnato."],
+    ["Quanti suggerimenti e aggiunte?", "Massimo 4 suggerimenti e 5 aggiunte per tabellone. Le prime 2 aggiunte sono gratuite; senza Premium le altre 3 e i suggerimenti propongono annunci con ricompensa."],
+    ["Se l’annuncio non funziona?", "Se indisponibile dopo la richiesta, l’azione può essere concessa senza video entro il saldo restante. Rifiutare o chiudere volontariamente prima della ricompensa non la concede."],
+    ["Premium è un abbonamento?", "No: acquisto unico senza pubblicità, anche per suggerimenti e aggiunte. I limiti restano uguali."],
+    ["Come ripristino Premium?", "Nelle Impostazioni, Ripristina acquisti con account e store originali. Nessun trasferimento automatico fra Apple e Google."],
+    ["Come elimino l’account di classifica?", "Richiedilo e seguilo nella sezione account delle Impostazioni. Senza accesso all’app, scrivi al supporto con Match the Digits e nickname/identificativo di classifica, mai token o password. Può servire una verifica."],
+    ["Posso tornare dopo l’eliminazione?", "Al termine puoi richiedere nuova identità e nickname, salvo restrizioni antiabuso. I progressi conservati possono consentire di ripubblicare il record. Premium resta secondo le regole dello store."],
+    ["Cosa fa Cancella anche i miei progressi?", "Azzera partita, record e risultati locali interessati, non Premium o preferenze. Senza l’opzione i progressi locali rimangono."],
+    ["Disinstallare cancella tutto?", "Può far perdere i progressi locali, ma non richiede l’eliminazione del server. La classifica non è un backup completo."],
+    ["Dove gestisco il consenso pubblicitario?", "Questa versione non ha ancora un centro delle scelte pubblicitarie nelle Impostazioni. I controlli del telefono e il supporto non sostituiscono un modulo necessario prima del trattamento."],
+    ["Perché il promemoria non appare?", "Controlla i promemoria nell’app e il permesso notifiche sul telefono."],
+    ["Come chiedo un rimborso?", "Rivolgiti ad Apple o Google secondo lo store d’acquisto. Le procedure sono collegate nelle condizioni; puoi anche contattare l’assistenza."]
   ],
   privacy: {
     sections: [
-      {
-        id: "0",
-        title: "In sintesi",
-        content:
-          "Data di entrata in vigore: 21 ottobre 2026.\n\nLa presente informativa spiega quali dati vengono trattati quando usi l'applicazione mobile Match the Digits (l'«App») su iOS e Android, perché, da chi, per quanto tempo e come esercitare i tuoi diritti.\n\n• L'App non ti chiede di creare un account e non ti chiede nome, indirizzo e-mail o data di nascita per giocare.\n• I tuoi progressi e le tue impostazioni sono salvati solo sul tuo dispositivo. Noi non li riceviamo.\n• L'App mostra pubblicità fornita da Google (AdMob). A tal fine, Google tratta alcuni dati del tuo dispositivo, descritti nella sezione 5. Nello Spazio economico europeo, nel Regno Unito e in Svizzera, il tuo consenso viene richiesto prima di qualsiasi pubblicità personalizzata.\n• Riceviamo dati che ti riguardano solo se ci scrivi (assistenza).",
-      },
+      { id: "0", title: "In breve", content: "Aggiornamento: 21 novembre 2026.\n\nPuoi giocare senza fornire nome, e-mail o password. La classifica usa un account anonimo; un identificativo tecnico non rende anonimi i dati associati. Partita e impostazioni restano sul dispositivo, mentre nickname e record della classifica sono conservati sul nostro server e visibili in classifica. Terzi forniscono sicurezza, pubblicità e acquisti. Puoi eliminare l’account di classifica con o senza cancellare i progressi locali." },
       {
         id: "1",
         title: "1. Titolare del trattamento",
         content: `L'App è pubblicata da:\n\n${PUBLISHER}\n${ADDRESS}\n${IDS}\n\nContatto per qualsiasi domanda sui tuoi dati: ${EMAIL}\n\nPer i dati pubblicitari trattati da Google, Google agisce come titolare autonomo del trattamento, secondo le proprie regole (sezione 5).`,
       },
-      {
-        id: "2",
-        title: "2. Dati salvati solo sul tuo dispositivo",
-        content:
-          "I seguenti dati sono salvati nella memoria locale dell'App, sul tuo dispositivo. Non ci vengono trasmessi e non vengono inviati ad alcun server dell'editore:\n\n• Partita in corso (tabellone, punteggio, indizi e aggiunte rimanenti): per riprendere la partita\n• Punteggio migliore: per mostrarlo nella schermata iniziale e nei trofei\n• Risultati giornalieri (tabelloni completati, punti, coppie, sfide giornaliere): calendario, statistiche, trofei\n• Preferenze: lingua, feedback aptico, effetti sonori, promemoria: per rispettare le tue impostazioni\n• Date delle richieste di valutazione già mostrate: per non chiederti troppo spesso di valutare l'App\n\nQuesti dati sono conservati finché l'App è installata. Puoi eliminarli in qualsiasi momento cancellando i dati dell'App (Android) o disinstallandola (iOS e Android). Successivamente non possono essere recuperati: l'editore non effettua alcun backup.",
-      },
+      { id: "2", title: "2. Progressi e preferenze locali", content: "Il dispositivo conserva partita, record locale, risultati delle sfide giornaliere, statistiche dei trofei, preferenze e date delle richieste di valutazione. Il record destinato alla classifica viene trasmesso separatamente.\n\nNon offriamo un backup sul server che ripristini tutti i progressi su un altro dispositivo. Cancellare i dati o disinstallare può farli perdere. Gli eventuali backup del sistema dipendono dalle impostazioni del dispositivo." },
+      { id: "2a", title: "2 bis. Account e classifica", content: "Al primo accesso alla classifica viene creato un account tecnico anonimo. Il nostro servizio Supabase ospitato autonomamente conserva identità di accesso, sessioni, nickname assegnato, record pubblicato, date e stato dell’account. Le credenziali di sessione restano anche sul dispositivo.\n\nNickname, punteggio e posizione sono visibili; credenziali e ricevute di eliminazione non sono pubbliche. Il record idoneo di una partita finita o abbandonata può essere inviato o ritentato dopo un errore di rete. La classifica non è un backup della partita." },
+      { id: "2b", title: "2 ter. Sicurezza e prevenzione degli abusi", content: "Trattiamo informazioni tecniche delle richieste, tra cui IP all’ingresso del servizio, impronte di installazione/rete, date e contatori, per proteggere la classifica, limitare registrazioni ripetute e gestire eliminazioni e restrizioni. Le impronte restano dati pseudonimi.\n\nFirebase App Check e l’attestazione Apple/Google verificano le richieste tramite dati tecnici e token di attestazione. Firebase non gestisce più autenticazione o archiviazione della classifica. Informazioni: https://firebase.google.com/support/privacy" },
       {
         id: "3",
         title: "3. Promemoria (notifiche)",
         content:
           "Se attivi i promemoria nelle impostazioni, l'App ti chiede l'autorizzazione a mostrare notifiche. I promemoria sono programmati localmente sul tuo dispositivo: nessun identificativo di notifica viene creato o inviato a un server. Puoi disattivarli in qualsiasi momento nelle impostazioni dell'App o del dispositivo. I promemoria non contengono pubblicità.",
       },
-      {
-        id: "4",
-        title: "4. Assistenza (quando ci scrivi)",
-        content: `Il pulsante «Contatta l'assistenza» apre la tua app di posta con un'e-mail precompilata indirizzata a ${EMAIL}. Se la invii, riceviamo:\n\n• il tuo indirizzo e-mail e il contenuto del messaggio;\n• la versione dell'App, il sistema operativo (iOS o Android) e la sua versione, aggiunti automaticamente in fondo al messaggio per aiutarci a risolvere il problema. Puoi eliminarli prima dell'invio.\n\nQuesti dati servono solo a risponderti. Vengono eliminati non appena la tua richiesta è stata gestita.`,
-      },
-      {
-        id: "5",
-        title: "5. Pubblicità (Google AdMob)",
-        subsections: [
-          {
-            subtitle: "Dati trattati da Google",
-            content:
-              "L'App mostra pubblicità fornita da Google AdMob, tramite l'SDK Google Mobile Ads integrato nell'App. Secondo la documentazione che Google pubblica per gli sviluppatori, Google tratta:\n\n• Indirizzo IP, che può servire a stimare la posizione approssimativa del dispositivo: pubblicità, misurazione, prevenzione delle frodi\n• Interazioni con l'App (avvii, tocchi, video visti): pubblicità, misurazione, prevenzione delle frodi\n• Dati diagnostici e di prestazione (tempo di avvio, blocchi, consumo energetico); su iOS, log degli arresti anomali non collegati all'utente: diagnostica, miglioramento, pubblicità, misurazione\n• Identificativi del dispositivo: ID pubblicità (Android), App Set ID, altri identificativi propri dell'app o dello sviluppatore: pubblicità e misurazione\n• Dati pubblicitari (annunci visti): pubblicità e misurazione\n\nGoogle indica che questi dati sono crittografati durante il trasferimento (TLS). L'editore non ha accesso a questi dati individuali: riceve solo statistiche aggregate (numero di impressioni, ricavi).",
-          },
-          {
-            subtitle: "Annunci mostrati nell'App",
-            content:
-              "• un banner nella schermata di gioco;\n• un annuncio con premio facoltativo: puoi scegliere di guardare un video per ottenere un indizio o per usare di nuovo il pulsante «+» (il primo «+» di ogni tabellone è gratuito). Rifiutare non ti impedisce di giocare.\n\nSe hai acquistato «Rimuovi pubblicità» (sezione 6), non viene mostrato alcun annuncio.",
-          },
-          {
-            subtitle: "Il tuo consenso (SEE, Regno Unito, Svizzera)",
-            content:
-              "Al primo avvio, una finestra di consenso gestita dallo strumento di consenso di Google ti permette di accettare o rifiutare l'uso dei tuoi dati a fini pubblicitari, finalità per finalità. Se rifiuti, l'App resta pienamente giocabile; possono allora essere mostrati annunci non personalizzati o limitati. Puoi modificare la tua scelta in qualsiasi momento nelle impostazioni dell'App.",
-          },
-          {
-            subtitle: "iOS: tracciamento",
-            content:
-              "L'App non ti chiede l'autorizzazione a tracciare la tua attività (App Tracking Transparency): l'identificativo pubblicitario del tuo dispositivo (IDFA) non viene utilizzato. L'App non ti obbliga mai ad accettare il tracciamento per giocare.",
-          },
-          {
-            subtitle: "Android: ID pubblicità",
-            content: "Puoi reimpostare o eliminare il tuo ID pubblicità nelle impostazioni del dispositivo.",
-          },
-          {
-            subtitle: "Stati Uniti",
-            content:
-              "A seconda dello Stato in cui vivi, la legge può darti il diritto di opporti alla «vendita» o alla «condivisione» dei tuoi dati per la pubblicità mirata. Puoi esercitare questa scelta dalle impostazioni sulla privacy dell'App o scrivendoci.",
-          },
-          {
-            subtitle: "Per saperne di più",
-            content: `Norme sulla privacy di Google: ${GOOGLE_PRIVACY}\nCome Google utilizza le informazioni di siti o app che utilizzano i suoi servizi: ${GOOGLE_PARTNERS}`,
-          },
-        ],
-      },
-      {
-        id: "6",
-        title: "6. Acquisto «Rimuovi pubblicità»",
-        content:
-          "L'acquisto unico che rimuove la pubblicità è gestito esclusivamente dall'App Store (Apple) o da Google Play (Google). Non riceviamo mai i tuoi dati di pagamento (carta di pagamento, nome, indirizzo di fatturazione). L'App riceve dallo store solo la conferma che l'acquisto è stato effettuato, per rimuovere gli annunci e consentirne il ripristino. Il trattamento del pagamento è disciplinato dalle informative sulla privacy di Apple o di Google.",
-      },
+      { id: "4", title: "4. Assistenza", content: `Scrivendo a ${EMAIL} ci invii il tuo indirizzo, il messaggio e gli allegati scelti. Il messaggio predisposto può includere versioni dell’app e del sistema; puoi rimuoverle.\n\nUsiamo i dati per rispondere, verificare richieste sull’account e risolvere problemi. Li conserviamo durante la gestione, poi solo se necessari per seguito, tutela di diritti o obblighi legali. Non inviare password, token di accesso o dati bancari.` },
+      { id: "5", title: "5. Pubblicità e scelte sulla privacy", content: `Google AdMob fornisce banner e video con ricompensa facoltativi. Secondo sistema e autorizzazioni, l’SDK tratta IP, identificativi pubblicitari o dell’app, interazioni e diagnostica per mostrare e misurare annunci e prevenire frodi. Premium elimina anche i video con ricompensa.\n\nAccettare un video non equivale a consentire il trattamento pubblicitario. Il consenso richiesto deve poter essere rifiutato o revocato. Questa versione non dispone ancora di un centro delle scelte pubblicitarie nelle impostazioni. Puoi contattarci per esercitare i diritti; ciò non sostituisce un modulo richiesto prima del trattamento.\n\nAndroid permette di reimpostare o eliminare l’identificativo pubblicitario. Su iOS, accesso a IDFA e tracciamento soggetto ad ATT richiedono l’autorizzazione Apple. Queste impostazioni non cancellano da sole i dati già detenuti dai fornitori. Restano validi i diritti locali, inclusa l’opposizione a determinate pubblicità mirate.\n\nGoogle: ${GOOGLE_PRIVACY}\nServizi partner: ${GOOGLE_PARTNERS}` },
+      { id: "6", title: "6. Acquisto Premium e ripristino", content: "Apple o Google gestisce pagamento e dati di fatturazione secondo le proprie regole. Non riceviamo il numero della tua carta.\n\nRevenueCat verifica e ripristina l’acquisto unico senza pubblicità. Tratta identificativo pseudonimo, transazione/ricevuta, prodotto, store e stato Premium. Anche l’app conserva lo stato necessario all’accesso. Eliminare la classifica non elimina l’acquisto; dati di ripristino e obblighi applicabili sono distinti.\n\nInformazioni: https://www.revenuecat.com/privacy" },
       {
         id: "7",
         title: "7. Valutazioni e recensioni",
         content:
           "Quando l'App ti invita a valutarla, usa la finestra ufficiale di Apple o di Google. La tua valutazione e la tua recensione sono trattate dallo store interessato, secondo le sue regole; l'App non vi ha accesso.",
       },
-      {
-        id: "8",
-        title: "8. Basi giuridiche (GDPR)",
-        content:
-          "• Funzionamento del gioco e salvataggio locale dei tuoi progressi e delle tue impostazioni: esecuzione del servizio che richiedi (contratto)\n• Accesso agli identificativi del dispositivo e pubblicità, personalizzata o meno, quando la legge richiede il consenso: consenso, revocabile in qualsiasi momento (sezione 5)\n• Visualizzazione dei promemoria: consenso (autorizzazione alle notifiche), revocabile in qualsiasi momento\n• Risposta alle tue richieste di assistenza: legittimo interesse a risponderti; oppure misure precontrattuali / contratto se la richiesta riguarda un acquisto\n• Adempimento di obblighi di legge (ad esempio contabili per gli acquisti): obbligo legale",
-      },
-      {
-        id: "9",
-        title: "9. Destinatari e trasferimenti al di fuori dell'Unione europea",
-        content:
-          "I dati trattati dall'App non sono né venduti né noleggiati dall'editore. Gli unici destinatari sono:\n\n• Google, per la pubblicità (sezione 5);\n• Apple o Google, per acquisti, valutazioni e notifiche di sistema, a seconda del dispositivo;\n• le autorità, solo se richiesto dalla legge.\n\nGoogle può trattare dati al di fuori dell'Unione europea, in particolare negli Stati Uniti, con le garanzie descritte nelle sue norme sulla privacy.",
-      },
+      { id: "8", title: "8. Finalità e basi giuridiche", content: "Gioco, account di classifica richiesto e gestione/ripristino Premium si basano sul servizio o contratto. Sicurezza, limiti antiabuso e assistenza si basano sul nostro interesse legittimo a proteggere servizio e utenti, fatti salvi i tuoi diritti. I promemoria sono facoltativi e richiedono l’autorizzazione del dispositivo.\n\nPubblicità e accesso agli identificativi si basano sul consenso quando richiesto. Alcune conservazioni rispondono a obblighi legali o all’accertamento, esercizio o difesa di diritti. Queste basi non autorizzano riutilizzi indiscriminati." },
+      { id: "9", title: "9. Fornitori e trasferimenti", content: `Destinatari necessari:\n• Contabo per il server Supabase e classifica;\n• Cloudflare per instradare e proteggere le richieste;\n• Backblaze per backup e registro delle decisioni cifrati;\n• Google/Firebase e Apple per attestazione e servizi di sistema;\n• Google AdMob per pubblicità;\n• RevenueCat e Apple/Google per acquisti;\n• GitHub Pages per questi documenti pubblici; autorità se richiesto dalla legge.\n\nSupabase è ospitato autonomamente, non implica Supabase Cloud. Fornitori internazionali possono trattare dati fuori dal SEE, inclusi gli Stati Uniti. Le garanzie dipendono da servizio e contratto; puoi chiedere dettagli a ${EMAIL}. Non garantiamo un trattamento esclusivamente europeo. Non vendiamo dati della classifica.\n\nInformative: https://contabo.com/en/legal/privacy/ ; https://www.cloudflare.com/privacypolicy/ ; https://www.backblaze.com/company/privacy ; https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement` },
       {
         id: "10",
         title: "10. Minori",
         content: `L'App è destinata a persone di almeno 16 anni. Non è rivolta ai minori e non raccogliamo consapevolmente dati che li riguardano.\n\nIn Francia, un minore di 15 anni non può acconsentire da solo al trattamento dei propri dati basato sul consenso: è necessario anche il consenso di un titolare della responsabilità genitoriale (articolo 45 della legge francese sulla protezione dei dati, Loi Informatique et Libertés). Se sei un genitore e ritieni che tuo figlio abbia dato il consenso, scrivici a ${EMAIL}: ti indicheremo come revocarlo.`,
       },
-      {
-        id: "11",
-        title: "11. I tuoi diritti",
-        content: `In base alla legge applicabile (in particolare il GDPR), hai diritto di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità, nonché il diritto di revocare il consenso in qualsiasi momento, senza pregiudicare i trattamenti già effettuati.\n\n• Dati sul tuo dispositivo: li controlli direttamente (sezione 2).\n• Consenso pubblicitario: modificabile in qualsiasi momento dalle impostazioni dell'App (sezione 5).\n• Dati pubblicitari detenuti da Google: strumenti e contatti descritti nelle norme sulla privacy di Google.\n• Dati di assistenza: scrivi a ${EMAIL}. Rispondiamo entro un mese, termine prorogabile alle condizioni previste dal GDPR.\n\nSe ritieni che i tuoi diritti non siano stati rispettati, puoi presentare reclamo alla ${CNIL}, o online su ${CNIL_URL}, oppure all'autorità di protezione dei dati del tuo paese di residenza.`,
-      },
-      {
-        id: "12",
-        title: "12. Sicurezza",
-        content:
-          "I dati di gioco restano sul tuo dispositivo e beneficiano delle sue protezioni. Gli scambi con Google sono crittografati (TLS). Nessun dato di gioco è memorizzato su un server dell'editore.",
-      },
-      {
-        id: "13",
-        title: "13. Modifiche",
-        content:
-          "Possiamo modificare la presente informativa, in particolare se l'App evolve. La data dell'ultimo aggiornamento è indicata in cima a questa pagina. In caso di modifica importante, ne sarai informato nell'App prima che si applichi.",
-      },
-      { id: "14", title: "14. Contatti", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "11", title: "11. Eliminazione e diritti", content: `La sezione account della classifica nelle Impostazioni permette di richiedere e seguire l’eliminazione. Dopo l’accettazione del server, il profilo viene tolto dalla classifica, poi identità e dati attivi associati vengono eliminati. Una richiesta offline deve prima essere trasmessa; disinstallare non elimina l’account server.\n\n«Cancella anche i miei progressi» azzera partita, record e risultati locali interessati. Senza l’opzione rimangono sul dispositivo. Premium e preferenze restano. Dopo l’eliminazione, rientrare volontariamente crea una nuova identità e nickname, salvo restrizioni antiabuso. Il record locale conservato può essere ripubblicato; il vecchio account non viene ripristinato e il nickname può essere riassegnato.\n\nSenza accesso all’app, scrivi a ${EMAIL} indicando Match the Digits e nickname/identificativo di classifica disponibile, mai token o password. Può essere necessaria una verifica proporzionata per non eliminare account altrui.\n\nSecondo i casi hai diritti di accesso, rettifica, cancellazione, limitazione, opposizione, portabilità e revoca del consenso. Rispondiamo normalmente entro un mese, prorogabile per legge. Puoi rivolgerti alla CNIL, ${CNIL_URL}, o all’autorità competente del tuo paese.` },
+      { id: "12", title: "12. Sicurezza", content: "Le comunicazioni sono cifrate in transito. L’accesso amministrativo è limitato; backup e registro delle decisioni sono cifrati. Le misure riducono i rischi senza garantire sicurezza assoluta. La classifica pubblica resta visibile; non inviare segreti tramite assistenza." },
+      { id: "12a", title: "12 bis. Conservazione e backup", content: `I dati locali restano fino a cancellazione o sostituzione. Account e record di classifica restano fino all’eliminazione dell’account. Contatori temporanei e restrizioni hanno scadenze proprie; alcune tracce servono contro gli abusi e per le contestazioni.\n\nLa rotazione mantiene 7 punti giornalieri, 4 settimanali e 2 mensili. Non garantisce la cancellazione di ogni copia a una data precisa. Il registro impedisce che un ripristino reintroduca account eliminati.\n\nRicevute di eliminazione e registro sono attualmente conservati senza cancellazione automatica. Possono contenere identificativi tecnici, impronte, date e stati. Puoi chiedere una verifica della conservazione o cancellazione a ${EMAIL}. I dati d’acquisto seguono separatamente le esigenze di ripristino e gli obblighi applicabili.` },
+      { id: "13", title: "13. Modifiche", content: "L’informativa è disponibile nelle impostazioni e sul sito. La data identifica la versione. Gli aggiornamenti riflettono l’evoluzione del servizio; restano gli obblighi di informazione e di nuovo consenso, quando richiesto." },
+      { id: "14", title: "14. Contatti", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` }
     ],
   },
   terms: {
@@ -180,43 +105,15 @@ export const it: Locale = {
         content:
           "Ti impegni a non:\n\n• copiare, modificare, decompilare, disassemblare o tentare di estrarre il codice sorgente dell'App, salvo nei casi espressamente consentiti dalla legge;\n• aggirare o alterare i suoi meccanismi tecnici, inclusa la visualizzazione degli annunci e gli acquisti in-app;\n• generare artificialmente impressioni o clic sugli annunci;\n• usare l'App in modo illecito o lesivo dei diritti di terzi.",
       },
-      {
-        id: "5",
-        title: "5. Il gioco e i tuoi progressi",
-        content:
-          "L'App non richiede un account. I tuoi progressi (partita in corso, punteggi, risultati giornalieri, trofei) e le tue impostazioni sono salvati solo sul tuo dispositivo.\n\nNon sono salvati dall'editore: vanno persi se disinstalli l'App, ne cancelli i dati o cambi dispositivo. L'editore non può ripristinarli.\n\nLe regole del gioco, il numero di indizi e aggiunte disponibili e i tabelloni proposti possono cambiare da una versione all'altra.",
-      },
-      {
-        id: "6",
-        title: "6. Pubblicità",
-        content:
-          "L'App è gratuita e finanziata dalla pubblicità fornita da Google AdMob:\n\n• un banner nella schermata di gioco;\n• un annuncio con premio facoltativo: puoi scegliere di guardare un video per ottenere un indizio o per usare di nuovo il pulsante «+» (il primo «+» di ogni tabellone è gratuito). Il premio è indicato prima del video e concesso una volta guardato il video. Se rifiuti, o se nessun annuncio è disponibile, puoi continuare a giocare.\n\nGli annunci sono selezionati da Google. L'editore non ne controlla il contenuto e non è responsabile dei prodotti o servizi presentati. Le tue scelte sull'uso dei tuoi dati a fini pubblicitari sono descritte nell'Informativa sulla privacy.",
-      },
-      {
-        id: "7",
-        title: "7. Acquisto «Rimuovi pubblicità»",
-        subsections: [
-          {
-            subtitle: "Cosa ottieni",
-            content:
-              "L'App offre un acquisto unico e permanente («Rimuovi pubblicità»):\n\n• rimuove tutti gli annunci dall'App, compreso l'annuncio con premio: indizi e aggiunte vengono allora concessi direttamente;\n• non dà alcun vantaggio di gioco: ogni giocatore ha 4 indizi per partita, con o senza acquisto; il numero di aggiunte e le regole sono uguali per tutti;\n• non è un abbonamento: viene addebitato una sola volta e non si rinnova.",
-          },
-          {
-            subtitle: "Prezzo e pagamento",
-            content:
-              "Il prezzo è indicato nell'App Store o su Google Play prima dell'acquisto, comprese le imposte applicabili nel tuo paese. Il pagamento è gestito esclusivamente da Apple o Google, secondo le loro condizioni. L'editore non riceve mai i tuoi dati di pagamento.",
-          },
-          {
-            subtitle: "Ripristino dell'acquisto",
-            content:
-              "L'acquisto è collegato all'account Apple o Google con cui è stato effettuato. Puoi recuperarlo gratuitamente su un nuovo dispositivo o dopo una reinstallazione, con lo stesso account, tramite il pulsante «Ripristina acquisti» nelle impostazioni.",
-          },
-          {
+      { id: "5", title: "5. Gioco, progressi e classifica", content: "Non serve un account con e-mail/password per giocare. La classifica usa identità tecnica anonima e nickname assegnato. I profili virtuali segnalati non sono giocatori reali. Non vengono assegnati premi in denaro.\n\nPartite, sfide, trofei e impostazioni sono principalmente locali. Il server conserva il record pubblicato, non tutti i progressi. Finire o abbandonare una partita per iniziarne un’altra può inviare il record idoneo, con nuovi tentativi se la rete fallisce.\n\nPer tabellone: massimo cinque aggiunte, le prime due gratuite, e quattro suggerimenti. Senza Premium, le altre tre aggiunte e i suggerimenti propongono annunci con ricompensa. I limiti Premium sono uguali.\n\nTrucchi, punteggi falsi o registrazioni ripetute abusive possono comportare restrizioni o esclusione. Puoi contestarle all’assistenza." },
+      { id: "6", title: "6. Pubblicità e ricompense", content: "Può apparire un banner durante il gioco. Prima di un suggerimento o ricarica interessati viene proposto un video con la tua accettazione. Confermata la ricompensa, l’azione viene concessa entro il saldo disponibile.\n\nSe dopo la richiesta l’annuncio è tecnicamente indisponibile, l’app può concedere l’azione senza video e mostrare un avviso discreto. Rifiutare o chiudere prima della ricompensa non concede l’azione. Premium non aumenta le ricariche oltre il limite esaurito.\n\nAnnunci e destinazioni sono di terzi. L’informativa descrive i trattamenti; accettare il video non è consenso alla privacy." },
+      { id: "7", title: "7. Acquisto «Rimuovi pubblicità»", subsections: [{ subtitle: "Cosa ottieni", content: "Premium è un acquisto unico senza rinnovo automatico. Elimina banner e video con ricompensa: suggerimenti e aggiunte sono diretti, con gli stessi limiti di quattro suggerimenti e cinque aggiunte per tabellone. La griglia può usare lo spazio liberato dal banner." },
+{ subtitle: "Prezzo e pagamento", content: "Quando disponibile, l’offerta mostra il prezzo localizzato dello store. Controlla prezzo e condizioni nella conferma Apple o Google. Acquisti annullati, in attesa o falliti non sono acquisiti. RevenueCat verifica Premium; non riceviamo dati della carta." },
+{ subtitle: "Ripristino", content: "Usa Ripristina acquisti nelle Impostazioni con account e store originali. Può servire una connessione. Gli acquisti Apple non passano automaticamente a Google Play o viceversa. Cancellare classifica o progressi non annulla l’acquisto." },
+{
             subtitle: "Recesso e rimborsi",
             content: `L'acquisto riguarda contenuti digitali forniti immediatamente dopo il pagamento. Il diritto di recesso e le richieste di rimborso si esercitano alle condizioni previste dalla legge applicabile e dalle regole dello store interessato:\n\n• App Store: richiesta ad Apple, su ${APPLE_REFUND}\n• Google Play: richiesta a Google, seguendo la procedura su ${GOOGLE_REFUND}\n\nPuoi anche scriverci a ${EMAIL}.`,
-          },
-        ],
-      },
+          }] },
       {
         id: "8",
         title: "8. Promemoria",
@@ -228,36 +125,17 @@ export const it: Locale = {
         title: "9. Proprietà intellettuale",
         content: `L'App, il suo nome, la grafica, i testi, i suoni, il codice e la presentazione sono protetti dal diritto della proprietà intellettuale e appartengono all'editore o ai suoi licenzianti. Alcuni elementi di terzi sono usati secondo la propria licenza:\n\n${LICENSES}\n\nÈ vietata qualsiasi riproduzione o riutilizzo non autorizzato.`,
       },
-      {
-        id: "10",
-        title: "10. Disponibilità e aggiornamenti",
-        content:
-          "L'editore può modificare l'App, correggerne gli errori, modificarne o rimuoverne funzionalità o interromperne la distribuzione. Alcuni aggiornamenti possono essere necessari per continuare a usare l'App. L'editore si impegna a garantirne il corretto funzionamento ma non garantisce che sarà disponibile senza interruzioni, in particolare per la visualizzazione degli annunci, che dipende da Google.",
-      },
+      { id: "10", title: "10. Disponibilità e aggiornamenti", content: "Classifica, acquisti e alcune verifiche richiedono connessione e fornitori. Guasti, manutenzione, restrizioni di sicurezza o annunci indisponibili possono influire sui servizi. Il gioco locale può restare disponibile secondo lo stato della partita.\n\nPossiamo correggere o sviluppare l’app. Restano i diritti inderogabili del consumatore e gli obblighi sui servizi digitali. L’acquisto senza pubblicità non garantisce disponibilità perpetua del servizio online." },
       {
         id: "11",
         title: "11. Garanzie e responsabilità",
         content:
           "L'App è fornita «così com'è». Nulla nelle presenti Condizioni limita i diritti che la legge ti riconosce in quanto consumatore, in particolare la garanzia legale di conformità dei contenuti e servizi digitali.\n\nNei limiti consentiti dalla legge, l'editore non è responsabile:\n\n• della perdita dei tuoi progressi salvati sul dispositivo (sezione 5);\n• dei danni indiretti;\n• dei contenuti pubblicitari forniti da terzi;\n• dell'indisponibilità causata dal tuo dispositivo, dal sistema operativo, dalla connessione o dai servizi di Apple e Google.\n\nQueste limitazioni non si applicano in caso di colpa grave o dolo, ai danni alla persona né nei casi in cui la legge le vieta.",
       },
-      {
-        id: "12",
-        title: "12. Fine dell'uso",
-        content:
-          "Puoi smettere di usare l'App in qualsiasi momento disinstallandola. L'editore può revocare la tua licenza se non rispetti le presenti Condizioni. Le sezioni 9, 11 e 14 continuano ad applicarsi dopo la fine della licenza.",
-      },
-      {
-        id: "13",
-        title: "13. Modifiche alle Condizioni",
-        content:
-          "L'editore può modificare le presenti Condizioni, in particolare per seguire l'evoluzione dell'App o della legge. La data dell'ultimo aggiornamento è indicata in cima a questa pagina. In caso di modifica importante, ne sarai informato nell'App prima della sua entrata in vigore. Se non accetti le nuove Condizioni, puoi smettere di usare l'App.",
-      },
-      {
-        id: "14",
-        title: "14. Legge applicabile, mediazione e controversie",
-        content: `Le presenti Condizioni sono regolate dalla legge francese. Se sei un consumatore residente in un altro paese, conservi la tutela delle norme imperative della legge del tuo paese.\n\nIn caso di difficoltà, scrivi prima a ${EMAIL}: cercheremo una soluzione amichevole.\n\nMediazione dei consumatori: se sei un consumatore e il tuo reclamo scritto non è stato risolto, puoi rivolgerti gratuitamente al seguente mediatore dei consumatori: ${MEDIATOR}.\n\nIn mancanza di accordo, la controversia sarà sottoposta ai tribunali competenti; se sei un consumatore, puoi rivolgerti in particolare al tribunale del tuo luogo di residenza.`,
-      },
-      { id: "15", title: "15. Contatti", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` },
+      { id: "12", title: "12. Eliminazione e fine dell’utilizzo", content: `Puoi smettere quando vuoi. Per eliminare l’account server usa la classifica nelle Impostazioni o ${EMAIL}; disinstallare non basta. L’informativa descrive trattamento e backup.\n\nCancellare i progressi locali è facoltativo. L’account eliminato non si recupera; un rientro consentito crea nuova identità e nickname. Il record locale conservato può essere riutilizzato. Premium resta collegato all’acquisto indipendentemente dalla classifica.\n\nGli abusi possono limitare la classifica senza annullare diritti legali. Proprietà intellettuale, responsabilità e gestione delle controversie restano applicabili.` },
+      { id: "13", title: "13. Modifiche delle condizioni", content: "La versione corrente, datata, è disponibile nell’app e sul sito. Evoluzioni del servizio o della legge possono richiedere revisioni. Restano gli obblighi informativi e i diritti acquisiti del consumatore." },
+      { id: "14", title: "14. Legge, mediazione e controversie", content: `Si applica la legge francese, senza privare il consumatore delle tutele imperative del paese di residenza.\n\nInvia reclami a ${EMAIL}. Dopo un previo reclamo scritto conservi il diritto alla mediazione gratuita del consumo alle condizioni legali. L’adesione dell’editore a un organismo resta da finalizzare; i recapiti saranno pubblicati dopo l’adesione. Queste condizioni non designano un mediatore.\n\nIn assenza di accordo sono competenti i tribunali previsti dalla legge; restano i rimedi legati alla residenza del consumatore.` },
+      { id: "15", title: "15. Contatti", content: `Marc SAMSON EI, Primisia\n${ADDRESS}\n${EMAIL}` }
     ],
   },
 };

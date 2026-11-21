@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>Questions fréquentes</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">Dois-je créer un compte ?</div>
-        <div class="faq-a">Non. Match the Digits ne demande ni compte, ni inscription, ni connexion. Vous pouvez jouer dès l'installation.</div>
+        <div class="faq-q">Faut-il un compte ?</div>
+        <div class="faq-a">Aucun e-mail ni mot de passe n’est demandé pour jouer. Le classement crée une identité anonyme avec un pseudo attribué.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">J'ai acheté « Supprimer les publicités » mais je vois encore des publicités</div>
-        <div class="faq-a">Ouvrez les réglages de l'application et appuyez sur <strong>Restaurer les achats</strong>. Vérifiez que vous êtes connecté avec le même compte App Store ou Google Play que celui de l'achat.</div>
+        <div class="faq-q">Combien d’indices et d’ajouts ?</div>
+        <div class="faq-a">Par plateau : 4 indices et 5 ajouts au maximum. Les 2 premiers ajouts sont gratuits ; sans Premium, les 3 suivants et les indices proposent une publicité récompensée.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">« Supprimer les publicités » est-il un abonnement ?</div>
-        <div class="faq-a">Non. C'est un achat unique : il est facturé une seule fois et ne se renouvelle jamais. Il retire toutes les publicités, y compris les publicités récompensées facultatives pour les indices et les ajouts. Il ne donne aucun avantage de jeu : chaque joueur dispose de 4 indices par partie.</div>
+        <div class="faq-q">Et si la publicité ne fonctionne pas ?</div>
+        <div class="faq-a">Si elle est indisponible après votre demande, l’action peut être accordée sans vidéo dans le quota restant. Refuser ou fermer volontairement la vidéo avant la récompense ne donne pas cette action.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Comment fonctionnent les indices ?</div>
-        <div class="faq-a">Chaque partie vous donne 4 indices. Sans l'achat « Supprimer les publicités », vous pouvez choisir de regarder une courte publicité pour révéler un indice. C'est facultatif : vous pouvez toujours continuer à jouer sans.</div>
+        <div class="faq-q">Premium est-il un abonnement ?</div>
+        <div class="faq-a">Non : c’est un achat unique sans publicité, y compris pour les indices et ajouts. Les plafonds du jeu restent identiques.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Comment fonctionne le bouton « + » ?</div>
-        <div class="faq-a">Le bouton « + » ajoute à la grille une copie des chiffres restants, jusqu'à 5 fois par plateau. Le premier est gratuit. Pour les quatre suivants, vous pouvez choisir de regarder une courte publicité. C'est facultatif.</div>
+        <div class="faq-q">Comment restaurer Premium ?</div>
+        <div class="faq-a">Dans Settings, choisissez Restaurer les achats avec le compte et la boutique d’origine. Il n’y a pas de transfert automatique entre Apple et Google.</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">Comment supprimer mon compte de classement ?</div>
+        <div class="faq-a">Utilisez la rubrique du compte dans Settings et suivez la suppression. Sans accès à l’app, contactez le support par e-mail en indiquant Match the Digits et votre pseudo/identifiant de classement, jamais un jeton ni un mot de passe. Une vérification peut être nécessaire.<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Comment modifier mes choix publicitaires ?</div>
-        <div class="faq-a">Ouvrez les réglages de l'application pour consulter ou modifier le consentement donné pour la publicité. Sur Android, vous pouvez aussi réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres de l'appareil.</div>
+        <div class="faq-q">Puis-je revenir après suppression ?</div>
+        <div class="faq-a">Après traitement, vous pouvez demander une nouvelle identité et un nouveau pseudo, sous réserve des restrictions anti-abus. La progression conservée peut servir à republier votre record. Le Premium reste acquis selon les règles de la boutique.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Mon rappel ne s'affiche pas</div>
-        <div class="faq-a">Vérifiez que les notifications sont autorisées pour Match the Digits dans les paramètres de votre appareil, puis que les rappels sont activés dans les réglages de l'application.</div>
+        <div class="faq-q">Que fait Effacer aussi ma progression ?</div>
+        <div class="faq-a">Cette option remet à zéro la partie, le record et les résultats locaux concernés. Elle ne supprime ni le Premium ni vos préférences. Sans cette option, la progression locale reste conservée.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Vais-je perdre ma progression ?</div>
-        <div class="faq-a">Votre partie, vos scores, vos résultats quotidiens et vos réglages sont enregistrés uniquement sur votre appareil. Désinstaller l'application, effacer ses données ou changer d'appareil les supprime définitivement : nous n'en gardons aucune copie et ne pouvons pas les restaurer.</div>
+        <div class="faq-q">Une désinstallation supprime-t-elle tout ?</div>
+        <div class="faq-a">Elle peut faire perdre votre progression locale, mais ne constitue pas une demande de suppression du compte serveur. Le classement n’est pas une sauvegarde complète de la partie.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Comment obtenir un remboursement ?</div>
-        <div class="faq-a">Les achats sont traités par Apple ou Google. Demandez un remboursement à Apple sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, ou à Google selon <a href="https://support.google.com/googleplay/answer/15574897">cette procédure</a>. Vous pouvez aussi nous écrire.</div>
+        <div class="faq-q">Où gérer le consentement publicitaire ?</div>
+        <div class="faq-a">Cette version n’a pas encore de centre de choix publicitaires dans Settings. Les réglages d’identifiant publicitaire du téléphone et le contact support restent disponibles ; ils ne remplacent pas un formulaire requis avant traitement.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Pourquoi mon rappel ne s’affiche-t-il pas ?</div>
+        <div class="faq-a">Vérifiez les rappels dans l’app et l’autorisation des notifications dans les paramètres du téléphone.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Comment demander un remboursement ?</div>
+        <div class="faq-a">Adressez-vous à Apple ou Google selon la boutique d’achat. Les procédures sont liées dans les conditions d’utilisation ; vous pouvez aussi contacter notre support.</div>
       </div>
     </div>
 

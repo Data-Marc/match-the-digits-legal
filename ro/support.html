@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>Întrebări frecvente</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">Trebuie să îmi creez un cont?</div>
-        <div class="faq-a">Nu. Match the Digits nu necesită cont, înregistrare sau autentificare. Poți juca imediat după instalare.</div>
+        <div class="faq-q">Am nevoie de cont?</div>
+        <div class="faq-a">Nu sunt necesare e-mail sau parolă pentru joc. Clasamentul creează identitate anonimă cu pseudonim atribuit.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Am cumpărat „Elimină reclamele”, dar încă văd reclame</div>
-        <div class="faq-a">Deschide setările aplicației și atinge <strong>Restabilește achizițiile</strong>. Verifică dacă ești conectat cu același cont App Store sau Google Play folosit la achiziție.</div>
+        <div class="faq-q">Câte indicii și adăugări?</div>
+        <div class="faq-a">Cel mult 4 indicii și 5 adăugări per tablă. Primele 2 adăugări sunt gratuite; fără Premium, celelalte 3 și indiciile propun reclame recompensate.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">„Elimină reclamele” este un abonament?</div>
-        <div class="faq-a">Nu. Este o achiziție unică: se plătește o singură dată și nu se reînnoiește niciodată. Elimină toate reclamele, inclusiv reclamele opționale cu recompensă pentru indicii și adăugări. Nu oferă niciun avantaj în joc: fiecare jucător are 4 indicii pe joc.</div>
+        <div class="faq-q">Dacă reclama nu funcționează?</div>
+        <div class="faq-a">Dacă e indisponibilă după cerere, acțiunea poate fi acordată fără videoclip în limita rămasă. Refuzul sau închiderea voluntară înaintea recompensei nu o acordă.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Cum funcționează indiciile?</div>
-        <div class="faq-a">Fiecare joc îți oferă 4 indicii. Fără achiziția „Elimină reclamele”, poți alege să urmărești o reclamă scurtă pentru a afla un indiciu. Este opțional: poți oricând să continui să joci fără ea.</div>
+        <div class="faq-q">Premium este abonament?</div>
+        <div class="faq-a">Nu, este achiziție unică fără reclame, inclusiv pentru indicii și adăugări. Limitele rămân aceleași.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Cum funcționează butonul „+”?</div>
-        <div class="faq-a">Butonul „+” adaugă pe tablă o copie a numerelor rămase, de până la 5 ori pe tablă. Prima dată este gratuită. Pentru următoarele patru, poți alege să urmărești o reclamă scurtă. Este opțional.</div>
+        <div class="faq-q">Cum restaurez Premium?</div>
+        <div class="faq-a">Din Setări, Restaurează achizițiile cu magazinul și contul originale. Nu există transfer automat între Apple și Google.</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">Cum șterg contul de clasament?</div>
+        <div class="faq-a">Solicită și urmărește ștergerea în secțiunea contului din Setări. Fără acces la aplicație, scrie asistenței cu Match the Digits și pseudonim/identificator, niciodată token sau parolă. Poate fi necesară verificarea.<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Cum îmi schimb opțiunile privind publicitatea?</div>
-        <div class="faq-a">Deschide setările aplicației pentru a vedea sau modifica consimțământul dat pentru publicitate. Pe Android, poți și să resetezi sau să ștergi ID-ul de publicitate din setările dispozitivului.</div>
+        <div class="faq-q">Pot reveni după ștergere?</div>
+        <div class="faq-a">După finalizare poți cere identitate și pseudonim noi, sub rezerva restricțiilor antiabuz. Progresul păstrat poate permite republicarea recordului. Premium rămâne conform magazinului.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Mementoul meu nu apare</div>
-        <div class="faq-a">Verifică dacă notificările pentru Match the Digits sunt permise în setările dispozitivului și dacă mementourile sunt activate în setările aplicației.</div>
+        <div class="faq-q">Ce face Șterge și progresul meu?</div>
+        <div class="faq-a">Resetează partida, recordul și rezultatele locale vizate, nu Premium sau preferințele. Fără opțiune progresul rămâne.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Îmi voi pierde progresul?</div>
-        <div class="faq-a">Jocul, scorurile, rezultatele zilnice și setările tale sunt salvate doar pe dispozitivul tău. Dezinstalarea aplicației, ștergerea datelor ei sau schimbarea dispozitivului le șterge definitiv: nu păstrăm nicio copie și nu le putem restabili.</div>
+        <div class="faq-q">Dezinstalarea șterge tot?</div>
+        <div class="faq-a">Poate pierde progresul local, dar nu solicită ștergerea contului serverului. Clasamentul nu este backup complet.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Cum obțin o rambursare?</div>
-        <div class="faq-a">Achizițiile sunt procesate de Apple sau Google. Solicită rambursarea de la Apple pe <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> sau de la Google urmând <a href="https://support.google.com/googleplay/answer/15574897">această procedură</a>. Ne poți și scrie.</div>
+        <div class="faq-q">Unde gestionez consimțământul publicitar?</div>
+        <div class="faq-a">Această versiune încă nu are un centru de opțiuni publicitare în Setări. Controalele telefonului și asistența nu înlocuiesc un formular necesar înainte de prelucrare.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">De ce nu apare mementoul?</div>
+        <div class="faq-a">Verifică mementourile aplicației și permisiunea pentru notificări a telefonului.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Cum cer rambursare?</div>
+        <div class="faq-a">Contactează Apple sau Google conform magazinului. Procedurile sunt legate în condiții; poți contacta și asistența.</div>
       </div>
     </div>
 

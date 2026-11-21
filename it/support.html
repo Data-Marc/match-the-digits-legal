@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>Domande frequenti</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">Devo creare un account?</div>
-        <div class="faq-a">No. Match the Digits non richiede account, registrazione né accesso. Puoi giocare subito dopo l'installazione.</div>
+        <div class="faq-q">Serve un account?</div>
+        <div class="faq-a">Non servono e-mail o password per giocare. La classifica crea un’identità anonima con nickname assegnato.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Ho acquistato «Rimuovi pubblicità» ma vedo ancora annunci</div>
-        <div class="faq-a">Apri le impostazioni dell'app e tocca <strong>Ripristina acquisti</strong>. Verifica di aver effettuato l'accesso con lo stesso account App Store o Google Play usato per l'acquisto.</div>
+        <div class="faq-q">Quanti suggerimenti e aggiunte?</div>
+        <div class="faq-a">Massimo 4 suggerimenti e 5 aggiunte per tabellone. Le prime 2 aggiunte sono gratuite; senza Premium le altre 3 e i suggerimenti propongono annunci con ricompensa.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">«Rimuovi pubblicità» è un abbonamento?</div>
-        <div class="faq-a">No. È un acquisto unico: viene addebitato una sola volta e non si rinnova mai. Rimuove tutti gli annunci, compreso gli annunci con premio facoltativi per indizi e aggiunte. Non dà alcun vantaggio di gioco: ogni giocatore ha 4 indizi per partita.</div>
+        <div class="faq-q">Se l’annuncio non funziona?</div>
+        <div class="faq-a">Se indisponibile dopo la richiesta, l’azione può essere concessa senza video entro il saldo restante. Rifiutare o chiudere volontariamente prima della ricompensa non la concede.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Come funzionano gli indizi?</div>
-        <div class="faq-a">Ogni partita ti dà 4 indizi. Senza l'acquisto «Rimuovi pubblicità», puoi scegliere di guardare un breve annuncio per scoprire un indizio. È facoltativo: puoi sempre continuare a giocare senza.</div>
+        <div class="faq-q">Premium è un abbonamento?</div>
+        <div class="faq-a">No: acquisto unico senza pubblicità, anche per suggerimenti e aggiunte. I limiti restano uguali.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Come funziona il pulsante «+»?</div>
-        <div class="faq-a">Il pulsante «+» aggiunge al tabellone una copia dei numeri rimasti, fino a 5 volte per tabellone. La prima è gratuita. Per le quattro successive, puoi scegliere di guardare un breve annuncio. È facoltativo.</div>
+        <div class="faq-q">Come ripristino Premium?</div>
+        <div class="faq-a">Nelle Impostazioni, Ripristina acquisti con account e store originali. Nessun trasferimento automatico fra Apple e Google.</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">Come elimino l’account di classifica?</div>
+        <div class="faq-a">Richiedilo e seguilo nella sezione account delle Impostazioni. Senza accesso all’app, scrivi al supporto con Match the Digits e nickname/identificativo di classifica, mai token o password. Può servire una verifica.<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Come modifico le mie scelte pubblicitarie?</div>
-        <div class="faq-a">Apri le impostazioni dell'app per consultare o modificare il consenso dato per la pubblicità. Su Android puoi anche reimpostare o eliminare il tuo ID pubblicità nelle impostazioni del dispositivo.</div>
+        <div class="faq-q">Posso tornare dopo l’eliminazione?</div>
+        <div class="faq-a">Al termine puoi richiedere nuova identità e nickname, salvo restrizioni antiabuso. I progressi conservati possono consentire di ripubblicare il record. Premium resta secondo le regole dello store.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Il mio promemoria non compare</div>
-        <div class="faq-a">Verifica che le notifiche di Match the Digits siano consentite nelle impostazioni del dispositivo e che i promemoria siano attivati nelle impostazioni dell'app.</div>
+        <div class="faq-q">Cosa fa Cancella anche i miei progressi?</div>
+        <div class="faq-a">Azzera partita, record e risultati locali interessati, non Premium o preferenze. Senza l’opzione i progressi locali rimangono.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Perderò i miei progressi?</div>
-        <div class="faq-a">La tua partita, i punteggi, i risultati giornalieri e le impostazioni sono salvati solo sul tuo dispositivo. Disinstallare l'app, cancellarne i dati o cambiare dispositivo li elimina definitivamente: non ne conserviamo copia e non possiamo ripristinarli.</div>
+        <div class="faq-q">Disinstallare cancella tutto?</div>
+        <div class="faq-a">Può far perdere i progressi locali, ma non richiede l’eliminazione del server. La classifica non è un backup completo.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Come ottengo un rimborso?</div>
-        <div class="faq-a">Gli acquisti sono gestiti da Apple o Google. Chiedi un rimborso ad Apple su <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, o a Google seguendo <a href="https://support.google.com/googleplay/answer/15574897">questa procedura</a>. Puoi anche scriverci.</div>
+        <div class="faq-q">Dove gestisco il consenso pubblicitario?</div>
+        <div class="faq-a">Questa versione non ha ancora un centro delle scelte pubblicitarie nelle Impostazioni. I controlli del telefono e il supporto non sostituiscono un modulo necessario prima del trattamento.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Perché il promemoria non appare?</div>
+        <div class="faq-a">Controlla i promemoria nell’app e il permesso notifiche sul telefono.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Come chiedo un rimborso?</div>
+        <div class="faq-a">Rivolgiti ad Apple o Google secondo lo store d’acquisto. Le procedure sono collegate nelle condizioni; puoi anche contattare l’assistenza.</div>
       </div>
     </div>
 

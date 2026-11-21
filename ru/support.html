@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>Частые вопросы</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">Нужно ли создавать аккаунт?</div>
-        <div class="faq-a">Нет. Match the Digits не требует аккаунта, регистрации или входа. Играть можно сразу после установки.</div>
+        <div class="faq-q">Нужен ли аккаунт?</div>
+        <div class="faq-a">Для игры не нужны почта и пароль. Рейтинг создаёт анонимную идентичность с назначенным псевдонимом.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Я купил «Убрать рекламу», но реклама всё ещё показывается</div>
-        <div class="faq-a">Откройте настройки приложения и нажмите <strong>Восстановить покупки</strong>. Убедитесь, что вы вошли в тот же аккаунт App Store или Google Play, с которого была сделана покупка.</div>
+        <div class="faq-q">Сколько подсказок и добавлений?</div>
+        <div class="faq-a">До 4 подсказок и 5 добавлений на поле. Первые 2 добавления бесплатны; без Premium следующие 3 и подсказки предлагают рекламу с наградой.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">«Убрать рекламу»: это подписка?</div>
-        <div class="faq-a">Нет. Это разовая покупка: оплата списывается один раз и никогда не продлевается. Она убирает всю рекламу, включая необязательную рекламу с вознаграждением для подсказок и добавлений. Она не даёт игрового преимущества: у каждого игрока 4 подсказки за партию.</div>
+        <div class="faq-q">Если реклама не работает?</div>
+        <div class="faq-a">При недоступности после запроса действие может быть предоставлено без видео в пределах остатка. Отказ или добровольное закрытие до награды его не предоставляет.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Как работают подсказки?</div>
-        <div class="faq-a">В каждой партии у вас 4 подсказки. Без покупки «Убрать рекламу» вы можете посмотреть короткую рекламу, чтобы открыть подсказку. Это необязательно: вы всегда можете продолжить игру без неё.</div>
+        <div class="faq-q">Premium — подписка?</div>
+        <div class="faq-a">Нет, разовая покупка без рекламы, включая подсказки и добавления. Лимиты одинаковы.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Как работает кнопка «+»?</div>
-        <div class="faq-a">Кнопка «+» добавляет на поле копию оставшихся чисел, до 5 раз на поле. Первое добавление бесплатно. Для следующих четырёх вы можете посмотреть короткую рекламу. Это необязательно.</div>
+        <div class="faq-q">Как восстановить Premium?</div>
+        <div class="faq-a">В настройках выберите восстановление с исходным магазином и аккаунтом. Автоматического переноса Apple/Google нет.</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">Как удалить аккаунт рейтинга?</div>
+        <div class="faq-a">Запросите и отслеживайте удаление в разделе аккаунта настроек. Без приложения напишите поддержке, указав Match the Digits и псевдоним/идентификатор, но не токен или пароль. Возможна проверка.<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Как изменить настройки рекламы?</div>
-        <div class="faq-a">Откройте настройки приложения, чтобы посмотреть или изменить согласие, данное для рекламы. На Android вы также можете сбросить или удалить рекламный идентификатор в настройках устройства.</div>
+        <div class="faq-q">Можно вернуться после удаления?</div>
+        <div class="faq-a">После завершения можно запросить новую идентичность и псевдоним с учётом ограничений. Сохранённый прогресс позволяет вновь опубликовать рекорд. Premium сохраняется по правилам магазина.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Напоминание не появляется</div>
-        <div class="faq-a">Проверьте, разрешены ли уведомления для Match the Digits в настройках устройства и включены ли напоминания в настройках приложения.</div>
+        <div class="faq-q">Что делает удаление прогресса?</div>
+        <div class="faq-a">Сбрасывает партию, рекорд и соответствующие локальные результаты, но не Premium и настройки. Без этой опции прогресс остаётся.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Я потеряю свой прогресс?</div>
-        <div class="faq-a">Ваша партия, очки, ежедневные результаты и настройки хранятся только на вашем устройстве. Удаление приложения, очистка его данных или смена устройства безвозвратно удаляют их: мы не храним копий и не можем их восстановить.</div>
+        <div class="faq-q">Удаление приложения удаляет всё?</div>
+        <div class="faq-a">Локальный прогресс может пропасть, но серверный аккаунт не запрашивается к удалению. Рейтинг не является полной копией.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Как вернуть деньги?</div>
-        <div class="faq-a">Покупки обрабатывают Apple или Google. Запросите возврат у Apple на <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> или у Google, следуя <a href="https://support.google.com/googleplay/answer/15574897">этой процедуре</a>. Вы также можете написать нам.</div>
+        <div class="faq-q">Где управлять рекламным согласием?</div>
+        <div class="faq-a">В этой версии ещё нет центра рекламных настроек конфиденциальности. Настройки телефона и поддержка не заменяют форму, необходимую до обработки.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Почему нет напоминания?</div>
+        <div class="faq-a">Проверьте напоминания в приложении и разрешение уведомлений на телефоне.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Как запросить возврат денег?</div>
+        <div class="faq-a">Обратитесь в Apple или Google согласно магазину. Ссылки на процедуры есть в условиях; можно написать и поддержке.</div>
       </div>
     </div>
 

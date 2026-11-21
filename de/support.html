@@ -43,7 +43,7 @@
     .faq-a { font-size: 12.5px; color: #64748b; line-height: 1.65; }
     .faq-a a { color: #1a56db; }
     .links { display: flex; gap: 10px; }
-    a.doc-link { flex: 1; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
+    a.doc-link { flex: 1; min-width: 0; overflow-wrap: anywhere; display: block; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; text-decoration: none; color: #0f172a; font-size: 12.5px; font-weight: 700; text-align: center; transition: border-color 0.15s, background 0.15s; }
     a.doc-link:hover { border-color: #1a56db; background: #f0f4ff; }
     .lang { display: flex; justify-content: flex-end; margin-bottom: 16px; }
     .lang select { font: inherit; font-size: 12px; color: #475569; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; }
@@ -73,40 +73,52 @@
     <h2>Häufige Fragen</h2>
     <div class="faq">
       <div class="faq-item">
-        <div class="faq-q">Muss ich ein Konto erstellen?</div>
-        <div class="faq-a">Nein. Match the Digits erfordert weder Konto noch Registrierung noch Anmeldung. Sie können direkt nach der Installation spielen.</div>
+        <div class="faq-q">Benötige ich ein Konto?</div>
+        <div class="faq-a">Zum Spielen sind weder E-Mail noch Passwort nötig. Die Rangliste erstellt eine anonyme Identität mit zugeteiltem Namen.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Ich habe „Werbung entfernen“ gekauft, sehe aber noch Werbung</div>
-        <div class="faq-a">Öffnen Sie die Einstellungen der App und tippen Sie auf <strong>Käufe wiederherstellen</strong>. Achten Sie darauf, mit demselben App-Store- oder Google-Play-Konto wie beim Kauf angemeldet zu sein.</div>
+        <div class="faq-q">Wie viele Hinweise und Ergänzungen gibt es?</div>
+        <div class="faq-a">Pro Spielfeld maximal 4 Hinweise und 5 Ergänzungen. Die ersten 2 Ergänzungen sind kostenlos; ohne Premium werden für die nächsten 3 und Hinweise Belohnungsanzeigen angeboten.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Ist „Werbung entfernen“ ein Abonnement?</div>
-        <div class="faq-a">Nein. Es ist ein einmaliger Kauf: Er wird nur einmal berechnet und verlängert sich nie. Er entfernt jegliche Werbung, auch die freiwillige Werbung mit Belohnung für Hinweise und Ergänzungen. Er verschafft keinen Spielvorteil: Jeder Spieler hat 4 Hinweise pro Spiel.</div>
+        <div class="faq-q">Was passiert bei einer nicht verfügbaren Anzeige?</div>
+        <div class="faq-a">Nach Ihrer Anfrage kann die Aktion innerhalb des Restkontingents ohne Video gewährt werden. Ablehnung oder freiwilliges Schließen vor der Belohnung gewährt sie nicht.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Wie funktionieren Hinweise?</div>
-        <div class="faq-a">Jedes Spiel gibt Ihnen 4 Hinweise. Ohne den Kauf „Werbung entfernen“ können Sie sich eine kurze Werbung ansehen, um einen Hinweis aufzudecken. Das ist freiwillig: Sie können jederzeit auch ohne weiterspielen.</div>
+        <div class="faq-q">Ist Premium ein Abonnement?</div>
+        <div class="faq-a">Nein, ein einmaliger werbefreier Kauf, auch für Hinweise und Ergänzungen. Die Spielgrenzen bleiben gleich.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Wie funktioniert die Schaltfläche „+“?</div>
-        <div class="faq-a">Die Schaltfläche „+“ fügt dem Spielfeld eine Kopie der verbleibenden Zahlen hinzu, bis zu 5-mal pro Spielfeld. Das erste Mal ist kostenlos. Für die nächsten vier können Sie sich eine kurze Werbung ansehen. Das ist freiwillig.</div>
+        <div class="faq-q">Wie stelle ich Premium wieder her?</div>
+        <div class="faq-a">Über „Käufe wiederherstellen“ in den Einstellungen mit ursprünglichem Storekonto. Kein automatischer Transfer zwischen Apple und Google.</div>
+      </div>
+      <div class="faq-item" id="account-deletion">
+        <div class="faq-q">Wie lösche ich das Ranglistenkonto?</div>
+        <div class="faq-a">Nutzen Sie den Kontobereich in den Einstellungen und verfolgen Sie den Vorgang. Ohne App-Zugriff schreiben Sie dem Support mit Match the Digits und Ranglistenname/Kennung, niemals Token oder Passwort. Eine Prüfung kann nötig sein.<br><a href="mailto:hello@primisia.com?subject=Match%20the%20Digits%20-%20account%20deletion">hello@primisia.com</a></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Wie ändere ich meine Werbeeinstellungen?</div>
-        <div class="faq-a">Öffnen Sie die Einstellungen der App, um die für Werbung erteilte Einwilligung einzusehen oder zu ändern. Unter Android können Sie Ihre Werbe-ID auch in den Geräteeinstellungen zurücksetzen oder löschen.</div>
+        <div class="faq-q">Kann ich nach der Löschung zurückkehren?</div>
+        <div class="faq-a">Nach Abschluss können Sie vorbehaltlich Missbrauchsbeschränkungen eine neue Identität und einen neuen Namen anfordern. Erhaltener Fortschritt kann erneut veröffentlicht werden. Premium bleibt nach den Storeregeln bestehen.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Meine Erinnerung wird nicht angezeigt</div>
-        <div class="faq-a">Prüfen Sie, ob Mitteilungen für Match the Digits in den Geräteeinstellungen erlaubt sind und ob die Erinnerungen in den Einstellungen der App aktiviert sind.</div>
+        <div class="faq-q">Was bewirkt das zusätzliche Löschen des Fortschritts?</div>
+        <div class="faq-a">Partie, Rekord und betroffene lokale Ergebnisse werden zurückgesetzt; Premium und Einstellungen bleiben. Ohne diese Option bleibt der lokale Fortschritt.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Verliere ich meinen Fortschritt?</div>
-        <div class="faq-a">Ihr Spiel, Ihre Punktzahlen, Tagesergebnisse und Einstellungen werden nur auf Ihrem Gerät gespeichert. Wenn Sie die App deinstallieren, ihre Daten löschen oder das Gerät wechseln, werden sie endgültig gelöscht: Wir haben keine Kopie und können sie nicht wiederherstellen.</div>
+        <div class="faq-q">Löscht eine Deinstallation alles?</div>
+        <div class="faq-a">Lokaler Fortschritt kann verloren gehen; das Serverkonto wird dadurch nicht zur Löschung angemeldet. Die Rangliste ist keine vollständige Sicherung.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Wie erhalte ich eine Erstattung?</div>
-        <div class="faq-a">Käufe werden von Apple oder Google abgewickelt. Beantragen Sie eine Erstattung bei Apple unter <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> oder bei Google nach <a href="https://support.google.com/googleplay/answer/15574897">diesem Verfahren</a>. Sie können uns auch schreiben.</div>
+        <div class="faq-q">Wo verwalte ich die Werbeeinwilligung?</div>
+        <div class="faq-a">Diese Version hat noch keine Werbedatenschutzverwaltung in den App-Einstellungen. Geräte-Werbekennungseinstellungen und Support ersetzen kein vor Verarbeitung erforderliches Formular.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Warum erscheint meine Erinnerung nicht?</div>
+        <div class="faq-a">Prüfen Sie App-Erinnerungen und die Benachrichtigungsberechtigung des Telefons.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Wie beantrage ich eine Erstattung?</div>
+        <div class="faq-a">Wenden Sie sich an den jeweiligen Store Apple oder Google. Die Verfahren sind in den Bedingungen verlinkt; unser Support hilft ebenfalls.</div>
       </div>
     </div>
 
