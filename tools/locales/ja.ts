@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "ja/";
 const PUBLISHER = "Marc SAMSON（entrepreneur individuel（EI）、フランスの個人事業主）、屋号 Primisia";
@@ -162,7 +162,7 @@ export const ja: Locale = {
       {
         id: "1",
         title: "1. 発行者",
-        content: `モバイルアプリ Match the Digits（以下「本アプリ」）の発行者：\n\n${PUBLISHER}\n• 住所：${ADDRESS}\n• 電話：${PHONE}\n• メール：${EMAIL}\n• ${IDS}, ${REG}\n• EU 付加価値税番号：${VAT}, 付加価値税非課税（フランス一般租税法典第 293 B 条）\n• 発行責任者：Marc SAMSON\n• プライバシーポリシーおよび本規約のページのホスティング：${HOST}, ${HOST_PHONE}`,
+        content: `モバイルアプリ Match the Digits（以下「本アプリ」）の発行者：\n\n${PUBLISHER}\n• 住所：${ADDRESS}\n• 電話：${PHONE}\n• メール：${EMAIL}\n• ${IDS}, ${REG}\n• EU 付加価値税番号：${VAT}, 付加価値税非課税（フランス一般租税法典第 293 B 条）\n• 発行責任者：Marc SAMSON\n• プライバシーポリシーおよび本規約のページのホスティング：${HOST}, ${HOST_SUPPORT}`,
       },
       {
         id: "2",

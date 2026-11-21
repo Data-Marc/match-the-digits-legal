@@ -47,7 +47,8 @@ export const VAT = "FR87106684699";
 export const REG = "RCS Nanterre 106 684 699";
 export const MEDIATOR = "[TO BE CONFIRMED: consumer mediator]";
 export const HOST = "GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA";
-export const HOST_PHONE = "[TO BE CONFIRMED: host phone]";
+// Official support portal; do not invent a telephone number or an unverified email.
+export const HOST_SUPPORT = "https://support.github.com";
 export const CNIL = "CNIL (Commission nationale de l'informatique et des libertés), Service des plaintes, 3 place de Fontenoy, 75007 Paris, France";
 export const CNIL_URL = "https://www.cnil.fr/fr/adresser-une-plainte";
 export const GOOGLE_PRIVACY = "https://policies.google.com/privacy";

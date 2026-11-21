@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "vi/";
 const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, doanh nghiệp tư nhân theo luật Pháp), với tên thương mại Primisia";
@@ -162,7 +162,7 @@ export const vi: Locale = {
       {
         id: "1",
         title: "1. Nhà phát hành",
-        content: `Ứng dụng di động Match the Digits (\"Ứng dụng\") được phát hành bởi:\n\n${PUBLISHER}\n• Địa chỉ: ${ADDRESS}\n• Điện thoại: ${PHONE}\n• Email: ${EMAIL}\n• ${IDS}, ${REG}\n• Mã số VAT nội khối EU: ${VAT}, không áp dụng VAT, Điều 293 B Bộ luật Thuế chung của Pháp\n• Người chịu trách nhiệm xuất bản: Marc SAMSON\n• Đơn vị lưu trữ các trang chính sách quyền riêng tư và Điều khoản này: ${HOST}, ${HOST_PHONE}`,
+        content: `Ứng dụng di động Match the Digits (\"Ứng dụng\") được phát hành bởi:\n\n${PUBLISHER}\n• Địa chỉ: ${ADDRESS}\n• Điện thoại: ${PHONE}\n• Email: ${EMAIL}\n• ${IDS}, ${REG}\n• Mã số VAT nội khối EU: ${VAT}, không áp dụng VAT, Điều 293 B Bộ luật Thuế chung của Pháp\n• Người chịu trách nhiệm xuất bản: Marc SAMSON\n• Đơn vị lưu trữ các trang chính sách quyền riêng tư và Điều khoản này: ${HOST}, ${HOST_SUPPORT}`,
       },
       {
         id: "2",

@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "de/";
 const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, französisches Einzelunternehmen), unter der Geschäftsbezeichnung Primisia";
@@ -162,7 +162,7 @@ export const de: Locale = {
       {
         id: "1",
         title: "1. Herausgeber",
-        content: `Die mobile Anwendung Match the Digits (die „App“) wird herausgegeben von:\n\n${PUBLISHER}\n• Adresse: ${ADDRESS}\n• Telefon: ${PHONE}\n• E-Mail: ${EMAIL}\n• ${IDS}, ${REG}\n• USt-IdNr.: ${VAT}, keine Umsatzsteuer ausgewiesen, Artikel 293 B des französischen Steuergesetzbuchs (Code général des impôts)\n• Verantwortlich für den Inhalt: Marc SAMSON\n• Hosting der Seiten der Datenschutzerklärung und dieser Bedingungen: ${HOST}, ${HOST_PHONE}`,
+        content: `Die mobile Anwendung Match the Digits (die „App“) wird herausgegeben von:\n\n${PUBLISHER}\n• Adresse: ${ADDRESS}\n• Telefon: ${PHONE}\n• E-Mail: ${EMAIL}\n• ${IDS}, ${REG}\n• USt-IdNr.: ${VAT}, keine Umsatzsteuer ausgewiesen, Artikel 293 B des französischen Steuergesetzbuchs (Code général des impôts)\n• Verantwortlich für den Inhalt: Marc SAMSON\n• Hosting der Seiten der Datenschutzerklärung und dieser Bedingungen: ${HOST}, ${HOST_SUPPORT}`,
       },
       {
         id: "2",

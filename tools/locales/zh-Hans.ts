@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "zh-hans/";
 const PUBLISHER = "Marc SAMSON（entrepreneur individuel（EI），法国个体经营者），商号 Primisia";
@@ -162,7 +162,7 @@ export const zhHans: Locale = {
       {
         id: "1",
         title: "1. 发行方",
-        content: `移动应用 Match the Digits（以下简称“本应用”）的发行方：\n\n${PUBLISHER}\n• 地址：${ADDRESS}\n• 电话：${PHONE}\n• 电子邮件：${EMAIL}\n• ${IDS}, ${REG}\n• 欧盟增值税号：${VAT}, 不适用增值税，依据《法国税收总法典》第 293 B 条\n• 出版负责人：Marc SAMSON\n• 隐私政策及本条款页面的托管方：${HOST}, ${HOST_PHONE}`,
+        content: `移动应用 Match the Digits（以下简称“本应用”）的发行方：\n\n${PUBLISHER}\n• 地址：${ADDRESS}\n• 电话：${PHONE}\n• 电子邮件：${EMAIL}\n• ${IDS}, ${REG}\n• 欧盟增值税号：${VAT}, 不适用增值税，依据《法国税收总法典》第 293 B 条\n• 出版负责人：Marc SAMSON\n• 隐私政策及本条款页面的托管方：${HOST}, ${HOST_SUPPORT}`,
       },
       {
         id: "2",

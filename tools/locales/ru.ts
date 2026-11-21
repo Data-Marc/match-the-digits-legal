@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "ru/";
 const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, индивидуальный предприниматель по праву Франции), под коммерческим наименованием Primisia";
@@ -162,7 +162,7 @@ export const ru: Locale = {
       {
         id: "1",
         title: "1. Издатель",
-        content: `Издатель мобильного приложения Match the Digits («Приложение»):\n\n${PUBLISHER}\n• Адрес: ${ADDRESS}\n• Телефон: ${PHONE}\n• E-mail: ${EMAIL}\n• ${IDS}, ${REG}\n• Номер плательщика НДС в ЕС: ${VAT}, НДС не применяется, статья 293 B Общего налогового кодекса Франции\n• Ответственный за публикацию: Marc SAMSON\n• Хостинг страниц политики конфиденциальности и настоящих Условий: ${HOST}, ${HOST_PHONE}`,
+        content: `Издатель мобильного приложения Match the Digits («Приложение»):\n\n${PUBLISHER}\n• Адрес: ${ADDRESS}\n• Телефон: ${PHONE}\n• E-mail: ${EMAIL}\n• ${IDS}, ${REG}\n• Номер плательщика НДС в ЕС: ${VAT}, НДС не применяется, статья 293 B Общего налогового кодекса Франции\n• Ответственный за публикацию: Marc SAMSON\n• Хостинг страниц политики конфиденциальности и настоящих Условий: ${HOST}, ${HOST_SUPPORT}`,
       },
       {
         id: "2",

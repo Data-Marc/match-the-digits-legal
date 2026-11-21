@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "ko/";
 const PUBLISHER = "Marc SAMSON(entrepreneur individuel(EI), 프랑스 개인사업자), 상호 Primisia";
@@ -162,7 +162,7 @@ export const ko: Locale = {
       {
         id: "1",
         title: "1. 발행자",
-        content: `모바일 애플리케이션 Match the Digits(이하 '앱') 발행자:\n\n${PUBLISHER}\n• 주소: ${ADDRESS}\n• 전화: ${PHONE}\n• 이메일: ${EMAIL}\n• ${IDS}, ${REG}\n• EU 부가가치세 번호: ${VAT}, 부가가치세 비과세(프랑스 일반조세법 제293 B조)\n• 발행 책임자: Marc SAMSON\n• 개인정보처리방침 및 본 약관 페이지의 호스팅: ${HOST}, ${HOST_PHONE}`,
+        content: `모바일 애플리케이션 Match the Digits(이하 '앱') 발행자:\n\n${PUBLISHER}\n• 주소: ${ADDRESS}\n• 전화: ${PHONE}\n• 이메일: ${EMAIL}\n• ${IDS}, ${REG}\n• EU 부가가치세 번호: ${VAT}, 부가가치세 비과세(프랑스 일반조세법 제293 B조)\n• 발행 책임자: Marc SAMSON\n• 개인정보처리방침 및 본 약관 페이지의 호스팅: ${HOST}, ${HOST_SUPPORT}`,
       },
       {
         id: "2",

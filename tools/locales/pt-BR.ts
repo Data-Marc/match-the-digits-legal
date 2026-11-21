@@ -1,4 +1,4 @@
-import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_PHONE, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
+import { ADDRESS, APPLE_EULA, APPLE_REFUND, CNIL, CNIL_URL, EMAIL, GOOGLE_PARTNERS, GOOGLE_PRIVACY, GOOGLE_REFUND, HOST, HOST_SUPPORT, IDS, LICENSES, MEDIATOR, PHONE, REG, VAT, privacyUrl, type Locale } from "../common.ts";
 
 const dir = "pt-br/";
 const PUBLISHER = "Marc SAMSON, entrepreneur individuel (EI, empresário individual francês), com o nome comercial Primisia";
@@ -162,7 +162,7 @@ export const ptBR: Locale = {
       {
         id: "1",
         title: "1. Editor",
-        content: `O aplicativo móvel Match the Digits (o \"Aplicativo\") é publicado por:\n\n${PUBLISHER}\n• Endereço: ${ADDRESS}\n• Telefone: ${PHONE}\n• E-mail: ${EMAIL}\n• ${IDS}, ${REG}\n• Número de IVA intracomunitário: ${VAT}, IVA não aplicável, artigo 293 B do Código Geral de Impostos francês\n• Diretor de publicação: Marc SAMSON\n• Hospedagem das páginas da política de privacidade e destes Termos: ${HOST}, ${HOST_PHONE}`,
+        content: `O aplicativo móvel Match the Digits (o \"Aplicativo\") é publicado por:\n\n${PUBLISHER}\n• Endereço: ${ADDRESS}\n• Telefone: ${PHONE}\n• E-mail: ${EMAIL}\n• ${IDS}, ${REG}\n• Número de IVA intracomunitário: ${VAT}, IVA não aplicável, artigo 293 B do Código Geral de Impostos francês\n• Diretor de publicação: Marc SAMSON\n• Hospedagem das páginas da política de privacidade e destes Termos: ${HOST}, ${HOST_SUPPORT}`,
       },
       {
         id: "2",
